@@ -1,0 +1,4149 @@
+{
+ "source": "SISTEMA - ORÇAMENTO (5).pdf",
+ "version": 1791987470,
+ "coverPage": 1,
+ "bellaDividerPage": 199,
+ "closingPage": 350,
+ "products": [
+  {
+   "name": "ARANDELA ÁPICE",
+   "description": "Arandela escultural com estrutura vertical em metal texturizado e camadas de cristal sobrepostas. Luz suave, presença imponente e minimalismo refinado.",
+   "price": 15000.0,
+   "brand": "WJ",
+   "pages": [
+    2
+   ],
+   "id": 1,
+   "search": "arandela apice arandela escultural com estrutura vertical em metal texturizado e camadas de cristal sobrepostas. luz suave, presenca imponente e minimalismo refinado.",
+   "thumb": "thumbs/1791987470-1.jpg"
+  },
+  {
+   "name": "PENDENTE ALO 120CM",
+   "description": "Escultura em tecido cru com iluminação aconchegante. Uma peça robusta, pensada para ser o ponto de destaque do ambiente.",
+   "price": 8400.0,
+   "brand": "WJ",
+   "pages": [
+    3
+   ],
+   "id": 2,
+   "search": "pendente alo 120cm escultura em tecido cru com iluminacao aconchegante. uma peca robusta, pensada para ser o ponto de destaque do ambiente.",
+   "thumb": "thumbs/1791987470-2.jpg"
+  },
+  {
+   "name": "PENDENTE ALO 180CM",
+   "description": "Escultura em tecido cru com iluminação aconchegante. Uma peça robusta, pensada para ser o ponto de destaque do ambiente.",
+   "price": 11400.0,
+   "brand": "WJ",
+   "pages": [
+    4
+   ],
+   "id": 3,
+   "search": "pendente alo 180cm escultura em tecido cru com iluminacao aconchegante. uma peca robusta, pensada para ser o ponto de destaque do ambiente.",
+   "thumb": "thumbs/1791987470-3.jpg"
+  },
+  {
+   "name": "PENDENTE AMORFO M",
+   "description": "Pendente em vidro soprado com formas orgânicas e superfície com brilho suave. Sua geometria fluida traz leveza e sofisticação ao ambiente.",
+   "price": 7920.0,
+   "brand": "WJ",
+   "pages": [
+    5
+   ],
+   "id": 4,
+   "search": "pendente amorfo m pendente em vidro soprado com formas organicas e superficie com brilho suave. sua geometria fluida traz leveza e sofisticacao ao ambiente.",
+   "thumb": "thumbs/1791987470-4.jpg"
+  },
+  {
+   "name": "PENDENTE AMORFO P",
+   "description": "Pendente em vidro soprado com formas orgânicas e superfície com brilho suave. Sua geometria fluida traz leveza e sofisticação ao ambiente.",
+   "price": 5610.0,
+   "brand": "WJ",
+   "pages": [
+    6
+   ],
+   "id": 5,
+   "search": "pendente amorfo p pendente em vidro soprado com formas organicas e superficie com brilho suave. sua geometria fluida traz leveza e sofisticacao ao ambiente.",
+   "thumb": "thumbs/1791987470-5.jpg"
+  },
+  {
+   "name": "PENDENTE ANEL CRISTAL Ø80",
+   "description": "Pendente com estrutura circular e pontos luminosos em cristal, delicadamente distribuídos. Sua composição geométrica cria um efeito cênico e envolvente na decoração.",
+   "price": 10560.0,
+   "brand": "WJ",
+   "pages": [
+    7
+   ],
+   "id": 6,
+   "search": "pendente anel cristal ø80 pendente com estrutura circular e pontos luminosos em cristal, delicadamente distribuidos. sua composicao geometrica cria um efeito cenico e envolvente na decoracao.",
+   "thumb": "thumbs/1791987470-6.jpg"
+  },
+  {
+   "name": "PENDENTE ANEL CRISTAL Ø120",
+   "description": "Pendente com estrutura circular e pontos luminosos em cristal, delicadamente distribuídos. Sua composição geométrica cria um efeito cênico e envolvente na decoração.",
+   "price": 14685.0,
+   "brand": "WJ",
+   "pages": [
+    8
+   ],
+   "id": 7,
+   "search": "pendente anel cristal ø120 pendente com estrutura circular e pontos luminosos em cristal, delicadamente distribuidos. sua composicao geometrica cria um efeito cenico e envolvente na decoracao.",
+   "thumb": "thumbs/1791987470-7.jpg"
+  },
+  {
+   "name": "PENDENTE ANEL ROCHA Ø80",
+   "description": "Sofisticado anel circular com múltiplas microponteiras em rocha natural, criando uma iluminação difusa e aconchegante.",
+   "price": 10560.0,
+   "brand": "WJ",
+   "pages": [
+    9
+   ],
+   "id": 8,
+   "search": "pendente anel rocha ø80 sofisticado anel circular com multiplas microponteiras em rocha natural, criando uma iluminacao difusa e aconchegante.",
+   "thumb": "thumbs/1791987470-8.jpg"
+  },
+  {
+   "name": "PENDENTE ANEL ROCHA Ø120",
+   "description": "Sofisticado anel circular com múltiplas microponteiras em rocha natural, criando uma iluminação difusa e aconchegante.",
+   "price": 14685.0,
+   "brand": "WJ",
+   "pages": [
+    10
+   ],
+   "id": 9,
+   "search": "pendente anel rocha ø120 sofisticado anel circular com multiplas microponteiras em rocha natural, criando uma iluminacao difusa e aconchegante.",
+   "thumb": "thumbs/1791987470-9.jpg"
+  },
+  {
+   "name": "PENDENTE BAR CIRCULAR Ø100",
+   "description": "Pendente circular delicado, finalizado com pequenos cálices em cristal.",
+   "price": 17700.0,
+   "brand": "WJ",
+   "pages": [
+    11
+   ],
+   "id": 10,
+   "search": "pendente bar circular ø100 pendente circular delicado, finalizado com pequenos calices em cristal.",
+   "thumb": "thumbs/1791987470-10.jpg"
+  },
+  {
+   "name": "PENDENTE BAR CIRCULAR Ø160",
+   "description": "Pendente circular delicado, finalizado com pequenos cálices em cristal.",
+   "price": 23880.0,
+   "brand": "WJ",
+   "pages": [
+    12
+   ],
+   "id": 11,
+   "search": "pendente bar circular ø160 pendente circular delicado, finalizado com pequenos calices em cristal.",
+   "thumb": "thumbs/1791987470-11.jpg"
+  },
+  {
+   "name": "PENDENTE BAR LINEAR",
+   "description": "Delicado pendente linear, finalizado com pequenos cálices em cristal.",
+   "price": 11700.0,
+   "brand": "WJ",
+   "pages": [
+    13
+   ],
+   "id": 12,
+   "search": "pendente bar linear delicado pendente linear, finalizado com pequenos calices em cristal.",
+   "thumb": "thumbs/1791987470-12.jpg"
+  },
+  {
+   "name": "PENDENTE BAR DE COURO LINEAR",
+   "description": "Delicado pendente linear, finalizado com pequenos cálices em cristal.",
+   "price": 14040.0,
+   "brand": "WJ",
+   "pages": [
+    14
+   ],
+   "id": 13,
+   "search": "pendente bar de couro linear delicado pendente linear, finalizado com pequenos calices em cristal.",
+   "thumb": "thumbs/1791987470-13.jpg"
+  },
+  {
+   "name": "ARANDELA BASAL",
+   "description": "Arandela com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 7425.0,
+   "brand": "WJ",
+   "pages": [
+    15
+   ],
+   "id": 14,
+   "search": "arandela basal arandela com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-14.jpg"
+  },
+  {
+   "name": "ARANDELA BASAL DE COURO",
+   "description": "Arandela com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 8910.0,
+   "brand": "WJ",
+   "pages": [
+    16
+   ],
+   "id": 15,
+   "search": "arandela basal de couro arandela com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-15.jpg"
+  },
+  {
+   "name": "PENDENTE BASAL M",
+   "description": "Pendente com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 9735.0,
+   "brand": "WJ",
+   "pages": [
+    17
+   ],
+   "id": 16,
+   "search": "pendente basal m pendente com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-16.jpg"
+  },
+  {
+   "name": "PENDENTE BASAL M DE COURO",
+   "description": "Pendente com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 11685.0,
+   "brand": "WJ",
+   "pages": [
+    18
+   ],
+   "id": 17,
+   "search": "pendente basal m de couro pendente com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-17.jpg"
+  },
+  {
+   "name": "PENDENTE BASAL G",
+   "description": "Pendente com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 9735.0,
+   "brand": "WJ",
+   "pages": [
+    19
+   ],
+   "id": 18,
+   "search": "pendente basal g pendente com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-18.jpg"
+  },
+  {
+   "name": "PENDENTE BASAL G DE COURO",
+   "description": "Pendente com estrutura leve e linhas alongadas. Seu desenho escultural equilibra forma e função, criando um ponto de luz suave e contemporâneo.",
+   "price": 11685.0,
+   "brand": "WJ",
+   "pages": [
+    20
+   ],
+   "id": 19,
+   "search": "pendente basal g de couro pendente com estrutura leve e linhas alongadas. seu desenho escultural equilibra forma e funcao, criando um ponto de luz suave e contemporaneo.",
+   "thumb": "thumbs/1791987470-19.jpg"
+  },
+  {
+   "name": "ARANDELA BASE 60CM DE COURO",
+   "description": "Arandela reta em metal com pedra natural retroiluminada.",
+   "price": 5545.0,
+   "brand": "WJ",
+   "pages": [
+    21
+   ],
+   "id": 20,
+   "search": "arandela base 60cm de couro arandela reta em metal com pedra natural retroiluminada.",
+   "thumb": "thumbs/1791987470-20.jpg"
+  },
+  {
+   "name": "ARANDELA BASE 120CM DE COURO",
+   "description": "Arandela reta em metal com pedra natural retroiluminada.",
+   "price": 7130.0,
+   "brand": "WJ",
+   "pages": [
+    22
+   ],
+   "id": 21,
+   "search": "arandela base 120cm de couro arandela reta em metal com pedra natural retroiluminada.",
+   "thumb": "thumbs/1791987470-21.jpg"
+  },
+  {
+   "name": "PENDENTE BASTON HORIZONTAL DUPLO",
+   "description": "Pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composição escultórica.",
+   "price": 5700.0,
+   "brand": "WJ",
+   "pages": [
+    23
+   ],
+   "id": 22,
+   "search": "pendente baston horizontal duplo pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composicao escultorica.",
+   "thumb": "thumbs/1791987470-22.jpg"
+  },
+  {
+   "name": "PENDENTE BASTON HORIZONTAL TRIPLO",
+   "description": "Pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composição escultórica.",
+   "price": 6600.0,
+   "brand": "WJ",
+   "pages": [
+    24
+   ],
+   "id": 23,
+   "search": "pendente baston horizontal triplo pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composicao escultorica.",
+   "thumb": "thumbs/1791987470-23.jpg"
+  },
+  {
+   "name": "PENDENTE BASTON VERTICAL TRIPLO",
+   "description": "Pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composição escultórica.",
+   "price": 6600.0,
+   "brand": "WJ",
+   "pages": [
+    25
+   ],
+   "id": 24,
+   "search": "pendente baston vertical triplo pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composicao escultorica.",
+   "thumb": "thumbs/1791987470-24.jpg"
+  },
+  {
+   "name": "PENDENTE BASTON VERTICAL DUPLO",
+   "description": "Pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composição escultórica.",
+   "price": 5700.0,
+   "brand": "WJ",
+   "pages": [
+    26
+   ],
+   "id": 25,
+   "search": "pendente baston vertical duplo pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composicao escultorica.",
+   "thumb": "thumbs/1791987470-25.jpg"
+  },
+  {
+   "name": "PENDENTE BASTON LONGO",
+   "description": "Pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composição escultórica.",
+   "price": 19800.0,
+   "brand": "WJ",
+   "pages": [
+    27
+   ],
+   "id": 26,
+   "search": "pendente baston longo pendente com hastes finas e discos de rocha natural retroiluminada que criam uma composicao escultorica.",
+   "thumb": "thumbs/1791987470-26.jpg"
+  },
+  {
+   "name": "PENDENTE BOTTE 70CM",
+   "description": "A trama do couro trançado acompanha a curva da peça, enquanto a luz indireta percorre sua forma.",
+   "price": 12870.0,
+   "brand": "WJ",
+   "pages": [
+    28
+   ],
+   "id": 27,
+   "search": "pendente botte 70cm a trama do couro trancado acompanha a curva da peca, enquanto a luz indireta percorre sua forma.",
+   "thumb": "thumbs/1791987470-27.jpg"
+  },
+  {
+   "name": "PENDENTE BOTTE 90CM",
+   "description": "A trama do couro trançado acompanha a curva da peça, enquanto a luz indireta percorre sua forma.",
+   "price": 14454.0,
+   "brand": "WJ",
+   "pages": [
+    29
+   ],
+   "id": 28,
+   "search": "pendente botte 90cm a trama do couro trancado acompanha a curva da peca, enquanto a luz indireta percorre sua forma.",
+   "thumb": "thumbs/1791987470-28.jpg"
+  },
+  {
+   "name": "PENDENTE BOTTE 140CM",
+   "description": "A trama do couro trançado acompanha a curva da peça, enquanto a luz indireta percorre sua forma.",
+   "price": 17100.0,
+   "brand": "WJ",
+   "pages": [
+    30
+   ],
+   "id": 29,
+   "search": "pendente botte 140cm a trama do couro trancado acompanha a curva da peca, enquanto a luz indireta percorre sua forma.",
+   "thumb": "thumbs/1791987470-29.jpg"
+  },
+  {
+   "name": "ABAJUR CANOVA",
+   "description": "Abajur com cúpula esculpida em rocha natural e base metálica. Uma peça escultórica que combina textura, luz e sofisticação.",
+   "price": 8250.0,
+   "brand": "WJ",
+   "pages": [
+    31
+   ],
+   "id": 30,
+   "search": "abajur canova abajur com cupula esculpida em rocha natural e base metalica. uma peca escultorica que combina textura, luz e sofisticacao.",
+   "thumb": "thumbs/1791987470-30.jpg"
+  },
+  {
+   "name": "COLUNA CANOVA",
+   "description": "Luminária de piso com estrutura robusta em metal texturizado e grande perfil de rocha natural retroiluminada. Uma peça de forte expressão escultórica e luz aconchegante.",
+   "price": 12000.0,
+   "brand": "WJ",
+   "pages": [
+    32
+   ],
+   "id": 31,
+   "search": "coluna canova luminaria de piso com estrutura robusta em metal texturizado e grande perfil de rocha natural retroiluminada. uma peca de forte expressao escultorica e luz aconchegante.",
+   "thumb": "thumbs/1791987470-31.jpg"
+  },
+  {
+   "name": "PENDENTE CANOVA G",
+   "description": "Imponente pendente em formato de canoa, com uma ampla rocha natural retroiluminada.",
+   "price": 14355.0,
+   "brand": "WJ",
+   "pages": [
+    33
+   ],
+   "id": 32,
+   "search": "pendente canova g imponente pendente em formato de canoa, com uma ampla rocha natural retroiluminada.",
+   "thumb": "thumbs/1791987470-32.jpg"
+  },
+  {
+   "name": "PENDENTE CANOVA M",
+   "description": "Sofisticado pendente em formato de canoa, com uma robusta peça de rocha natural retroiluminada.",
+   "price": 7755.0,
+   "brand": "WJ",
+   "pages": [
+    34
+   ],
+   "id": 33,
+   "search": "pendente canova m sofisticado pendente em formato de canoa, com uma robusta peca de rocha natural retroiluminada.",
+   "thumb": "thumbs/1791987470-33.jpg"
+  },
+  {
+   "name": "ARANDELA CANOVA",
+   "description": "Sofisticado pendente em formato de canoa, com uma robusta peça de rocha natural retroiluminada.",
+   "price": 7860.0,
+   "brand": "WJ",
+   "pages": [
+    35
+   ],
+   "id": 34,
+   "search": "arandela canova sofisticado pendente em formato de canoa, com uma robusta peca de rocha natural retroiluminada.",
+   "thumb": "thumbs/1791987470-34.jpg"
+  },
+  {
+   "name": "COLUNA CARBONE",
+   "description": "Luminária de piso com base escultórica revestida por textura calcárea, cúpula em alumínio e difusor frontal em tecido cru. Uma peça de presença orgânica que emana luz suave e acolhedora.",
+   "price": 16170.0,
+   "brand": "WJ",
+   "pages": [
+    36
+   ],
+   "id": 35,
+   "search": "coluna carbone luminaria de piso com base escultorica revestida por textura calcarea, cupula em aluminio e difusor frontal em tecido cru. uma peca de presenca organica que emana luz suave e acolhedora.",
+   "thumb": "thumbs/1791987470-35.jpg"
+  },
+  {
+   "name": "ARANDELA CORDEL COM TIRA BAIXA 20CM",
+   "description": "Arandela com perfis em metal e discos de rocha natural retroiluminados, disponíveis nas versões alta e baixa. Uma composição escultural de luz e matéria.",
+   "price": 4587.0,
+   "brand": "WJ",
+   "pages": [
+    37
+   ],
+   "id": 36,
+   "search": "arandela cordel com tira baixa 20cm arandela com perfis em metal e discos de rocha natural retroiluminados, disponiveis nas versoes alta e baixa. uma composicao escultural de luz e materia.",
+   "thumb": "thumbs/1791987470-36.jpg"
+  },
+  {
+   "name": "ARANDELA CORDEL COM TIRA ALTA 20CM",
+   "description": "Arandela com perfis em metal e discos de rocha natural retroiluminados, disponíveis nas versões alta e baixa. Uma composição escultural de luz e matéria.",
+   "price": 4587.0,
+   "brand": "WJ",
+   "pages": [
+    38
+   ],
+   "id": 37,
+   "search": "arandela cordel com tira alta 20cm arandela com perfis em metal e discos de rocha natural retroiluminados, disponiveis nas versoes alta e baixa. uma composicao escultural de luz e materia.",
+   "thumb": "thumbs/1791987470-37.jpg"
+  },
+  {
+   "name": "ARANDELA CORDEL COM GLOBO BAIXA 20CM",
+   "description": "Arandela com perfis em metal e discos de rocha natural retroiluminados, disponíveis nas versões alta e baixa. Uma composição escultural de luz e matéria.",
+   "price": 4587.0,
+   "brand": "WJ",
+   "pages": [
+    39
+   ],
+   "id": 38,
+   "search": "arandela cordel com globo baixa 20cm arandela com perfis em metal e discos de rocha natural retroiluminados, disponiveis nas versoes alta e baixa. uma composicao escultural de luz e materia.",
+   "thumb": "thumbs/1791987470-38.jpg"
+  },
+  {
+   "name": "ARANDELA CORDEL COM GLOBO ALTA 20CM",
+   "description": "Arandela com perfis em metal e discos de rocha natural retroiluminados, disponíveis nas versões alta e baixa. Uma composição escultural de luz e matéria.",
+   "price": 4587.0,
+   "brand": "WJ",
+   "pages": [
+    40
+   ],
+   "id": 39,
+   "search": "arandela cordel com globo alta 20cm arandela com perfis em metal e discos de rocha natural retroiluminados, disponiveis nas versoes alta e baixa. uma composicao escultural de luz e materia.",
+   "thumb": "thumbs/1791987470-39.jpg"
+  },
+  {
+   "name": "ARANDELA CORDEL COM GLOBO 30CM",
+   "description": "Arandela com perfis em metal e discos de rocha natural retroiluminados, disponíveis nas versões alta e baixa. Uma composição escultural de luz e matéria.",
+   "price": 5400.0,
+   "brand": "WJ",
+   "pages": [
+    41
+   ],
+   "id": 40,
+   "search": "arandela cordel com globo 30cm arandela com perfis em metal e discos de rocha natural retroiluminados, disponiveis nas versoes alta e baixa. uma composicao escultural de luz e materia.",
+   "thumb": "thumbs/1791987470-40.jpg"
+  },
+  {
+   "name": "PENDENTE COSMO",
+   "description": "Pendente circular possui estrutura em couro natural, difusor inferior em rocha natural e superior em tecido cru.",
+   "price": 14400.0,
+   "brand": "WJ",
+   "pages": [
+    42
+   ],
+   "id": 41,
+   "search": "pendente cosmo pendente circular possui estrutura em couro natural, difusor inferior em rocha natural e superior em tecido cru.",
+   "thumb": "thumbs/1791987470-41.jpg"
+  },
+  {
+   "name": "PENDENTE CORDILHA",
+   "description": "Lâminas de vidro sobrepostas desenham o horizonte irregular de uma cordilheira em uma composição linear.",
+   "price": 13500.0,
+   "brand": "WJ",
+   "pages": [
+    43
+   ],
+   "id": 42,
+   "search": "pendente cordilha laminas de vidro sobrepostas desenham o horizonte irregular de uma cordilheira em uma composicao linear.",
+   "thumb": "thumbs/1791987470-42.jpg"
+  },
+  {
+   "name": "ARANDELA COTONE DIRETA",
+   "description": "Cristal que envolve a luz e cria reflexos delicados, conferindo à peça uma presença leve e escultórica. Disponível com iluminação direta ou indireta.",
+   "price": 10800.0,
+   "brand": "WJ",
+   "pages": [
+    44
+   ],
+   "id": 43,
+   "search": "arandela cotone direta cristal que envolve a luz e cria reflexos delicados, conferindo a peca uma presenca leve e escultorica. disponivel com iluminacao direta ou indireta.",
+   "thumb": "thumbs/1791987470-43.jpg"
+  },
+  {
+   "name": "ARANDELA COTONE INDIRETA",
+   "description": "Cristal que envolve a luz e cria reflexos delicados, conferindo à peça uma presença leve e escultórica. Disponível com iluminação direta ou indireta.",
+   "price": 10800.0,
+   "brand": "WJ",
+   "pages": [
+    45
+   ],
+   "id": 44,
+   "search": "arandela cotone indireta cristal que envolve a luz e cria reflexos delicados, conferindo a peca uma presenca leve e escultorica. disponivel com iluminacao direta ou indireta.",
+   "thumb": "thumbs/1791987470-44.jpg"
+  },
+  {
+   "name": "PENDENTE COTONE",
+   "description": "Cristal que envolve a luz e cria reflexos delicados, conferindo à peça uma presença leve e escultórica.",
+   "price": 17700.0,
+   "brand": "WJ",
+   "pages": [
+    46
+   ],
+   "id": 45,
+   "search": "pendente cotone cristal que envolve a luz e cria reflexos delicados, conferindo a peca uma presenca leve e escultorica.",
+   "thumb": "thumbs/1791987470-45.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO P",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 7800.0,
+   "brand": "WJ",
+   "pages": [
+    47
+   ],
+   "id": 46,
+   "search": "pendente cupulo p pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-46.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO P COM PALHA",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 9360.0,
+   "brand": "WJ",
+   "pages": [
+    48
+   ],
+   "id": 47,
+   "search": "pendente cupulo p com palha pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-47.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO M",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 13440.0,
+   "brand": "WJ",
+   "pages": [
+    49
+   ],
+   "id": 48,
+   "search": "pendente cupulo m pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-48.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO M COM PALHA",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 16125.0,
+   "brand": "WJ",
+   "pages": [
+    50
+   ],
+   "id": 49,
+   "search": "pendente cupulo m com palha pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-49.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO G",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 12540.0,
+   "brand": "WJ",
+   "pages": [
+    51
+   ],
+   "id": 50,
+   "search": "pendente cupulo g pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-50.jpg"
+  },
+  {
+   "name": "PENDENTE CÚPULO G COM PALHA",
+   "description": "Pendente com cúpula em tecido cru ou palha natural e acabamento em alumínio. Uma peça de luz difusa e design atemporal, que combina aconchego e elegância.",
+   "price": 15060.0,
+   "brand": "WJ",
+   "pages": [
+    52
+   ],
+   "id": 51,
+   "search": "pendente cupulo g com palha pendente com cupula em tecido cru ou palha natural e acabamento em aluminio. uma peca de luz difusa e design atemporal, que combina aconchego e elegancia.",
+   "thumb": "thumbs/1791987470-51.jpg"
+  },
+  {
+   "name": "ARANDELA DOCE ALTA",
+   "description": "Delicada e sutil, assim como seu nome. Possui uma rocha natural usada como difusor e uma forma de metal que a circunda.",
+   "price": 1920.0,
+   "brand": "WJ",
+   "pages": [
+    53
+   ],
+   "id": 52,
+   "search": "arandela doce alta delicada e sutil, assim como seu nome. possui uma rocha natural usada como difusor e uma forma de metal que a circunda.",
+   "thumb": "thumbs/1791987470-52.jpg"
+  },
+  {
+   "name": "ARANDELA DOCE BAIXA",
+   "description": "Delicada e sutil, assim como seu nome. Possui uma rocha natural usada como difusor e uma forma de metal que a circunda.",
+   "price": 1920.0,
+   "brand": "WJ",
+   "pages": [
+    54
+   ],
+   "id": 53,
+   "search": "arandela doce baixa delicada e sutil, assim como seu nome. possui uma rocha natural usada como difusor e uma forma de metal que a circunda.",
+   "thumb": "thumbs/1791987470-53.jpg"
+  },
+  {
+   "name": "ABAJUR DOMO",
+   "description": "As luminárias Domo, assinadas pelos designers Carlos e Caio Carvalho, da BA.SICO, possuem um design extremamente minimalista.",
+   "price": 1590.0,
+   "brand": "WJ",
+   "pages": [
+    55
+   ],
+   "id": 54,
+   "search": "abajur domo as luminarias domo, assinadas pelos designers carlos e caio carvalho, da ba.sico, possuem um design extremamente minimalista.",
+   "thumb": "thumbs/1791987470-54.jpg"
+  },
+  {
+   "name": "PENDENTE DOMO HORIZONTAL 120CM",
+   "description": "As luminárias Domo, assinadas pelos designers Carlos e Caio Carvalho, da BA.SICO, possuem um design extremamente minimalista.",
+   "price": 8085.0,
+   "brand": "WJ",
+   "pages": [
+    56
+   ],
+   "id": 55,
+   "search": "pendente domo horizontal 120cm as luminarias domo, assinadas pelos designers carlos e caio carvalho, da ba.sico, possuem um design extremamente minimalista.",
+   "thumb": "thumbs/1791987470-55.jpg"
+  },
+  {
+   "name": "PENDENTE DOMO HORIZONTAL 180CM",
+   "description": "As luminárias Domo, assinadas pelos designers Carlos e Caio Carvalho, da BA.SICO, possuem um design extremamente minimalista.",
+   "price": 10395.0,
+   "brand": "WJ",
+   "pages": [
+    57
+   ],
+   "id": 56,
+   "search": "pendente domo horizontal 180cm as luminarias domo, assinadas pelos designers carlos e caio carvalho, da ba.sico, possuem um design extremamente minimalista.",
+   "thumb": "thumbs/1791987470-56.jpg"
+  },
+  {
+   "name": "PENDENTE DOMO VERTICAL",
+   "description": "As luminárias Domo, assinadas pelos designers Carlos e Caio Carvalho, da BA.SICO, possuem um design extremamente minimalista.",
+   "price": 8085.0,
+   "brand": "WJ",
+   "pages": [
+    58
+   ],
+   "id": 57,
+   "search": "pendente domo vertical as luminarias domo, assinadas pelos designers carlos e caio carvalho, da ba.sico, possuem um design extremamente minimalista.",
+   "thumb": "thumbs/1791987470-57.jpg"
+  },
+  {
+   "name": "COLUNA DOMO",
+   "description": "As luminárias Domo, assinadas pelos designers Carlos e Caio Carvalho, da BA.SICO, possuem um design extremamente minimalista.",
+   "price": 12870.0,
+   "brand": "WJ",
+   "pages": [
+    59
+   ],
+   "id": 58,
+   "search": "coluna domo as luminarias domo, assinadas pelos designers carlos e caio carvalho, da ba.sico, possuem um design extremamente minimalista.",
+   "thumb": "thumbs/1791987470-58.jpg"
+  },
+  {
+   "name": "PENDENTE DUETO",
+   "description": "Pendente com corpo em metal e difusor em cristal soprado. Uma combinação de materiais que valoriza a luz com elegância e leveza.",
+   "price": 3300.0,
+   "brand": "WJ",
+   "pages": [
+    60
+   ],
+   "id": 59,
+   "search": "pendente dueto pendente com corpo em metal e difusor em cristal soprado. uma combinacao de materiais que valoriza a luz com elegancia e leveza.",
+   "thumb": "thumbs/1791987470-59.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS LINEAR 12CM",
+   "description": "Pendente linear em alumínio com pintura ou textura especial. Seu desenho contínuo e ondulado cria um efeito de luz dinâmico e elegante.",
+   "price": 9735.0,
+   "brand": "WJ",
+   "pages": [
+    61
+   ],
+   "id": 60,
+   "search": "pendente dunas linear 12cm pendente linear em aluminio com pintura ou textura especial. seu desenho continuo e ondulado cria um efeito de luz dinamico e elegante.",
+   "thumb": "thumbs/1791987470-60.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS LINEAR DE COURO 12CM",
+   "description": "Pendente linear revestido em couro ou camurça natural. Seu desenho contínuo e ondulado cria um efeito de luz dinâmico e elegante.",
+   "price": 11680.0,
+   "brand": "WJ",
+   "pages": [
+    62
+   ],
+   "id": 61,
+   "search": "pendente dunas linear de couro 12cm pendente linear revestido em couro ou camurca natural. seu desenho continuo e ondulado cria um efeito de luz dinamico e elegante.",
+   "thumb": "thumbs/1791987470-61.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS LINEAR 22CM",
+   "description": "Pendente linear em alumínio com pintura ou textura especial. Seu desenho contínuo e ondulado cria um efeito de luz dinâmico e elegante.",
+   "price": 10560.0,
+   "brand": "WJ",
+   "pages": [
+    63
+   ],
+   "id": 62,
+   "search": "pendente dunas linear 22cm pendente linear em aluminio com pintura ou textura especial. seu desenho continuo e ondulado cria um efeito de luz dinamico e elegante.",
+   "thumb": "thumbs/1791987470-62.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS LINEAR DE COURO 22CM",
+   "description": "Pendente linear revestido em couro ou camurça natural. Seu desenho contínuo e ondulado cria um efeito de luz dinâmico e elegante.",
+   "price": 12670.0,
+   "brand": "WJ",
+   "pages": [
+    64
+   ],
+   "id": 63,
+   "search": "pendente dunas linear de couro 22cm pendente linear revestido em couro ou camurca natural. seu desenho continuo e ondulado cria um efeito de luz dinamico e elegante.",
+   "thumb": "thumbs/1791987470-63.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 12CM Ø70",
+   "description": "Pendente circular em alumínio com pintura ou textura especial, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 9735.0,
+   "brand": "WJ",
+   "pages": [
+    65
+   ],
+   "id": 64,
+   "search": "pendente dunas circular 12cm ø70 pendente circular em aluminio com pintura ou textura especial, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-64.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 12CM Ø70 (COURO/CAMURÇA)",
+   "description": "Pendente circular revestido em couro ou camurça natural, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 11680.0,
+   "brand": "WJ",
+   "pages": [
+    66
+   ],
+   "id": 65,
+   "search": "pendente dunas circular 12cm ø70 (couro/camurca) pendente circular revestido em couro ou camurca natural, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-65.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 12CM Ø90",
+   "description": "Pendente circular em alumínio com pintura ou textura especial, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 10890.0,
+   "brand": "WJ",
+   "pages": [
+    67
+   ],
+   "id": 66,
+   "search": "pendente dunas circular 12cm ø90 pendente circular em aluminio com pintura ou textura especial, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-66.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 12CM Ø90 (COURO/CAMURÇA)",
+   "description": "Pendente circular revestido em couro ou camurça natural, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 13070.0,
+   "brand": "WJ",
+   "pages": [
+    68
+   ],
+   "id": 67,
+   "search": "pendente dunas circular 12cm ø90 (couro/camurca) pendente circular revestido em couro ou camurca natural, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-67.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 22CM Ø70",
+   "description": "Pendente circular em alumínio com pintura ou textura especial, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 10725.0,
+   "brand": "WJ",
+   "pages": [
+    69
+   ],
+   "id": 68,
+   "search": "pendente dunas circular 22cm ø70 pendente circular em aluminio com pintura ou textura especial, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-68.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 22CM Ø70 (COURO/CAMURÇA)",
+   "description": "Pendente circular revestido em couro ou camurça natural, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 12870.0,
+   "brand": "WJ",
+   "pages": [
+    70
+   ],
+   "id": 69,
+   "search": "pendente dunas circular 22cm ø70 (couro/camurca) pendente circular revestido em couro ou camurca natural, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-69.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 22CM Ø90",
+   "description": "Pendente circular em alumínio com pintura ou textura especial, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 12045.0,
+   "brand": "WJ",
+   "pages": [
+    71
+   ],
+   "id": 70,
+   "search": "pendente dunas circular 22cm ø90 pendente circular em aluminio com pintura ou textura especial, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-70.jpg"
+  },
+  {
+   "name": "PENDENTE DUNAS CIRCULAR 22CM Ø90 (COURO/CAMURÇA)",
+   "description": "Pendente circular revestido em couro ou camurça natural, disponível nas versões de 70 cm e 90 cm. Seu contorno orgânico e luz difusa criam um efeito cenográfico e acolhedor.",
+   "price": 14455.0,
+   "brand": "WJ",
+   "pages": [
+    72
+   ],
+   "id": 71,
+   "search": "pendente dunas circular 22cm ø90 (couro/camurca) pendente circular revestido em couro ou camurca natural, disponivel nas versoes de 70 cm e 90 cm. seu contorno organico e luz difusa criam um efeito cenografico e acolhedor.",
+   "thumb": "thumbs/1791987470-71.jpg"
+  },
+  {
+   "name": "PENDENTE ELO",
+   "description": "Pendente de forma longitudinal, com iluminação difusa ascendente que valoriza a textura do tecido cru. Finalizado com duas faixas metálicas que envolvem a peça e reforçam sua presença com sutileza.",
+   "price": 6510.0,
+   "brand": "WJ",
+   "pages": [
+    73
+   ],
+   "id": 72,
+   "search": "pendente elo pendente de forma longitudinal, com iluminacao difusa ascendente que valoriza a textura do tecido cru. finalizado com duas faixas metalicas que envolvem a peca e reforcam sua presenca com sutileza.",
+   "thumb": "thumbs/1791987470-72.jpg"
+  },
+  {
+   "name": "PENDENTE ELO DE PALHA",
+   "description": "Pendente de forma longitudinal, com iluminação difusa ascendente que valoriza a textura do tecido cru ou da palha. Finalizado com duas faixas metálicas que envolvem a peça e reforçam sua presença com sutileza.",
+   "price": 7800.0,
+   "brand": "WJ",
+   "pages": [
+    74
+   ],
+   "id": 73,
+   "search": "pendente elo de palha pendente de forma longitudinal, com iluminacao difusa ascendente que valoriza a textura do tecido cru ou da palha. finalizado com duas faixas metalicas que envolvem a peca e reforcam sua presenca com sutileza.",
+   "thumb": "thumbs/1791987470-73.jpg"
+  },
+  {
+   "name": "PENDENTE EMPÍRICO P",
+   "description": "Pendente em latão envelhecido com difusor em rocha natural. Leve e delicado, é perfeito para composições.",
+   "price": 1290.0,
+   "brand": "WJ",
+   "pages": [
+    75
+   ],
+   "id": 74,
+   "search": "pendente empirico p pendente em latao envelhecido com difusor em rocha natural. leve e delicado, e perfeito para composicoes.",
+   "thumb": "thumbs/1791987470-74.jpg"
+  },
+  {
+   "name": "PENDENTE EMPÍRICO M",
+   "description": "Pendente em latão envelhecido com difusor em rocha natural. Leve e delicado, é perfeito para composições.",
+   "price": 2580.0,
+   "brand": "WJ",
+   "pages": [
+    76
+   ],
+   "id": 75,
+   "search": "pendente empirico m pendente em latao envelhecido com difusor em rocha natural. leve e delicado, e perfeito para composicoes.",
+   "thumb": "thumbs/1791987470-75.jpg"
+  },
+  {
+   "name": "ARANDELA ENIGMA M",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica.",
+   "price": 4455.0,
+   "brand": "WJ",
+   "pages": [
+    77
+   ],
+   "id": 76,
+   "search": "arandela enigma m sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica.",
+   "thumb": "thumbs/1791987470-76.jpg"
+  },
+  {
+   "name": "ARANDELA ENIGMA G",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica.",
+   "price": 5775.0,
+   "brand": "WJ",
+   "pages": [
+    78
+   ],
+   "id": 77,
+   "search": "arandela enigma g sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica.",
+   "thumb": "thumbs/1791987470-77.jpg"
+  },
+  {
+   "name": "PENDENTE ENIGMA VERTICAL DUPLO",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. Agora, em composição vertical, revela ainda mais sua presença escultórica.",
+   "price": 7920.0,
+   "brand": "WJ",
+   "pages": [
+    81
+   ],
+   "id": 78,
+   "search": "pendente enigma vertical duplo sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. agora, em composicao vertical, revela ainda mais sua presenca escultorica.",
+   "thumb": "thumbs/1791987470-78.jpg"
+  },
+  {
+   "name": "PENDENTE ENIGMA VERTICAL TRIPLO",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. Agora, em composição vertical, revela ainda mais sua presença escultórica.",
+   "price": 9240.0,
+   "brand": "WJ",
+   "pages": [
+    82
+   ],
+   "id": 79,
+   "search": "pendente enigma vertical triplo sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. agora, em composicao vertical, revela ainda mais sua presenca escultorica.",
+   "thumb": "thumbs/1791987470-79.jpg"
+  },
+  {
+   "name": "PENDENTE ENIGMA P",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. A mesma essência agora em versão pendente, acrescentando sofisticação e destaque ao ambiente.",
+   "price": 2970.0,
+   "brand": "WJ",
+   "pages": [
+    83
+   ],
+   "id": 80,
+   "search": "pendente enigma p sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. a mesma essencia agora em versao pendente, acrescentando sofisticacao e destaque ao ambiente.",
+   "thumb": "thumbs/1791987470-80.jpg"
+  },
+  {
+   "name": "PENDENTE ENIGMA M",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. A mesma essência agora em versão pendente, acrescentando sofisticação e destaque ao ambiente.",
+   "price": 4455.0,
+   "brand": "WJ",
+   "pages": [
+    84
+   ],
+   "id": 81,
+   "search": "pendente enigma m sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. a mesma essencia agora em versao pendente, acrescentando sofisticacao e destaque ao ambiente.",
+   "thumb": "thumbs/1791987470-81.jpg"
+  },
+  {
+   "name": "PENDENTE ENIGMA G",
+   "description": "Sutil e sofisticada composição de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. A mesma essência agora em versão pendente, acrescentando sofisticação e destaque ao ambiente.",
+   "price": 5445.0,
+   "brand": "WJ",
+   "pages": [
+    85
+   ],
+   "id": 82,
+   "search": "pendente enigma g sutil e sofisticada composicao de camadas em vidro, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. a mesma essencia agora em versao pendente, acrescentando sofisticacao e destaque ao ambiente.",
+   "thumb": "thumbs/1791987470-82.jpg"
+  },
+  {
+   "name": "COLUNA ENIGMA P",
+   "description": "Sutil e sofisticada composição de camadas em vidro martelado, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. A mesma essência agora em versão de coluna com base em pedra natural e botão e couro natural.",
+   "price": 21000.0,
+   "brand": "WJ",
+   "pages": [
+    86
+   ],
+   "id": 83,
+   "search": "coluna enigma p sutil e sofisticada composicao de camadas em vidro martelado, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. a mesma essencia agora em versao de coluna com base em pedra natural e botao e couro natural.",
+   "thumb": "thumbs/1791987470-83.jpg"
+  },
+  {
+   "name": "COLUNA ENIGMA M",
+   "description": "Sutil e sofisticada composição de camadas em vidro martelado, que provoca um elegante jogo de profundidade e uma delicada ilusão óptica. A mesma essência agora em versão de coluna com base em pedra natural e botão e couro natural.",
+   "price": 24000.0,
+   "brand": "WJ",
+   "pages": [
+    87
+   ],
+   "id": 84,
+   "search": "coluna enigma m sutil e sofisticada composicao de camadas em vidro martelado, que provoca um elegante jogo de profundidade e uma delicada ilusao optica. a mesma essencia agora em versao de coluna com base em pedra natural e botao e couro natural.",
+   "thumb": "thumbs/1791987470-84.jpg"
+  },
+  {
+   "name": "PENDENTE FACIA Ø12",
+   "description": "Peça componível com rocha retroiluminada e topo em metal, ideal para composições em série, unindo presença visual e sofisticação.",
+   "price": 2805.0,
+   "brand": "WJ",
+   "pages": [
+    88
+   ],
+   "id": 85,
+   "search": "pendente facia ø12 peca componivel com rocha retroiluminada e topo em metal, ideal para composicoes em serie, unindo presenca visual e sofisticacao.",
+   "thumb": "thumbs/1791987470-85.jpg"
+  },
+  {
+   "name": "PENDENTE FACIA Ø25",
+   "description": "Peça componível com rocha retroiluminada e topo em metal, ideal para composições em série, unindo presença visual e sofisticação.",
+   "price": 6540.0,
+   "brand": "WJ",
+   "pages": [
+    89
+   ],
+   "id": 86,
+   "search": "pendente facia ø25 peca componivel com rocha retroiluminada e topo em metal, ideal para composicoes em serie, unindo presenca visual e sofisticacao.",
+   "thumb": "thumbs/1791987470-86.jpg"
+  },
+  {
+   "name": "PENDENTE FENDA Ø25",
+   "description": "Pendente com discos de alumínio em dois tamanhos, iluminados por uma fonte de luz que os circunda. Uma composição minimalista que valoriza a forma pura e a luminosidade suave.",
+   "price": 2475.0,
+   "brand": "WJ",
+   "pages": [
+    90
+   ],
+   "id": 87,
+   "search": "pendente fenda ø25 pendente com discos de aluminio em dois tamanhos, iluminados por uma fonte de luz que os circunda. uma composicao minimalista que valoriza a forma pura e a luminosidade suave.",
+   "thumb": "thumbs/1791987470-87.jpg"
+  },
+  {
+   "name": "PENDENTE FENDA Ø40",
+   "description": "Pendente com discos de alumínio em dois tamanhos, iluminados por uma fonte de luz que os circunda. Uma composição minimalista que valoriza a forma pura e a luminosidade suave.",
+   "price": 3135.0,
+   "brand": "WJ",
+   "pages": [
+    91
+   ],
+   "id": 88,
+   "search": "pendente fenda ø40 pendente com discos de aluminio em dois tamanhos, iluminados por uma fonte de luz que os circunda. uma composicao minimalista que valoriza a forma pura e a luminosidade suave.",
+   "thumb": "thumbs/1791987470-88.jpg"
+  },
+  {
+   "name": "PENDENTE GRAN ENIGMA",
+   "description": "Imponente pendente com estrutura radial em metal e discos de cristal soprado, delicadamente posicionados para criar um espetáculo de luz e reflexos. Seu design escultural e acabamento sofisticado trazem requinte e personalidade ao ambiente.",
+   "price": 32970.0,
+   "brand": "WJ",
+   "pages": [
+    92
+   ],
+   "id": 89,
+   "search": "pendente gran enigma imponente pendente com estrutura radial em metal e discos de cristal soprado, delicadamente posicionados para criar um espetaculo de luz e reflexos. seu design escultural e acabamento sofisticado trazem requinte e personalidade ao ambiente.",
+   "thumb": "thumbs/1791987470-89.jpg"
+  },
+  {
+   "name": "PENDENTE GRAN MIDE",
+   "description": "Pendente com formas geométricas precisas e acabamento sofisticado em metal e acrílico. Sua composição de linhas opostas cria um elegante contraste entre luz e sombra, trazendo personalidade e presença ao ambiente.",
+   "price": 13140.0,
+   "brand": "WJ",
+   "pages": [
+    93
+   ],
+   "id": 90,
+   "search": "pendente gran mide pendente com formas geometricas precisas e acabamento sofisticado em metal e acrilico. sua composicao de linhas opostas cria um elegante contraste entre luz e sombra, trazendo personalidade e presenca ao ambiente.",
+   "thumb": "thumbs/1791987470-90.jpg"
+  },
+  {
+   "name": "ARANDELA GRÃO M",
+   "description": "Arandela com difusor em cristal soprado e base metálica. Seu desenho orgânico e delicado cria um efeito de luz suave e acolhedora.",
+   "price": 4455.0,
+   "brand": "WJ",
+   "pages": [
+    94
+   ],
+   "id": 91,
+   "search": "arandela grao m arandela com difusor em cristal soprado e base metalica. seu desenho organico e delicado cria um efeito de luz suave e acolhedora.",
+   "thumb": "thumbs/1791987470-91.jpg"
+  },
+  {
+   "name": "ARANDELA GRÃO P",
+   "description": "Arandela com difusor em cristal soprado e base metálica. Seu desenho orgânico e delicado cria um efeito de luz suave e acolhedora.",
+   "price": 2805.0,
+   "brand": "WJ",
+   "pages": [
+    95
+   ],
+   "id": 92,
+   "search": "arandela grao p arandela com difusor em cristal soprado e base metalica. seu desenho organico e delicado cria um efeito de luz suave e acolhedora.",
+   "thumb": "thumbs/1791987470-92.jpg"
+  },
+  {
+   "name": "PENDENTE GRÃO",
+   "description": "Pendente com difusor em cristal soprado e acabamento metálico. Seu desenho orgânico e delicado envolve a luz com suavidade, criando uma atmosfera acolhedora e sofisticada.",
+   "price": 6270.0,
+   "brand": "WJ",
+   "pages": [
+    96
+   ],
+   "id": 93,
+   "search": "pendente grao pendente com difusor em cristal soprado e acabamento metalico. seu desenho organico e delicado envolve a luz com suavidade, criando uma atmosfera acolhedora e sofisticada.",
+   "thumb": "thumbs/1791987470-93.jpg"
+  },
+  {
+   "name": "PENDENTE GRIDE HORIZONTAL",
+   "description": "Uma peça onde a trama metálica encontra o tecido retroiluminado, criando uma luz suave, acolhedora e cheia de textura.",
+   "price": 14550.0,
+   "brand": "WJ",
+   "pages": [
+    97
+   ],
+   "id": 94,
+   "search": "pendente gride horizontal uma peca onde a trama metalica encontra o tecido retroiluminado, criando uma luz suave, acolhedora e cheia de textura.",
+   "thumb": "thumbs/1791987470-94.jpg"
+  },
+  {
+   "name": "PENDENTE GRIDE VERTICAL",
+   "description": "Uma peça onde a trama metálica encontra o tecido retroiluminado, criando uma luz suave, acolhedora e cheia de textura.",
+   "price": 12360.0,
+   "brand": "WJ",
+   "pages": [
+    98
+   ],
+   "id": 95,
+   "search": "pendente gride vertical uma peca onde a trama metalica encontra o tecido retroiluminado, criando uma luz suave, acolhedora e cheia de textura.",
+   "thumb": "thumbs/1791987470-95.jpg"
+  },
+  {
+   "name": "ARANDELA ICE LISA",
+   "description": "Arandela com estrutura em alumínio e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparências. Uma peça de caráter orgânico e luminosidade suave, que valoriza a matéria-prima em sua forma mais pura.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    99
+   ],
+   "id": 96,
+   "search": "arandela ice lisa arandela com estrutura em aluminio e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparencias. uma peca de carater organico e luminosidade suave, que valoriza a materia-prima em sua forma mais pura.",
+   "thumb": "thumbs/1791987470-96.jpg"
+  },
+  {
+   "name": "ARANDELA ICE ESCARIADA",
+   "description": "Arandela com estrutura em alumínio e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparências. Uma peça de caráter orgânico e luminosidade suave, que valoriza a matéria-prima em sua forma mais pura.",
+   "price": 3885.0,
+   "brand": "WJ",
+   "pages": [
+    100
+   ],
+   "id": 97,
+   "search": "arandela ice escariada arandela com estrutura em aluminio e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparencias. uma peca de carater organico e luminosidade suave, que valoriza a materia-prima em sua forma mais pura.",
+   "thumb": "thumbs/1791987470-97.jpg"
+  },
+  {
+   "name": "ARANDELA ICE DE COURO",
+   "description": "Arandela com estrutura em alumínio, couro natural e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparências. Uma peça de caráter orgânico e luminosidade suave, que valoriza a matéria-prima em sua forma mais pura.",
+   "price": 3885.0,
+   "brand": "WJ",
+   "pages": [
+    101
+   ],
+   "id": 98,
+   "search": "arandela ice de couro arandela com estrutura em aluminio, couro natural e bloco de selenita natural, que ao ser iluminada revela a delicadeza de seus veios e transparencias. uma peca de carater organico e luminosidade suave, que valoriza a materia-prima em sua forma mais pura.",
+   "thumb": "thumbs/1791987470-98.jpg"
+  },
+  {
+   "name": "ARANDELA ÍMPAR P LISA",
+   "description": "Arandela com difusor em rocha natural e corpo em madeira escariada. Disponível em dois tamanhos, proporciona uma presença orgânica.",
+   "price": 1945.0,
+   "brand": "WJ",
+   "pages": [
+    102
+   ],
+   "id": 99,
+   "search": "arandela impar p lisa arandela com difusor em rocha natural e corpo em madeira escariada. disponivel em dois tamanhos, proporciona uma presenca organica.",
+   "thumb": "thumbs/1791987470-99.jpg"
+  },
+  {
+   "name": "ARANDELA ÍMPAR P ESCARIADA",
+   "description": "Arandela com difusor em rocha natural e corpo em madeira escariada. Disponível em dois tamanhos, proporciona uma presença orgânica.",
+   "price": 2325.0,
+   "brand": "WJ",
+   "pages": [
+    103
+   ],
+   "id": 100,
+   "search": "arandela impar p escariada arandela com difusor em rocha natural e corpo em madeira escariada. disponivel em dois tamanhos, proporciona uma presenca organica.",
+   "thumb": "thumbs/1791987470-100.jpg"
+  },
+  {
+   "name": "ARANDELA ÍMPAR M LISA",
+   "description": "Arandela com difusor em rocha natural e corpo em madeira escariada. Disponível em dois tamanhos, proporciona uma presença orgânica.",
+   "price": 3885.0,
+   "brand": "WJ",
+   "pages": [
+    104
+   ],
+   "id": 101,
+   "search": "arandela impar m lisa arandela com difusor em rocha natural e corpo em madeira escariada. disponivel em dois tamanhos, proporciona uma presenca organica.",
+   "thumb": "thumbs/1791987470-101.jpg"
+  },
+  {
+   "name": "ARANDELA ÍMPAR M ESCARIADA",
+   "description": "Arandela com difusor em rocha natural e corpo em madeira escariada. Disponível em dois tamanhos, proporciona uma presença orgânica.",
+   "price": 4665.0,
+   "brand": "WJ",
+   "pages": [
+    105
+   ],
+   "id": 102,
+   "search": "arandela impar m escariada arandela com difusor em rocha natural e corpo em madeira escariada. disponivel em dois tamanhos, proporciona uma presenca organica.",
+   "thumb": "thumbs/1791987470-102.jpg"
+  },
+  {
+   "name": "PENDENTE ÍMPAR P LISA",
+   "description": "Pendente com cúpula em madeira, difusor em rocha natural e acabamento em alumínio. Uma peça de design atemporal.",
+   "price": 2094.0,
+   "brand": "WJ",
+   "pages": [
+    106
+   ],
+   "id": 103,
+   "search": "pendente impar p lisa pendente com cupula em madeira, difusor em rocha natural e acabamento em aluminio. uma peca de design atemporal.",
+   "thumb": "thumbs/1791987470-103.jpg"
+  },
+  {
+   "name": "PENDENTE ÍMPAR P ESCARIADA",
+   "description": "Pendente com cúpula em madeira, difusor em rocha natural e acabamento em alumínio. Uma peça de design atemporal.",
+   "price": 2505.0,
+   "brand": "WJ",
+   "pages": [
+    107
+   ],
+   "id": 104,
+   "search": "pendente impar p escariada pendente com cupula em madeira, difusor em rocha natural e acabamento em aluminio. uma peca de design atemporal.",
+   "thumb": "thumbs/1791987470-104.jpg"
+  },
+  {
+   "name": "PENDENTE ÍMPAR M LISA",
+   "description": "Pendente com cúpula em madeira, difusor em rocha natural e acabamento em alumínio. Uma peça de design atemporal.",
+   "price": 4185.0,
+   "brand": "WJ",
+   "pages": [
+    108
+   ],
+   "id": 105,
+   "search": "pendente impar m lisa pendente com cupula em madeira, difusor em rocha natural e acabamento em aluminio. uma peca de design atemporal.",
+   "thumb": "thumbs/1791987470-105.jpg"
+  },
+  {
+   "name": "PENDENTE ÍMPAR M ESCARIADA",
+   "description": "Pendente com cúpula em madeira, difusor em rocha natural e acabamento em alumínio. Uma peça de design atemporal.",
+   "price": 5025.0,
+   "brand": "WJ",
+   "pages": [
+    109
+   ],
+   "id": 106,
+   "search": "pendente impar m escariada pendente com cupula em madeira, difusor em rocha natural e acabamento em aluminio. uma peca de design atemporal.",
+   "thumb": "thumbs/1791987470-106.jpg"
+  },
+  {
+   "name": "COLUNA IMPERIAL",
+   "description": "Sofisticada luminária com acabamento clássico e difusor em tecido, que proporciona um fluxo de luz suave e poeticamente envolvente.",
+   "price": 8910.0,
+   "brand": "WJ",
+   "pages": [
+    110
+   ],
+   "id": 107,
+   "search": "coluna imperial sofisticada luminaria com acabamento classico e difusor em tecido, que proporciona um fluxo de luz suave e poeticamente envolvente.",
+   "thumb": "thumbs/1791987470-107.jpg"
+  },
+  {
+   "name": "PENDENTE IMPERIAL",
+   "description": "Sofisticado pendente com acabamento clássico e difusor em tecido. Uma peça que proporciona um fluxo de luz suave e poeticamente envolvente.",
+   "price": 7260.0,
+   "brand": "WJ",
+   "pages": [
+    111
+   ],
+   "id": 108,
+   "search": "pendente imperial sofisticado pendente com acabamento classico e difusor em tecido. uma peca que proporciona um fluxo de luz suave e poeticamente envolvente.",
+   "thumb": "thumbs/1791987470-108.jpg"
+  },
+  {
+   "name": "ARANDELA IMPULSO",
+   "description": "Arandela articulada de linhas alongadas, com difusor em rocha natural, proporcionando uma luz pontual e equilibrada.",
+   "price": 8910.0,
+   "brand": "WJ",
+   "pages": [
+    112
+   ],
+   "id": 109,
+   "search": "arandela impulso arandela articulada de linhas alongadas, com difusor em rocha natural, proporcionando uma luz pontual e equilibrada.",
+   "thumb": "thumbs/1791987470-109.jpg"
+  },
+  {
+   "name": "ARANDELA IRO",
+   "description": "O cristal revela a luz em um desenho circular preciso, criando uma presença cênica e sofisticada na parede.",
+   "price": 16500.0,
+   "brand": "WJ",
+   "pages": [
+    113
+   ],
+   "id": 110,
+   "search": "arandela iro o cristal revela a luz em um desenho circular preciso, criando uma presenca cenica e sofisticada na parede.",
+   "thumb": "thumbs/1791987470-110.jpg"
+  },
+  {
+   "name": "PENDENTE JAPÃO Ø70",
+   "description": "Pendente cônico em metal, com design elegante e proporções precisas. Sua cúpula é adornada por uma pedra natural cilíndrica, que adiciona textura, contraste e um toque de sofisticação à peça.",
+   "price": 9075.0,
+   "brand": "WJ",
+   "pages": [
+    114
+   ],
+   "id": 111,
+   "search": "pendente japao ø70 pendente conico em metal, com design elegante e proporcoes precisas. sua cupula e adornada por uma pedra natural cilindrica, que adiciona textura, contraste e um toque de sofisticacao a peca.",
+   "thumb": "thumbs/1791987470-111.jpg"
+  },
+  {
+   "name": "PENDENTE JAPÃO Ø90",
+   "description": "Pendente cônico em metal, com design elegante e proporções precisas. Sua cúpula é adornada por uma pedra natural cilíndrica, que adiciona textura, contraste e um toque de sofisticação à peça.",
+   "price": 9075.0,
+   "brand": "WJ",
+   "pages": [
+    115
+   ],
+   "id": 112,
+   "search": "pendente japao ø90 pendente conico em metal, com design elegante e proporcoes precisas. sua cupula e adornada por uma pedra natural cilindrica, que adiciona textura, contraste e um toque de sofisticacao a peca.",
+   "thumb": "thumbs/1791987470-112.jpg"
+  },
+  {
+   "name": "ARANDELA KARVER M1",
+   "description": "Arandela em rocha Sal retroiluminada. O detalhe em metal martelado valoriza a textura natural da pedra e cria uma composição cheia de presença.",
+   "price": 4950.0,
+   "brand": "WJ",
+   "pages": [
+    116
+   ],
+   "id": 113,
+   "search": "arandela karver m1 arandela em rocha sal retroiluminada. o detalhe em metal martelado valoriza a textura natural da pedra e cria uma composicao cheia de presenca.",
+   "thumb": "thumbs/1791987470-113.jpg"
+  },
+  {
+   "name": "ARANDELA KARVER M2",
+   "description": "Arandela em rocha Sal retroiluminada. O detalhe em metal martelado valoriza a textura natural da pedra e cria uma composição cheia de presença.",
+   "price": 4950.0,
+   "brand": "WJ",
+   "pages": [
+    117
+   ],
+   "id": 114,
+   "search": "arandela karver m2 arandela em rocha sal retroiluminada. o detalhe em metal martelado valoriza a textura natural da pedra e cria uma composicao cheia de presenca.",
+   "thumb": "thumbs/1791987470-114.jpg"
+  },
+  {
+   "name": "ARANDELA KARVER G",
+   "description": "Arandela em rocha Sal retroiluminada. O detalhe em metal martelado valoriza a textura natural da pedra e cria uma composição cheia de presença.",
+   "price": 5850.0,
+   "brand": "WJ",
+   "pages": [
+    118
+   ],
+   "id": 115,
+   "search": "arandela karver g arandela em rocha sal retroiluminada. o detalhe em metal martelado valoriza a textura natural da pedra e cria uma composicao cheia de presenca.",
+   "thumb": "thumbs/1791987470-115.jpg"
+  },
+  {
+   "name": "ARANDELA KOR CHAPÉU",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 8100.0,
+   "brand": "WJ",
+   "pages": [
+    119
+   ],
+   "id": 116,
+   "search": "arandela kor chapeu estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-116.jpg"
+  },
+  {
+   "name": "ARANDELA KOR PLANO",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 15000.0,
+   "brand": "WJ",
+   "pages": [
+    120
+   ],
+   "id": 117,
+   "search": "arandela kor plano estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-117.jpg"
+  },
+  {
+   "name": "PENDENTE KOR CHAPÉU Ø90",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 17100.0,
+   "brand": "WJ",
+   "pages": [
+    121
+   ],
+   "id": 118,
+   "search": "pendente kor chapeu ø90 estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-118.jpg"
+  },
+  {
+   "name": "PENDENTE KOR LONGO",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 21000.0,
+   "brand": "WJ",
+   "pages": [
+    122
+   ],
+   "id": 119,
+   "search": "pendente kor longo estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-119.jpg"
+  },
+  {
+   "name": "PENDENTE KOR SAMUR DIRETO",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 12900.0,
+   "brand": "WJ",
+   "pages": [
+    123
+   ],
+   "id": 120,
+   "search": "pendente kor samur direto estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-120.jpg"
+  },
+  {
+   "name": "PENDENTE KOR SAMUR INDIRETO",
+   "description": "Estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "price": 12900.0,
+   "brand": "WJ",
+   "pages": [
+    124
+   ],
+   "id": 121,
+   "search": "pendente kor samur indireto estruturas tramadas em tiras de couro desenham volumes leves e marcantes, criando jogos de luz e sombra.",
+   "thumb": "thumbs/1791987470-121.jpg"
+  },
+  {
+   "name": "PENDENTE KUMA",
+   "description": "Sobreposições orgânicas encontram formas lineares em uma composição rica em texturas e materiais. A luz percorre essas camadas, revelando profundidade e diferentes percepções da peça.",
+   "price": 21000.0,
+   "brand": "WJ",
+   "pages": [
+    125
+   ],
+   "id": 122,
+   "search": "pendente kuma sobreposicoes organicas encontram formas lineares em uma composicao rica em texturas e materiais. a luz percorre essas camadas, revelando profundidade e diferentes percepcoes da peca.",
+   "thumb": "thumbs/1791987470-122.jpg"
+  },
+  {
+   "name": "ARANDELA LÂMINO 100CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 14400.0,
+   "brand": "WJ",
+   "pages": [
+    126
+   ],
+   "id": 123,
+   "search": "arandela lamino 100cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-123.jpg"
+  },
+  {
+   "name": "ARANDELA LÂMINO 140CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 15600.0,
+   "brand": "WJ",
+   "pages": [
+    127
+   ],
+   "id": 124,
+   "search": "arandela lamino 140cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-124.jpg"
+  },
+  {
+   "name": "ARANDELA LÂMINO 190CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 17400.0,
+   "brand": "WJ",
+   "pages": [
+    128
+   ],
+   "id": 125,
+   "search": "arandela lamino 190cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-125.jpg"
+  },
+  {
+   "name": "PENDENTE LÂMINO 100CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 14700.0,
+   "brand": "WJ",
+   "pages": [
+    129
+   ],
+   "id": 126,
+   "search": "pendente lamino 100cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-126.jpg"
+  },
+  {
+   "name": "PENDENTE LÂMINO 140CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 15900.0,
+   "brand": "WJ",
+   "pages": [
+    130
+   ],
+   "id": 127,
+   "search": "pendente lamino 140cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-127.jpg"
+  },
+  {
+   "name": "PENDENTE LÂMINO 190CM",
+   "description": "Lâmina de madeira natural e pedra natural se encontram em formas escultóricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "price": 17700.0,
+   "brand": "WJ",
+   "pages": [
+    131
+   ],
+   "id": 128,
+   "search": "pendente lamino 190cm lamina de madeira natural e pedra natural se encontram em formas escultoricas, valorizadas pela luz que percorre seus veios e texturas.",
+   "thumb": "thumbs/1791987470-128.jpg"
+  },
+  {
+   "name": "ARANDELA LUMA",
+   "description": "Arandela com estrutura em acrílico e perfil esculpido em rocha natural retroiluminada. Seu desenho alongado e delicado destaca a textura da pedra, criando um efeito de luz suave e envolvente.",
+   "price": 7860.0,
+   "brand": "WJ",
+   "pages": [
+    132
+   ],
+   "id": 129,
+   "search": "arandela luma arandela com estrutura em acrilico e perfil esculpido em rocha natural retroiluminada. seu desenho alongado e delicado destaca a textura da pedra, criando um efeito de luz suave e envolvente.",
+   "thumb": "thumbs/1791987470-129.jpg"
+  },
+  {
+   "name": "COLUNA MAXA",
+   "description": "Luminária de piso com estrutura em metal e detalhe em pedra natural, finalizada com cúpula em tecido cru. Uma peça de presença imponente, que combina textura, materialidade e uma luz suave e acolhedora.",
+   "price": 9570.0,
+   "brand": "WJ",
+   "pages": [
+    133
+   ],
+   "id": 130,
+   "search": "coluna maxa luminaria de piso com estrutura em metal e detalhe em pedra natural, finalizada com cupula em tecido cru. uma peca de presenca imponente, que combina textura, materialidade e uma luz suave e acolhedora.",
+   "thumb": "thumbs/1791987470-130.jpg"
+  },
+  {
+   "name": "ARANDELA MEGA Ø30",
+   "description": "Delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradável. Uma peça de design minimalista que valoriza a luz difusa.",
+   "price": 2145.0,
+   "brand": "WJ",
+   "pages": [
+    134
+   ],
+   "id": 131,
+   "search": "arandela mega ø30 delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradavel. uma peca de design minimalista que valoriza a luz difusa.",
+   "thumb": "thumbs/1791987470-131.jpg"
+  },
+  {
+   "name": "ARANDELA MEGA BASE PEDRA Ø20",
+   "description": "Delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradável. Uma peça de design minimalista que valoriza a luz difusa.",
+   "price": 2145.0,
+   "brand": "WJ",
+   "pages": [
+    135
+   ],
+   "id": 132,
+   "search": "arandela mega base pedra ø20 delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradavel. uma peca de design minimalista que valoriza a luz difusa.",
+   "thumb": "thumbs/1791987470-132.jpg"
+  },
+  {
+   "name": "ARANDELA MEGA BASE PEDRA Ø30",
+   "description": "Delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradável. Uma peça de design minimalista que valoriza a luz difusa.",
+   "price": 2475.0,
+   "brand": "WJ",
+   "pages": [
+    136
+   ],
+   "id": 133,
+   "search": "arandela mega base pedra ø30 delicado disco de metal que circunda um globo difusor, refletindo e ampliando a luz de forma suave e agradavel. uma peca de design minimalista que valoriza a luz difusa.",
+   "thumb": "thumbs/1791987470-133.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE COM PEDRA",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    137
+   ],
+   "id": 134,
+   "search": "pendente mide com pedra o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-134.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE DUPLA ALTA",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    138
+   ],
+   "id": 135,
+   "search": "pendente mide dupla alta o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-135.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE DUPLA BAIXA",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    139
+   ],
+   "id": 136,
+   "search": "pendente mide dupla baixa o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-136.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE COM PEDRA COM CALCÁRIO",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    140
+   ],
+   "id": 137,
+   "search": "pendente mide com pedra com calcario o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-137.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE DUPLA ALTA COM CALCÁRIO",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    141
+   ],
+   "id": 138,
+   "search": "pendente mide dupla alta com calcario o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-138.jpg"
+  },
+  {
+   "name": "PENDENTE MIDE DUPLA BAIXA COM CALCÁRIO",
+   "description": "O pendente Mide é uma coleção versátil e elegante, composta por três peças distintas, perfeitas para composições sofisticadas e harmônicas.",
+   "price": 3240.0,
+   "brand": "WJ",
+   "pages": [
+    142
+   ],
+   "id": 139,
+   "search": "pendente mide dupla baixa com calcario o pendente mide e uma colecao versatil e elegante, composta por tres pecas distintas, perfeitas para composicoes sofisticadas e harmonicas.",
+   "thumb": "thumbs/1791987470-139.jpg"
+  },
+  {
+   "name": "PENDENTE NATURA VERTICAL",
+   "description": "Pendente vertical com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. Seu desenho orgânico e a distribuição pontual de luz conferem leveza e personalidade ao espaço.",
+   "price": 7920.0,
+   "brand": "WJ",
+   "pages": [
+    143
+   ],
+   "id": 140,
+   "search": "pendente natura vertical pendente vertical com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. seu desenho organico e a distribuicao pontual de luz conferem leveza e personalidade ao espaco.",
+   "thumb": "thumbs/1791987470-140.jpg"
+  },
+  {
+   "name": "PENDENTE NATURA HORIZONTAL 120CM",
+   "description": "Pendente horizontal com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. Seu desenho orgânico e a distribuição pontual de luz conferem leveza e personalidade ao espaço.",
+   "price": 7920.0,
+   "brand": "WJ",
+   "pages": [
+    144
+   ],
+   "id": 141,
+   "search": "pendente natura horizontal 120cm pendente horizontal com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. seu desenho organico e a distribuicao pontual de luz conferem leveza e personalidade ao espaco.",
+   "thumb": "thumbs/1791987470-141.jpg"
+  },
+  {
+   "name": "PENDENTE NATURA HORIZONTAL 190CM",
+   "description": "Pendente horizontal com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. Seu desenho orgânico e a distribuição pontual de luz conferem leveza e personalidade ao espaço.",
+   "price": 12210.0,
+   "brand": "WJ",
+   "pages": [
+    145
+   ],
+   "id": 142,
+   "search": "pendente natura horizontal 190cm pendente horizontal com estrutura delicadamente alongada em metal e detalhes em madeira ou pedra esculpida. seu desenho organico e a distribuicao pontual de luz conferem leveza e personalidade ao espaco.",
+   "thumb": "thumbs/1791987470-142.jpg"
+  },
+  {
+   "name": "PENDENTE ORBO",
+   "description": "Uma composição de equilíbrio construída pela sobreposição de planos, entre cúpulas de vidro martelado e linhas metálicas.",
+   "price": 57000.0,
+   "brand": "WJ",
+   "pages": [
+    146
+   ],
+   "id": 143,
+   "search": "pendente orbo uma composicao de equilibrio construida pela sobreposicao de planos, entre cupulas de vidro martelado e linhas metalicas.",
+   "thumb": "thumbs/1791987470-143.jpg"
+  },
+  {
+   "name": "COLUNA ORI P",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 4290.0,
+   "brand": "WJ",
+   "pages": [
+    147
+   ],
+   "id": 144,
+   "search": "coluna ori p luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-144.jpg"
+  },
+  {
+   "name": "COLUNA ORI M",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 5280.0,
+   "brand": "WJ",
+   "pages": [
+    148
+   ],
+   "id": 145,
+   "search": "coluna ori m luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-145.jpg"
+  },
+  {
+   "name": "COLUNA ORI G",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 6270.0,
+   "brand": "WJ",
+   "pages": [
+    149
+   ],
+   "id": 146,
+   "search": "coluna ori g luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-146.jpg"
+  },
+  {
+   "name": "COLUNA ORI P COM PALHA",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 4290.0,
+   "brand": "WJ",
+   "pages": [
+    150
+   ],
+   "id": 147,
+   "search": "coluna ori p com palha luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-147.jpg"
+  },
+  {
+   "name": "COLUNA ORI M COM PALHA",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 5280.0,
+   "brand": "WJ",
+   "pages": [
+    151
+   ],
+   "id": 148,
+   "search": "coluna ori m com palha luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-148.jpg"
+  },
+  {
+   "name": "COLUNA ORI G COM PALHA",
+   "description": "Luminária de piso com inspiração oriental. Possuí base em pedra natural, estrutura cilíndrica em alumínio e difusor em tecido. Disponível em três tamanhos, proporciona uma iluminação suave e um efeito visual leve e atemporal.",
+   "price": 6270.0,
+   "brand": "WJ",
+   "pages": [
+    152
+   ],
+   "id": 149,
+   "search": "coluna ori g com palha luminaria de piso com inspiracao oriental. possui base em pedra natural, estrutura cilindrica em aluminio e difusor em tecido. disponivel em tres tamanhos, proporciona uma iluminacao suave e um efeito visual leve e atemporal.",
+   "thumb": "thumbs/1791987470-149.jpg"
+  },
+  {
+   "name": "PENDENTE PARIS CRISTAL",
+   "description": "Lustre com hastes de diferentes tamanhos fixadas em um globo central, finalizadas com ponteiras de cristal incolor maciço. Uma composição que alia leveza, brilho e sofisticação.",
+   "price": 15510.0,
+   "brand": "WJ",
+   "pages": [
+    153
+   ],
+   "id": 150,
+   "search": "pendente paris cristal lustre com hastes de diferentes tamanhos fixadas em um globo central, finalizadas com ponteiras de cristal incolor macico. uma composicao que alia leveza, brilho e sofisticacao.",
+   "thumb": "thumbs/1791987470-150.jpg"
+  },
+  {
+   "name": "PENDENTE PARIS ROCHA",
+   "description": "Lustre com hastes de diferentes tamanhos fixadas em um globo central, finalizadas com ponteiras de rocha natural. Uma composição que alia leveza, brilho e sofisticação.",
+   "price": 15510.0,
+   "brand": "WJ",
+   "pages": [
+    154
+   ],
+   "id": 151,
+   "search": "pendente paris rocha lustre com hastes de diferentes tamanhos fixadas em um globo central, finalizadas com ponteiras de rocha natural. uma composicao que alia leveza, brilho e sofisticacao.",
+   "thumb": "thumbs/1791987470-151.jpg"
+  },
+  {
+   "name": "COLUNA QUEPE",
+   "description": "Luminária de piso com base em pedra natural, haste esguia em metal e cúpula minimalista. Uma peça de design leve e preciso, que une equilíbrio visual e sofisticação com um ponto de luz discreto e elegante.",
+   "price": 5115.0,
+   "brand": "WJ",
+   "pages": [
+    155
+   ],
+   "id": 152,
+   "search": "coluna quepe luminaria de piso com base em pedra natural, haste esguia em metal e cupula minimalista. uma peca de design leve e preciso, que une equilibrio visual e sofisticacao com um ponto de luz discreto e elegante.",
+   "thumb": "thumbs/1791987470-152.jpg"
+  },
+  {
+   "name": "PENDENTE QUEPE",
+   "description": "Pendente linear com corpo em metal e acabamento em pedra natural na extremidade. Os módulos cônicos, distribuídos ao longo da estrutura, projetam luz bidirecional de forma precisa, criando um efeito elegante e funcional para diferentes ambientes.",
+   "price": 10560.0,
+   "brand": "WJ",
+   "pages": [
+    156
+   ],
+   "id": 153,
+   "search": "pendente quepe pendente linear com corpo em metal e acabamento em pedra natural na extremidade. os modulos conicos, distribuidos ao longo da estrutura, projetam luz bidirecional de forma precisa, criando um efeito elegante e funcional para diferentes ambientes.",
+   "thumb": "thumbs/1791987470-153.jpg"
+  },
+  {
+   "name": "ARANDELA RODUL G",
+   "description": "Discos de cristal texturizado emolduram a luz e criam profundidade através de sobreposições delicadas.",
+   "price": 7200.0,
+   "brand": "WJ",
+   "pages": [
+    157
+   ],
+   "id": 154,
+   "search": "arandela rodul g discos de cristal texturizado emolduram a luz e criam profundidade atraves de sobreposicoes delicadas.",
+   "thumb": "thumbs/1791987470-154.jpg"
+  },
+  {
+   "name": "ARANDELA RODUL M",
+   "description": "Discos de cristal texturizado emolduram a luz e criam profundidade através de sobreposições delicadas.",
+   "price": 5100.0,
+   "brand": "WJ",
+   "pages": [
+    158
+   ],
+   "id": 155,
+   "search": "arandela rodul m discos de cristal texturizado emolduram a luz e criam profundidade atraves de sobreposicoes delicadas.",
+   "thumb": "thumbs/1791987470-155.jpg"
+  },
+  {
+   "name": "PENDENTE ROSSEL",
+   "description": "A composição circular é marcada pela repetição de discos de luz, combinando madeira e difusor em rocha natural em uma peça de forte materialidade.",
+   "price": 20400.0,
+   "brand": "WJ",
+   "pages": [
+    159
+   ],
+   "id": 156,
+   "search": "pendente rossel a composicao circular e marcada pela repeticao de discos de luz, combinando madeira e difusor em rocha natural em uma peca de forte materialidade.",
+   "thumb": "thumbs/1791987470-156.jpg"
+  },
+  {
+   "name": "COLUNA SAMURAI",
+   "description": "Luminária de piso com base em pedra natural, haste metálica texturizada e cúpula em tecido com detalhe superior em alumínio. Uma peça de design equilibrado que combina materiais nobres, linhas precisas e uma iluminação suave e acolhedora.",
+   "price": 11880.0,
+   "brand": "WJ",
+   "pages": [
+    160
+   ],
+   "id": 157,
+   "search": "coluna samurai luminaria de piso com base em pedra natural, haste metalica texturizada e cupula em tecido com detalhe superior em aluminio. uma peca de design equilibrado que combina materiais nobres, linhas precisas e uma iluminacao suave e acolhedora.",
+   "thumb": "thumbs/1791987470-157.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI DIRETO (I)",
+   "description": "Pendente com cúpula em tecido cru e acabamento em alumínio, disponível nos modelos direto e indireto. Suas formas geométricas e proporções generosas valorizam a difusão da luz.",
+   "price": 6240.0,
+   "brand": "WJ",
+   "pages": [
+    161
+   ],
+   "id": 158,
+   "search": "pendente samurai direto (i) pendente com cupula em tecido cru e acabamento em aluminio, disponivel nos modelos direto e indireto. suas formas geometricas e proporcoes generosas valorizam a difusao da luz.",
+   "thumb": "thumbs/1791987470-158.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI INDIRETO (I)",
+   "description": "Pendente com cúpula em tecido cru e acabamento em alumínio, disponível nos modelos direto e indireto. Suas formas geométricas e proporções generosas valorizam a difusão da luz.",
+   "price": 6240.0,
+   "brand": "WJ",
+   "pages": [
+    162
+   ],
+   "id": 159,
+   "search": "pendente samurai indireto (i) pendente com cupula em tecido cru e acabamento em aluminio, disponivel nos modelos direto e indireto. suas formas geometricas e proporcoes generosas valorizam a difusao da luz.",
+   "thumb": "thumbs/1791987470-159.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI DIRETO (II)",
+   "description": "Pendente com cúpula de papel de arroz e acabamento em latão, disponível nos modelos direto e indireto. Suas formas geométricas e proporções generosas valorizam a difusão da luz.",
+   "price": 7485.0,
+   "brand": "WJ",
+   "pages": [
+    163
+   ],
+   "id": 160,
+   "search": "pendente samurai direto (ii) pendente com cupula de papel de arroz e acabamento em latao, disponivel nos modelos direto e indireto. suas formas geometricas e proporcoes generosas valorizam a difusao da luz.",
+   "thumb": "thumbs/1791987470-160.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI INDIRETO (II)",
+   "description": "Pendente com cúpula de papel de arroz e acabamento em latão, disponível nos modelos direto e indireto. Suas formas geométricas e proporções generosas valorizam a difusão da luz.",
+   "price": 7485.0,
+   "brand": "WJ",
+   "pages": [
+    164
+   ],
+   "id": 161,
+   "search": "pendente samurai indireto (ii) pendente com cupula de papel de arroz e acabamento em latao, disponivel nos modelos direto e indireto. suas formas geometricas e proporcoes generosas valorizam a difusao da luz.",
+   "thumb": "thumbs/1791987470-161.jpg"
+  },
+  {
+   "name": "ARANDELA SAMURAI",
+   "description": "Arandela de parede com base em pedra natural e corpo cônico em metal. Seu desenho preciso e escultural cria um efeito de luz indireta, valorizando texturas e realçando a sofisticação do ambiente.",
+   "price": 3210.0,
+   "brand": "WJ",
+   "pages": [
+    165
+   ],
+   "id": 162,
+   "search": "arandela samurai arandela de parede com base em pedra natural e corpo conico em metal. seu desenho preciso e escultural cria um efeito de luz indireta, valorizando texturas e realcando a sofisticacao do ambiente.",
+   "thumb": "thumbs/1791987470-162.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI LONGO DIRETO",
+   "description": "Pendente com cúpula em tecido cru e acabamento em metal, disponível nos modelos direto e indireto. Suas formas cônicas e proporções marcantes criam um efeito de iluminação escultural.",
+   "price": 7395.0,
+   "brand": "WJ",
+   "pages": [
+    166
+   ],
+   "id": 163,
+   "search": "pendente samurai longo direto pendente com cupula em tecido cru e acabamento em metal, disponivel nos modelos direto e indireto. suas formas conicas e proporcoes marcantes criam um efeito de iluminacao escultural.",
+   "thumb": "thumbs/1791987470-163.jpg"
+  },
+  {
+   "name": "PENDENTE SAMURAI LONGO INDIRETO",
+   "description": "Pendente com cúpula em tecido cru e acabamento em metal, disponível nos modelos direto e indireto. Suas formas cônicas e proporções marcantes criam um efeito de iluminação escultural.",
+   "price": 7395.0,
+   "brand": "WJ",
+   "pages": [
+    167
+   ],
+   "id": 164,
+   "search": "pendente samurai longo indireto pendente com cupula em tecido cru e acabamento em metal, disponivel nos modelos direto e indireto. suas formas conicas e proporcoes marcantes criam um efeito de iluminacao escultural.",
+   "thumb": "thumbs/1791987470-164.jpg"
+  },
+  {
+   "name": "ARANDELA SATÊ",
+   "description": "Arandela composta por hastes alongadas e articuladas, que permitem diferentes direcionamentos da peça. Seu desenho delicado cria uma composição fluida no espaço.",
+   "price": 9450.0,
+   "brand": "WJ",
+   "pages": [
+    168
+   ],
+   "id": 165,
+   "search": "arandela sate arandela composta por hastes alongadas e articuladas, que permitem diferentes direcionamentos da peca. seu desenho delicado cria uma composicao fluida no espaco.",
+   "thumb": "thumbs/1791987470-165.jpg"
+  },
+  {
+   "name": "ARANDELA SÉRIE",
+   "description": "Arandela tubular com corpo em metal e base em pedra natural. Seu design minimalista projeta luz bidirecional de forma suave, criando um elegante efeito de destaque nas paredes.",
+   "price": 3900.0,
+   "brand": "WJ",
+   "pages": [
+    169
+   ],
+   "id": 166,
+   "search": "arandela serie arandela tubular com corpo em metal e base em pedra natural. seu design minimalista projeta luz bidirecional de forma suave, criando um elegante efeito de destaque nas paredes.",
+   "thumb": "thumbs/1791987470-166.jpg"
+  },
+  {
+   "name": "ARANDELA SÉRIE DE COURO",
+   "description": "Arandela tubular com corpo revestido em couro ou camurça natural e base em pedra natural. Seu design minimalista projeta luz bidirecional de forma suave, criando um elegante efeito de destaque nas paredes.",
+   "price": 4680.0,
+   "brand": "WJ",
+   "pages": [
+    170
+   ],
+   "id": 167,
+   "search": "arandela serie de couro arandela tubular com corpo revestido em couro ou camurca natural e base em pedra natural. seu design minimalista projeta luz bidirecional de forma suave, criando um elegante efeito de destaque nas paredes.",
+   "thumb": "thumbs/1791987470-167.jpg"
+  },
+  {
+   "name": "PENDENTE SINCRO 90CM",
+   "description": "Pendente de composição circular, onde lâminas de vidro texturizado se alinham em sincronia entre luz e transparência.",
+   "price": 37500.0,
+   "brand": "WJ",
+   "pages": [
+    171
+   ],
+   "id": 168,
+   "search": "pendente sincro 90cm pendente de composicao circular, onde laminas de vidro texturizado se alinham em sincronia entre luz e transparencia.",
+   "thumb": "thumbs/1791987470-168.jpg"
+  },
+  {
+   "name": "PENDENTE SOLITÁRIO ROCHA",
+   "description": "Micro pendente com corpo em metal e delicado difusor em rocha natural. Seu design minimalista e proporções reduzidas tornam a peça perfeita para múltiplas composições, criando pontos de luz sutis e sofisticados no ambiente.",
+   "price": 1755.0,
+   "brand": "WJ",
+   "pages": [
+    172
+   ],
+   "id": 169,
+   "search": "pendente solitario rocha micro pendente com corpo em metal e delicado difusor em rocha natural. seu design minimalista e proporcoes reduzidas tornam a peca perfeita para multiplas composicoes, criando pontos de luz sutis e sofisticados no ambiente.",
+   "thumb": "thumbs/1791987470-169.jpg"
+  },
+  {
+   "name": "PENDENTE SOLITÁRIO CRISTAL",
+   "description": "Micro pendente com corpo em metal e delicado difusor em cristal. Seu design minimalista e proporções reduzidas tornam a peça perfeita para múltiplas composições, criando pontos de luz sutis e sofisticados no ambiente.",
+   "price": 1755.0,
+   "brand": "WJ",
+   "pages": [
+    173
+   ],
+   "id": 170,
+   "search": "pendente solitario cristal micro pendente com corpo em metal e delicado difusor em cristal. seu design minimalista e proporcoes reduzidas tornam a peca perfeita para multiplas composicoes, criando pontos de luz sutis e sofisticados no ambiente.",
+   "thumb": "thumbs/1791987470-170.jpg"
+  },
+  {
+   "name": "ARANDELA SOLITÁRIO ROCHA",
+   "description": "Arandela com corpo em metal e delicado difusor em rocha natural. Seu formato compacto e design minimalista tornam a peça perfeita para composições em série, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticação.",
+   "price": 1605.0,
+   "brand": "WJ",
+   "pages": [
+    174
+   ],
+   "id": 171,
+   "search": "arandela solitario rocha arandela com corpo em metal e delicado difusor em rocha natural. seu formato compacto e design minimalista tornam a peca perfeita para composicoes em serie, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticacao.",
+   "thumb": "thumbs/1791987470-171.jpg"
+  },
+  {
+   "name": "ARANDELA SOLITÁRIO CRISTAL",
+   "description": "Arandela com corpo em metal e delicado difusor em cristal. Seu formato compacto e design minimalista tornam a peça perfeita para composições em série, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticação.",
+   "price": 1605.0,
+   "brand": "WJ",
+   "pages": [
+    175
+   ],
+   "id": 172,
+   "search": "arandela solitario cristal arandela com corpo em metal e delicado difusor em cristal. seu formato compacto e design minimalista tornam a peca perfeita para composicoes em serie, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticacao.",
+   "thumb": "thumbs/1791987470-172.jpg"
+  },
+  {
+   "name": "ARANDELA GRAN SOLITÁRIO CRISTAL",
+   "description": "Arandela com corpo em metal e delicado difusor em cristal. Seu formato compacto e design minimalista tornam a peça perfeita para composições em série, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticação.",
+   "price": 2550.0,
+   "brand": "WJ",
+   "pages": [
+    176
+   ],
+   "id": 173,
+   "search": "arandela gran solitario cristal arandela com corpo em metal e delicado difusor em cristal. seu formato compacto e design minimalista tornam a peca perfeita para composicoes em serie, criando pontos de luz elegantes e discretos que valorizam o ambiente com sofisticacao.",
+   "thumb": "thumbs/1791987470-173.jpg"
+  },
+  {
+   "name": "ARANDELA TÊNUE",
+   "description": "Arandela tubular com difusor em tecido cru, base em pedra natural e acabamento em metal. Uma peça de estética limpa e contemporânea que proporciona iluminação delicada.",
+   "price": 4095.0,
+   "brand": "WJ",
+   "pages": [
+    177
+   ],
+   "id": 174,
+   "search": "arandela tenue arandela tubular com difusor em tecido cru, base em pedra natural e acabamento em metal. uma peca de estetica limpa e contemporanea que proporciona iluminacao delicada.",
+   "thumb": "thumbs/1791987470-174.jpg"
+  },
+  {
+   "name": "COLUNA TUNDRA",
+   "description": "Uma composição vertical que une a força da rocha natural à translucidez do papel de arroz",
+   "price": 20100.0,
+   "brand": "WJ",
+   "pages": [
+    178
+   ],
+   "id": 175,
+   "search": "coluna tundra uma composicao vertical que une a forca da rocha natural a translucidez do papel de arroz",
+   "thumb": "thumbs/1791987470-175.jpg"
+  },
+  {
+   "name": "COLUNA ULDE",
+   "description": "Luminária de piso com base em pedra natural, estrutura em metal e difusor em tecido cru. Sua forma vertical e minimalista proporciona um efeito luminoso envolvente.",
+   "price": 11550.0,
+   "brand": "WJ",
+   "pages": [
+    179
+   ],
+   "id": 176,
+   "search": "coluna ulde luminaria de piso com base em pedra natural, estrutura em metal e difusor em tecido cru. sua forma vertical e minimalista proporciona um efeito luminoso envolvente.",
+   "thumb": "thumbs/1791987470-176.jpg"
+  },
+  {
+   "name": "ARANDELA UMBRA Ø40",
+   "description": "A arandela Umbra recebe um acabamento com textura única, especialmente desenvolvida pela WJ para conferir caráter exclusivo e identidade à peça.",
+   "price": 3795.0,
+   "brand": "WJ",
+   "pages": [
+    180
+   ],
+   "id": 177,
+   "search": "arandela umbra ø40 a arandela umbra recebe um acabamento com textura unica, especialmente desenvolvida pela wj para conferir carater exclusivo e identidade a peca.",
+   "thumb": "thumbs/1791987470-177.jpg"
+  },
+  {
+   "name": "ARANDELA UMBRA Ø90",
+   "description": "A arandela Umbra recebe um acabamento com textura única, especialmente desenvolvida pela WJ para conferir caráter exclusivo e identidade à peça.",
+   "price": 7755.0,
+   "brand": "WJ",
+   "pages": [
+    181
+   ],
+   "id": 178,
+   "search": "arandela umbra ø90 a arandela umbra recebe um acabamento com textura unica, especialmente desenvolvida pela wj para conferir carater exclusivo e identidade a peca.",
+   "thumb": "thumbs/1791987470-178.jpg"
+  },
+  {
+   "name": "PENDENTE VEGA",
+   "description": "O Vega é uma combinação de materiais nobres, onde texturas e acabamentos se unem para valorizar a presença da peça.",
+   "price": 14400.0,
+   "brand": "WJ",
+   "pages": [
+    182
+   ],
+   "id": 179,
+   "search": "pendente vega o vega e uma combinacao de materiais nobres, onde texturas e acabamentos se unem para valorizar a presenca da peca.",
+   "thumb": "thumbs/1791987470-179.jpg"
+  },
+  {
+   "name": "ARANDELA VELA",
+   "description": "Arandela com corpo metálico e difusor em cristal artesanal. Suas formas orgânicas e acabamento translúcido criam um jogo de luz envolvente, com reflexos sutis que valorizam a arquitetura e a atmosfera do ambiente.",
+   "price": 3540.0,
+   "brand": "WJ",
+   "pages": [
+    183
+   ],
+   "id": 180,
+   "search": "arandela vela arandela com corpo metalico e difusor em cristal artesanal. suas formas organicas e acabamento translucido criam um jogo de luz envolvente, com reflexos sutis que valorizam a arquitetura e a atmosfera do ambiente.",
+   "thumb": "thumbs/1791987470-180.jpg"
+  },
+  {
+   "name": "ABAJUR VÉRTICE",
+   "description": "Luminária de piso com design geométrico e base em pedra natural. Sua luz difusa revela uma composição de equilíbrio visual e expressão escultural. O modelo é dimerizável, permitindo ajustar o fluxo luminoso de acordo com a atmosfera desejada.",
+   "price": 13860.0,
+   "brand": "WJ",
+   "pages": [
+    184
+   ],
+   "id": 181,
+   "search": "abajur vertice luminaria de piso com design geometrico e base em pedra natural. sua luz difusa revela uma composicao de equilibrio visual e expressao escultural. o modelo e dimerizavel, permitindo ajustar o fluxo luminoso de acordo com a atmosfera desejada.",
+   "thumb": "thumbs/1791987470-181.jpg"
+  },
+  {
+   "name": "ABAJUR VÉRTICE SALINO",
+   "description": "Luminária de piso com design geométrico e base em pedra natural. Sua luz difusa revela uma composição de equilíbrio visual e expressão escultural. O modelo é dimerizável, permitindo ajustar o fluxo luminoso de acordo com a atmosfera desejada.",
+   "price": 17400.0,
+   "brand": "WJ",
+   "pages": [
+    185
+   ],
+   "id": 182,
+   "search": "abajur vertice salino luminaria de piso com design geometrico e base em pedra natural. sua luz difusa revela uma composicao de equilibrio visual e expressao escultural. o modelo e dimerizavel, permitindo ajustar o fluxo luminoso de acordo com a atmosfera desejada.",
+   "thumb": "thumbs/1791987470-182.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE G",
+   "description": "Pendente moderno de acrílico que proporciona uma luz de silhueta inconfundível, finalizado com nossa canopla de camadas.",
+   "price": 10395.0,
+   "brand": "WJ",
+   "pages": [
+    186
+   ],
+   "id": 183,
+   "search": "pendente vertice g pendente moderno de acrilico que proporciona uma luz de silhueta inconfundivel, finalizado com nossa canopla de camadas.",
+   "thumb": "thumbs/1791987470-183.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE G SALINO",
+   "description": "Pendente moderno de acrílico que proporciona uma luz de silhueta inconfundível, finalizado com nossa canopla de camadas.",
+   "price": 14100.0,
+   "brand": "WJ",
+   "pages": [
+    187
+   ],
+   "id": 184,
+   "search": "pendente vertice g salino pendente moderno de acrilico que proporciona uma luz de silhueta inconfundivel, finalizado com nossa canopla de camadas.",
+   "thumb": "thumbs/1791987470-184.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE M",
+   "description": "Pendente com design geométrico e acabamento em metal. Sua luz difusa proporciona uma presença escultural e um equilíbrio visual marcante. Dimerizável, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticação e personalidade.",
+   "price": 8580.0,
+   "brand": "WJ",
+   "pages": [
+    188
+   ],
+   "id": 185,
+   "search": "pendente vertice m pendente com design geometrico e acabamento em metal. sua luz difusa proporciona uma presenca escultural e um equilibrio visual marcante. dimerizavel, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticacao e personalidade.",
+   "thumb": "thumbs/1791987470-185.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE M SALINO",
+   "description": "Pendente com design geométrico e acabamento em metal. Sua luz difusa proporciona uma presença escultural e um equilíbrio visual marcante. Dimerizável, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticação e personalidade.",
+   "price": 11580.0,
+   "brand": "WJ",
+   "pages": [
+    189
+   ],
+   "id": 186,
+   "search": "pendente vertice m salino pendente com design geometrico e acabamento em metal. sua luz difusa proporciona uma presenca escultural e um equilibrio visual marcante. dimerizavel, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticacao e personalidade.",
+   "thumb": "thumbs/1791987470-186.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE P",
+   "description": "Pendente com design geométrico e acabamento em metal. Sua luz difusa proporciona uma presença escultural e um equilíbrio visual marcante. Dimerizável, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticação e personalidade.",
+   "price": 6270.0,
+   "brand": "WJ",
+   "pages": [
+    190
+   ],
+   "id": 187,
+   "search": "pendente vertice p pendente com design geometrico e acabamento em metal. sua luz difusa proporciona uma presenca escultural e um equilibrio visual marcante. dimerizavel, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticacao e personalidade.",
+   "thumb": "thumbs/1791987470-187.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE P SALINO",
+   "description": "Pendente com design geométrico e acabamento em metal. Sua luz difusa proporciona uma presença escultural e um equilíbrio visual marcante. Dimerizável, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticação e personalidade.",
+   "price": 8040.0,
+   "brand": "WJ",
+   "pages": [
+    191
+   ],
+   "id": 188,
+   "search": "pendente vertice p salino pendente com design geometrico e acabamento em metal. sua luz difusa proporciona uma presenca escultural e um equilibrio visual marcante. dimerizavel, permite controlar a intensidade luminosa para criar diferentes atmosferas com sofisticacao e personalidade.",
+   "thumb": "thumbs/1791987470-188.jpg"
+  },
+  {
+   "name": "PENDENTE VÉRTICE PP",
+   "description": "Pendente com design geométrico e acabamento em metal. Sua luz difusa proporciona uma presença escultural e um equilíbrio visual marcante. Agora no tamanho PP, ideal para composições e diferentes configurações de projeto.",
+   "price": 1635.0,
+   "brand": "WJ",
+   "pages": [
+    192
+   ],
+   "id": 189,
+   "search": "pendente vertice pp pendente com design geometrico e acabamento em metal. sua luz difusa proporciona uma presenca escultural e um equilibrio visual marcante. agora no tamanho pp, ideal para composicoes e diferentes configuracoes de projeto.",
+   "thumb": "thumbs/1791987470-189.jpg"
+  },
+  {
+   "name": "ARANDELA VITRA",
+   "description": "Arandela de vidro martelado, cuja lâmina sinuosa envolve a luz com fluidez e delicadeza escultural.",
+   "price": 21000.0,
+   "brand": "WJ",
+   "pages": [
+    193
+   ],
+   "id": 190,
+   "search": "arandela vitra arandela de vidro martelado, cuja lamina sinuosa envolve a luz com fluidez e delicadeza escultural.",
+   "thumb": "thumbs/1791987470-190.jpg"
+  },
+  {
+   "name": "CANOPLA CANOPLA QUADRADA 50CM",
+   "description": "Canopla quadrada e personalizável de acordo com a composição de peças escolhida. Os furos para suspensão são feitos sob medida, seguindo o posicionamento e a distribuição definidos para cada composição.",
+   "price": 1000.0,
+   "brand": "WJ",
+   "pages": [
+    194
+   ],
+   "id": 191,
+   "search": "canopla canopla quadrada 50cm canopla quadrada e personalizavel de acordo com a composicao de pecas escolhida. os furos para suspensao sao feitos sob medida, seguindo o posicionamento e a distribuicao definidos para cada composicao.",
+   "thumb": "thumbs/1791987470-191.jpg"
+  },
+  {
+   "name": "CANOPLA CANOPLA QUADRADA 100CM",
+   "description": "Canopla quadrada e personalizável de acordo com a composição de peças escolhida. Os furos para suspensão são feitos sob medida, seguindo o posicionamento e a distribuição definidos para cada composição.",
+   "price": 3000.0,
+   "brand": "WJ",
+   "pages": [
+    195
+   ],
+   "id": 192,
+   "search": "canopla canopla quadrada 100cm canopla quadrada e personalizavel de acordo com a composicao de pecas escolhida. os furos para suspensao sao feitos sob medida, seguindo o posicionamento e a distribuicao definidos para cada composicao.",
+   "thumb": "thumbs/1791987470-192.jpg"
+  },
+  {
+   "name": "CANOPLA CANOPLA RETANGULAR",
+   "description": "Canopla retangular e personalizável de acordo com a composição de peças escolhida. Os furos para suspensão são feitos sob medida, seguindo o posicionamento e a distribuição definidos para cada composição.",
+   "price": 3000.0,
+   "brand": "WJ",
+   "pages": [
+    196
+   ],
+   "id": 193,
+   "search": "canopla canopla retangular canopla retangular e personalizavel de acordo com a composicao de pecas escolhida. os furos para suspensao sao feitos sob medida, seguindo o posicionamento e a distribuicao definidos para cada composicao.",
+   "thumb": "thumbs/1791987470-193.jpg"
+  },
+  {
+   "name": "CANOPLA CANOPLA LINEAR 100CM",
+   "description": "Canopla linear e personalizável de acordo com a composição de peças escolhida. Os furos para suspensão são feitos sob medida, seguindo o posicionamento e a distribuição definidos para cada composição.",
+   "price": 1000.0,
+   "brand": "WJ",
+   "pages": [
+    197
+   ],
+   "id": 194,
+   "search": "canopla canopla linear 100cm canopla linear e personalizavel de acordo com a composicao de pecas escolhida. os furos para suspensao sao feitos sob medida, seguindo o posicionamento e a distribuicao definidos para cada composicao.",
+   "thumb": "thumbs/1791987470-194.jpg"
+  },
+  {
+   "name": "CANOPLA CANOPLA LINEAR 200CM",
+   "description": "Canopla linear e personalizável de acordo com a composição de peças escolhida. Os furos para suspensão são feitos sob medida, seguindo o posicionamento e a distribuição definidos para cada composição.",
+   "price": 1500.0,
+   "brand": "WJ",
+   "pages": [
+    198
+   ],
+   "id": 195,
+   "search": "canopla canopla linear 200cm canopla linear e personalizavel de acordo com a composicao de pecas escolhida. os furos para suspensao sao feitos sob medida, seguindo o posicionamento e a distribuicao definidos para cada composicao.",
+   "thumb": "thumbs/1791987470-195.jpg"
+  },
+  {
+   "name": "ABAJUR AGUDO",
+   "description": "Abajur de desenho vertical e minimalista, com base metálica estriada e difusor em tecido, que proporciona uma iluminação suave e acolhedora.",
+   "price": 2700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    200
+   ],
+   "id": 196,
+   "search": "abajur agudo abajur de desenho vertical e minimalista, com base metalica estriada e difusor em tecido, que proporciona uma iluminacao suave e acolhedora.",
+   "thumb": "thumbs/1791987470-196.jpg"
+  },
+  {
+   "name": "ARANDELA ALE",
+   "description": "Arandela spot com base redonda em pedra natural ou madeira, corpo cilíndrico metálico em diversas cores e feixe de luz direcionável.",
+   "price": 2590.0,
+   "brand": "Bella Itália",
+   "pages": [
+    201
+   ],
+   "id": 197,
+   "search": "arandela ale arandela spot com base redonda em pedra natural ou madeira, corpo cilindrico metalico em diversas cores e feixe de luz direcionavel.",
+   "thumb": "thumbs/1791987470-197.jpg"
+  },
+  {
+   "name": "ARANDELA ALTEZA",
+   "description": "Arandela com haste metálica curva, base em madeira e disco circular com difusor em rocha natural.",
+   "price": 3750.0,
+   "brand": "Bella Itália",
+   "pages": [
+    202
+   ],
+   "id": 198,
+   "search": "arandela alteza arandela com haste metalica curva, base em madeira e disco circular com difusor em rocha natural.",
+   "thumb": "thumbs/1791987470-198.jpg"
+  },
+  {
+   "name": "ARANDELA ANASTASIA",
+   "description": "Arandela de formato retangular com cantos arredondados, composta por difusor em tecido e base em pedra natural. Emite uma iluminação suave que valoriza a textura dos materiais.",
+   "price": 3600.0,
+   "brand": "Bella Itália",
+   "pages": [
+    203
+   ],
+   "id": 199,
+   "search": "arandela anastasia arandela de formato retangular com cantos arredondados, composta por difusor em tecido e base em pedra natural. emite uma iluminacao suave que valoriza a textura dos materiais.",
+   "thumb": "thumbs/1791987470-199.jpg"
+  },
+  {
+   "name": "ARANDELA ANTONELA",
+   "description": "Arandela com base em metal e difusor em tecido cru, que oferece iluminação suave e difusa. Ponteira em pedra natural esculpida, adicionando peso visual e acabamento orgânico à peça.",
+   "price": 2870.0,
+   "brand": "Bella Itália",
+   "pages": [
+    204
+   ],
+   "id": 200,
+   "search": "arandela antonela arandela com base em metal e difusor em tecido cru, que oferece iluminacao suave e difusa. ponteira em pedra natural esculpida, adicionando peso visual e acabamento organico a peca.",
+   "thumb": "thumbs/1791987470-200.jpg"
+  },
+  {
+   "name": "ARANDELA ANTONELA DE PALHA",
+   "description": "Arandela com base em metal e difusor em tecido cru, que oferece iluminação suave e difusa. Ponteira em pedra natural esculpida, adicionando peso visual e acabamento orgânico à peça.",
+   "price": 3450.0,
+   "brand": "Bella Itália",
+   "pages": [
+    205
+   ],
+   "id": 201,
+   "search": "arandela antonela de palha arandela com base em metal e difusor em tecido cru, que oferece iluminacao suave e difusa. ponteira em pedra natural esculpida, adicionando peso visual e acabamento organico a peca.",
+   "thumb": "thumbs/1791987470-201.jpg"
+  },
+  {
+   "name": "PENDENTE ANTONELA",
+   "description": "Pendente linear com varão metálico, difusores em tecido ou palha e detalhes em pedra nas extremidades, proporcionando iluminação suave e difusa.",
+   "price": 14100.0,
+   "brand": "Bella Itália",
+   "pages": [
+    206
+   ],
+   "id": 202,
+   "search": "pendente antonela pendente linear com varao metalico, difusores em tecido ou palha e detalhes em pedra nas extremidades, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-202.jpg"
+  },
+  {
+   "name": "PENDENTE ANTONELA DE PALHA",
+   "description": "Pendente linear com varão metálico, difusores em tecido ou palha e detalhes em pedra nas extremidades, proporcionando iluminação suave e difusa.",
+   "price": 16500.0,
+   "brand": "Bella Itália",
+   "pages": [
+    207
+   ],
+   "id": 203,
+   "search": "pendente antonela de palha pendente linear com varao metalico, difusores em tecido ou palha e detalhes em pedra nas extremidades, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-203.jpg"
+  },
+  {
+   "name": "COLUNA ANTONELA",
+   "description": "Luminária de piso com haste metálica delicada, base em pedra natural e difusor em tecido ou palha, proporcionando iluminação suave e acolhedora.",
+   "price": 11700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    208
+   ],
+   "id": 204,
+   "search": "coluna antonela luminaria de piso com haste metalica delicada, base em pedra natural e difusor em tecido ou palha, proporcionando iluminacao suave e acolhedora.",
+   "thumb": "thumbs/1791987470-204.jpg"
+  },
+  {
+   "name": "COLUNA ANTONELA DE PALHA",
+   "description": "Luminária de piso com haste metálica delicada, base em pedra natural e difusor em tecido ou palha, proporcionando iluminação suave e acolhedora.",
+   "price": 13500.0,
+   "brand": "Bella Itália",
+   "pages": [
+    209
+   ],
+   "id": 205,
+   "search": "coluna antonela de palha luminaria de piso com haste metalica delicada, base em pedra natural e difusor em tecido ou palha, proporcionando iluminacao suave e acolhedora.",
+   "thumb": "thumbs/1791987470-205.jpg"
+  },
+  {
+   "name": "PENDENTE APOLO",
+   "description": "Pendente em formato de disco, com design minimalista, estrutura em mármore e difusor em tecido cru, resultando em uma peça sofisticada e com acabamento impecável.",
+   "price": 7160.0,
+   "brand": "Bella Itália",
+   "pages": [
+    210
+   ],
+   "id": 206,
+   "search": "pendente apolo pendente em formato de disco, com design minimalista, estrutura em marmore e difusor em tecido cru, resultando em uma peca sofisticada e com acabamento impecavel.",
+   "thumb": "thumbs/1791987470-206.jpg"
+  },
+  {
+   "name": "PENDENTE ÁUREA 90CM",
+   "description": "Pendente linear em pedra natural, com corpo alongado e iluminação LED integrada, emitindo luz para cima e para baixo de forma contínua e uniforme.",
+   "price": 5940.0,
+   "brand": "Bella Itália",
+   "pages": [
+    211
+   ],
+   "id": 207,
+   "search": "pendente aurea 90cm pendente linear em pedra natural, com corpo alongado e iluminacao led integrada, emitindo luz para cima e para baixo de forma continua e uniforme.",
+   "thumb": "thumbs/1791987470-207.jpg"
+  },
+  {
+   "name": "PENDENTE ÁUREA 130CM",
+   "description": "Pendente linear em pedra natural, com corpo alongado e iluminação LED integrada, emitindo luz para cima e para baixo de forma contínua e uniforme.",
+   "price": 8100.0,
+   "brand": "Bella Itália",
+   "pages": [
+    212
+   ],
+   "id": 208,
+   "search": "pendente aurea 130cm pendente linear em pedra natural, com corpo alongado e iluminacao led integrada, emitindo luz para cima e para baixo de forma continua e uniforme.",
+   "thumb": "thumbs/1791987470-208.jpg"
+  },
+  {
+   "name": "PENDENTE ÁUREA 180CM",
+   "description": "Pendente linear em pedra natural, com corpo alongado e iluminação LED integrada, emitindo luz para cima e para baixo de forma contínua e uniforme.",
+   "price": 10350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    213
+   ],
+   "id": 209,
+   "search": "pendente aurea 180cm pendente linear em pedra natural, com corpo alongado e iluminacao led integrada, emitindo luz para cima e para baixo de forma continua e uniforme.",
+   "thumb": "thumbs/1791987470-209.jpg"
+  },
+  {
+   "name": "ARANDELA AYLA",
+   "description": "Arandela de linhas retas e composição geométrica, com volumes sobrepostos que criam profundidade e personalidade à peça.",
+   "price": 436.0,
+   "brand": "Bella Itália",
+   "pages": [
+    214
+   ],
+   "id": 210,
+   "search": "arandela ayla arandela de linhas retas e composicao geometrica, com volumes sobrepostos que criam profundidade e personalidade a peca.",
+   "thumb": "thumbs/1791987470-210.jpg"
+  },
+  {
+   "name": "ARANDELA BAILARINA",
+   "description": "Arandela articulada em metal, com estrutura fina e braços alongados. Possui cúpulas que abrigam os LEDs integrados, oferecendo iluminação focal e direcionada.",
+   "price": 4100.0,
+   "brand": "Bella Itália",
+   "pages": [
+    215
+   ],
+   "id": 211,
+   "search": "arandela bailarina arandela articulada em metal, com estrutura fina e bracos alongados. possui cupulas que abrigam os leds integrados, oferecendo iluminacao focal e direcionada.",
+   "thumb": "thumbs/1791987470-211.jpg"
+  },
+  {
+   "name": "ARANDELA BAILARINA VERSÃO 2",
+   "description": "Arandela articulada em metal, com estrutura fina, braços alongados e base em madeira natural. Possui cúpulas giratórias que abrigam difusores em rocha natural.",
+   "price": 5670.0,
+   "brand": "Bella Itália",
+   "pages": [
+    216
+   ],
+   "id": 212,
+   "search": "arandela bailarina versao 2 arandela articulada em metal, com estrutura fina, bracos alongados e base em madeira natural. possui cupulas giratorias que abrigam difusores em rocha natural.",
+   "thumb": "thumbs/1791987470-212.jpg"
+  },
+  {
+   "name": "ARANDELA BELMONTE",
+   "description": "Arandela em metal e rocha retroiluminada, com LED integrado que destaca as formas orgânicas da peça e proporciona uma iluminação suave e difusa na parede.",
+   "price": 4455.0,
+   "brand": "Bella Itália",
+   "pages": [
+    217
+   ],
+   "id": 213,
+   "search": "arandela belmonte arandela em metal e rocha retroiluminada, com led integrado que destaca as formas organicas da peca e proporciona uma iluminacao suave e difusa na parede.",
+   "thumb": "thumbs/1791987470-213.jpg"
+  },
+  {
+   "name": "PENDENTE BELMONTE 120CM",
+   "description": "Pendente linear em metal, com rochas retroiluminadas em formas orgânicas. Conta com LED integrado que oferece iluminação suave e difusa.",
+   "price": 9735.0,
+   "brand": "Bella Itália",
+   "pages": [
+    218
+   ],
+   "id": 214,
+   "search": "pendente belmonte 120cm pendente linear em metal, com rochas retroiluminadas em formas organicas. conta com led integrado que oferece iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-214.jpg"
+  },
+  {
+   "name": "PENDENTE BELMONTE 180CM",
+   "description": "Pendente linear em metal, com rochas retroiluminadas em formas orgânicas. Conta com LED integrado que oferece iluminação suave e difusa.",
+   "price": 11880.0,
+   "brand": "Bella Itália",
+   "pages": [
+    219
+   ],
+   "id": 215,
+   "search": "pendente belmonte 180cm pendente linear em metal, com rochas retroiluminadas em formas organicas. conta com led integrado que oferece iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-215.jpg"
+  },
+  {
+   "name": "ARANDELA BERIN 80CM",
+   "description": "Arandela vertical em formato linear, com estrutura metálica fixada em base esférica. Conta com LED integrado que emite luz indireta, rebatida na parede, criando uma iluminação difusa e uniforme.",
+   "price": 4550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    220
+   ],
+   "id": 216,
+   "search": "arandela berin 80cm arandela vertical em formato linear, com estrutura metalica fixada em base esferica. conta com led integrado que emite luz indireta, rebatida na parede, criando uma iluminacao difusa e uniforme.",
+   "thumb": "thumbs/1791987470-216.jpg"
+  },
+  {
+   "name": "ARANDELA BERIN 120CM",
+   "description": "Arandela vertical em formato linear, com estrutura metálica fixada em base esférica. Conta com LED integrado que emite luz indireta, rebatida na parede, criando uma iluminação difusa e uniforme.",
+   "price": 5470.0,
+   "brand": "Bella Itália",
+   "pages": [
+    221
+   ],
+   "id": 217,
+   "search": "arandela berin 120cm arandela vertical em formato linear, com estrutura metalica fixada em base esferica. conta com led integrado que emite luz indireta, rebatida na parede, criando uma iluminacao difusa e uniforme.",
+   "thumb": "thumbs/1791987470-217.jpg"
+  },
+  {
+   "name": "ARANDELA BIA 1 FACHO",
+   "description": "Arandela em formato cúbico e produzida em pedra natural. Está disponível em duas versões: uma que ilumina apenas para um lado e outra que projeta luz para dois lados opostos.",
+   "price": 925.0,
+   "brand": "Bella Itália",
+   "pages": [
+    222
+   ],
+   "id": 218,
+   "search": "arandela bia 1 facho arandela em formato cubico e produzida em pedra natural. esta disponivel em duas versoes: uma que ilumina apenas para um lado e outra que projeta luz para dois lados opostos.",
+   "thumb": "thumbs/1791987470-218.jpg"
+  },
+  {
+   "name": "ARANDELA BIA 2 FACHOS",
+   "description": "Arandela em formato cúbico e produzida em pedra natural. Está disponível em duas versões: uma que ilumina apenas para um lado e outra que projeta luz para dois lados opostos.",
+   "price": 925.0,
+   "brand": "Bella Itália",
+   "pages": [
+    223
+   ],
+   "id": 219,
+   "search": "arandela bia 2 fachos arandela em formato cubico e produzida em pedra natural. esta disponivel em duas versoes: uma que ilumina apenas para um lado e outra que projeta luz para dois lados opostos.",
+   "thumb": "thumbs/1791987470-219.jpg"
+  },
+  {
+   "name": "ARANDELA BOTON",
+   "description": "Arandela circular em pedra natural, com detalhe central em metal. Equipada com LED integrado, emite iluminação indireta que cria um efeito difuso na parede.",
+   "price": 2010.0,
+   "brand": "Bella Itália",
+   "pages": [
+    224
+   ],
+   "id": 220,
+   "search": "arandela boton arandela circular em pedra natural, com detalhe central em metal. equipada com led integrado, emite iluminacao indireta que cria um efeito difuso na parede.",
+   "thumb": "thumbs/1791987470-220.jpg"
+  },
+  {
+   "name": "PENDENTE CABAN 120CM",
+   "description": "Pendente linear em formato prismático, produzido em metal com base em pedra natural. Conta com LED integrado envolto em tecido cru, direcionado para baixo, oferecendo iluminação direta e uniforme.",
+   "price": 5940.0,
+   "brand": "Bella Itália",
+   "pages": [
+    225
+   ],
+   "id": 221,
+   "search": "pendente caban 120cm pendente linear em formato prismatico, produzido em metal com base em pedra natural. conta com led integrado envolto em tecido cru, direcionado para baixo, oferecendo iluminacao direta e uniforme.",
+   "thumb": "thumbs/1791987470-221.jpg"
+  },
+  {
+   "name": "PENDENTE CABAN 180CM",
+   "description": "Pendente linear em formato prismático, produzido em metal com base em pedra natural. Conta com LED integrado envolto em tecido cru, direcionado para baixo, oferecendo iluminação direta e uniforme.",
+   "price": 8085.0,
+   "brand": "Bella Itália",
+   "pages": [
+    226
+   ],
+   "id": 222,
+   "search": "pendente caban 180cm pendente linear em formato prismatico, produzido em metal com base em pedra natural. conta com led integrado envolto em tecido cru, direcionado para baixo, oferecendo iluminacao direta e uniforme.",
+   "thumb": "thumbs/1791987470-222.jpg"
+  },
+  {
+   "name": "PENDENTE CANI VERTICAL 80CM",
+   "description": "Pendente cilíndrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. Possui LED integrado, que emite iluminação difusa, ideal para composições verticais, horizontais ou agrupadas.",
+   "price": 10945.0,
+   "brand": "Bella Itália",
+   "pages": [
+    227
+   ],
+   "id": 223,
+   "search": "pendente cani vertical 80cm pendente cilindrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. possui led integrado, que emite iluminacao difusa, ideal para composicoes verticais, horizontais ou agrupadas.",
+   "thumb": "thumbs/1791987470-223.jpg"
+  },
+  {
+   "name": "PENDENTE CANI VERTICAL 120CM",
+   "description": "Pendente cilíndrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. Possui LED integrado, que emite iluminação difusa, ideal para composições verticais, horizontais ou agrupadas.",
+   "price": 13770.0,
+   "brand": "Bella Itália",
+   "pages": [
+    228
+   ],
+   "id": 224,
+   "search": "pendente cani vertical 120cm pendente cilindrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. possui led integrado, que emite iluminacao difusa, ideal para composicoes verticais, horizontais ou agrupadas.",
+   "thumb": "thumbs/1791987470-224.jpg"
+  },
+  {
+   "name": "PENDENTE CANI HORIZONTAL 80CM",
+   "description": "Pendente cilíndrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. Possui LED integrado, que emite iluminação difusa, ideal para composições verticais, horizontais ou agrupadas.",
+   "price": 12585.0,
+   "brand": "Bella Itália",
+   "pages": [
+    229
+   ],
+   "id": 225,
+   "search": "pendente cani horizontal 80cm pendente cilindrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. possui led integrado, que emite iluminacao difusa, ideal para composicoes verticais, horizontais ou agrupadas.",
+   "thumb": "thumbs/1791987470-225.jpg"
+  },
+  {
+   "name": "PENDENTE CANI HORIZONTAL 120CM",
+   "description": "Pendente cilíndrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. Possui LED integrado, que emite iluminação difusa, ideal para composições verticais, horizontais ou agrupadas.",
+   "price": 13770.0,
+   "brand": "Bella Itália",
+   "pages": [
+    230
+   ],
+   "id": 226,
+   "search": "pendente cani horizontal 120cm pendente cilindrico em tecido cru, formado por hastes lineares que envolvem a fonte de luz. possui led integrado, que emite iluminacao difusa, ideal para composicoes verticais, horizontais ou agrupadas.",
+   "thumb": "thumbs/1791987470-226.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPE",
+   "description": "Balizador de linhas minimalistas, composto por haste delgada e cúpula cônica em alumínio texturizado. Proporciona iluminação direcionada e suave, ideal para composições paisagísticas.",
+   "price": 1200.0,
+   "brand": "Bella Itália",
+   "pages": [
+    231
+   ],
+   "id": 227,
+   "search": "balizador cape balizador de linhas minimalistas, composto por haste delgada e cupula conica em aluminio texturizado. proporciona iluminacao direcionada e suave, ideal para composicoes paisagisticas.",
+   "thumb": "thumbs/1791987470-227.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM I 40CM",
+   "description": "Balizador para área externa com proteção IP65. Composto por hastes metálicas esguias em acabamento metálico, cada uma equipada com LED integrado na ponta, proporcionando pontos de luz sutis que se integram à vegetação.",
+   "price": 320.0,
+   "brand": "Bella Itália",
+   "pages": [
+    232
+   ],
+   "id": 228,
+   "search": "balizador capim i 40cm balizador para area externa com protecao ip65. composto por hastes metalicas esguias em acabamento metalico, cada uma equipada com led integrado na ponta, proporcionando pontos de luz sutis que se integram a vegetacao.",
+   "thumb": "thumbs/1791987470-228.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM I 70CM",
+   "description": "Balizador para área externa com proteção IP65. Composto por hastes metálicas esguias em acabamento metálico, cada uma equipada com LED integrado na ponta, proporcionando pontos de luz sutis que se integram à vegetação.",
+   "price": 360.0,
+   "brand": "Bella Itália",
+   "pages": [
+    233
+   ],
+   "id": 229,
+   "search": "balizador capim i 70cm balizador para area externa com protecao ip65. composto por hastes metalicas esguias em acabamento metalico, cada uma equipada com led integrado na ponta, proporcionando pontos de luz sutis que se integram a vegetacao.",
+   "thumb": "thumbs/1791987470-229.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM I 120CM",
+   "description": "Balizador para área externa com proteção IP65. Composto por hastes metálicas esguias em acabamento metálico, cada uma equipada com LED integrado na ponta, proporcionando pontos de luz sutis que se integram à vegetação.",
+   "price": 400.0,
+   "brand": "Bella Itália",
+   "pages": [
+    234
+   ],
+   "id": 230,
+   "search": "balizador capim i 120cm balizador para area externa com protecao ip65. composto por hastes metalicas esguias em acabamento metalico, cada uma equipada com led integrado na ponta, proporcionando pontos de luz sutis que se integram a vegetacao.",
+   "thumb": "thumbs/1791987470-230.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM II 40CM",
+   "description": "Balizador linear produzido em estrutura metálica é equipado com LED integrado e proteção IP65, garantindo resistência e durabilidade em ambientes externos. Projeta pontos de luz delicados, ideais para composições paisagísticas.",
+   "price": 475.0,
+   "brand": "Bella Itália",
+   "pages": [
+    235
+   ],
+   "id": 231,
+   "search": "balizador capim ii 40cm balizador linear produzido em estrutura metalica e equipado com led integrado e protecao ip65, garantindo resistencia e durabilidade em ambientes externos. projeta pontos de luz delicados, ideais para composicoes paisagisticas.",
+   "thumb": "thumbs/1791987470-231.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM II 70CM",
+   "description": "Balizador linear produzido em estrutura metálica é equipado com LED integrado e proteção IP65, garantindo resistência e durabilidade em ambientes externos. Projeta pontos de luz delicados, ideais para composições paisagísticas.",
+   "price": 550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    236
+   ],
+   "id": 232,
+   "search": "balizador capim ii 70cm balizador linear produzido em estrutura metalica e equipado com led integrado e protecao ip65, garantindo resistencia e durabilidade em ambientes externos. projeta pontos de luz delicados, ideais para composicoes paisagisticas.",
+   "thumb": "thumbs/1791987470-232.jpg"
+  },
+  {
+   "name": "BALIZADOR CAPIM II 120CM",
+   "description": "Balizador linear produzido em estrutura metálica é equipado com LED integrado e proteção IP65, garantindo resistência e durabilidade em ambientes externos. Projeta pontos de luz delicados, ideais para composições paisagísticas.",
+   "price": 595.0,
+   "brand": "Bella Itália",
+   "pages": [
+    237
+   ],
+   "id": 233,
+   "search": "balizador capim ii 120cm balizador linear produzido em estrutura metalica e equipado com led integrado e protecao ip65, garantindo resistencia e durabilidade em ambientes externos. projeta pontos de luz delicados, ideais para composicoes paisagisticas.",
+   "thumb": "thumbs/1791987470-233.jpg"
+  },
+  {
+   "name": "ARANDELA CASTAN",
+   "description": "Arandela em formato orgânico, composta por estrutura em poliproleno que envolve uma rocha retroiluminada. Conta com LED integrado, proporcionando uma iluminação suave e acolhedora.",
+   "price": 5610.0,
+   "brand": "Bella Itália",
+   "pages": [
+    238
+   ],
+   "id": 234,
+   "search": "arandela castan arandela em formato organico, composta por estrutura em poliproleno que envolve uma rocha retroiluminada. conta com led integrado, proporcionando uma iluminacao suave e acolhedora.",
+   "thumb": "thumbs/1791987470-234.jpg"
+  },
+  {
+   "name": "ARANDELA CASTAN SALINO",
+   "description": "Arandela em formato orgânico, composta por estrutura em acrílico texturixado que envolve uma rocha retroiluminada.",
+   "price": 5610.0,
+   "brand": "Bella Itália",
+   "pages": [
+    239
+   ],
+   "id": 235,
+   "search": "arandela castan salino arandela em formato organico, composta por estrutura em acrilico texturixado que envolve uma rocha retroiluminada.",
+   "thumb": "thumbs/1791987470-235.jpg"
+  },
+  {
+   "name": "BALIZADOR COGO 70CM",
+   "description": "Balizador composto por haste alongada, cúpula circular em alumínio texturizado e difusor e rocha natural. Possui iluminação indireta e difusa, criando um efeito suave na vegetação.",
+   "price": 1560.0,
+   "brand": "Bella Itália",
+   "pages": [
+    240
+   ],
+   "id": 236,
+   "search": "balizador cogo 70cm balizador composto por haste alongada, cupula circular em aluminio texturizado e difusor e rocha natural. possui iluminacao indireta e difusa, criando um efeito suave na vegetacao.",
+   "thumb": "thumbs/1791987470-236.jpg"
+  },
+  {
+   "name": "BALIZADOR COGO 120CM",
+   "description": "Balizador composto por haste alongada, cúpula circular em alumínio texturizado e difusor e rocha natural. Possui iluminação indireta e difusa, criando um efeito suave na vegetação.",
+   "price": 1680.0,
+   "brand": "Bella Itália",
+   "pages": [
+    241
+   ],
+   "id": 237,
+   "search": "balizador cogo 120cm balizador composto por haste alongada, cupula circular em aluminio texturizado e difusor e rocha natural. possui iluminacao indireta e difusa, criando um efeito suave na vegetacao.",
+   "thumb": "thumbs/1791987470-237.jpg"
+  },
+  {
+   "name": "ARANDELA CONI PP",
+   "description": "Balizador em formato cônico, com base pequena em metal e corpo totalmente esculpido em pedra natural.",
+   "price": 1085.0,
+   "brand": "Bella Itália",
+   "pages": [
+    242
+   ],
+   "id": 238,
+   "search": "arandela coni pp balizador em formato conico, com base pequena em metal e corpo totalmente esculpido em pedra natural.",
+   "thumb": "thumbs/1791987470-238.jpg"
+  },
+  {
+   "name": "ARANDELA CONI P",
+   "description": "Balizador em formato cônico, com base pequena em metal e corpo totalmente esculpido em pedra natural.",
+   "price": 1930.0,
+   "brand": "Bella Itália",
+   "pages": [
+    243
+   ],
+   "id": 239,
+   "search": "arandela coni p balizador em formato conico, com base pequena em metal e corpo totalmente esculpido em pedra natural.",
+   "thumb": "thumbs/1791987470-239.jpg"
+  },
+  {
+   "name": "ARANDELA CUBE 30CM",
+   "description": "Arandela retangular com base em latão de acabamento artesanal e corpo em tecido cru. Possui LED integrado, proporcionando iluminação suave e difusa.",
+   "price": 1580.0,
+   "brand": "Bella Itália",
+   "pages": [
+    244
+   ],
+   "id": 240,
+   "search": "arandela cube 30cm arandela retangular com base em latao de acabamento artesanal e corpo em tecido cru. possui led integrado, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-240.jpg"
+  },
+  {
+   "name": "ARANDELA CUBE 60CM",
+   "description": "Arandela retangular com base em latão de acabamento artesanal e corpo em tecido cru. Possui LED integrado, proporcionando iluminação suave e difusa.",
+   "price": 3160.0,
+   "brand": "Bella Itália",
+   "pages": [
+    245
+   ],
+   "id": 241,
+   "search": "arandela cube 60cm arandela retangular com base em latao de acabamento artesanal e corpo em tecido cru. possui led integrado, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-241.jpg"
+  },
+  {
+   "name": "ARANDELA CUMBO",
+   "description": "Peça esculpida em pedra, com um difusor delicado em rocha natural. Possui uma pequena base em metal que cria um sutil afastamento entre a peça e a parede, realçando a volumetria e a iluminação.",
+   "price": 2970.0,
+   "brand": "Bella Itália",
+   "pages": [
+    246
+   ],
+   "id": 242,
+   "search": "arandela cumbo peca esculpida em pedra, com um difusor delicado em rocha natural. possui uma pequena base em metal que cria um sutil afastamento entre a peca e a parede, realcando a volumetria e a iluminacao.",
+   "thumb": "thumbs/1791987470-242.jpg"
+  },
+  {
+   "name": "ARANDELA ECLIPSE Ø32",
+   "description": "Arandela em formato circular, produzida em metal. Equipada com LED integrado, emite iluminação indireta que cria uma luz suave ao redor da peça.",
+   "price": 1070.0,
+   "brand": "Bella Itália",
+   "pages": [
+    247
+   ],
+   "id": 243,
+   "search": "arandela eclipse ø32 arandela em formato circular, produzida em metal. equipada com led integrado, emite iluminacao indireta que cria uma luz suave ao redor da peca.",
+   "thumb": "thumbs/1791987470-243.jpg"
+  },
+  {
+   "name": "ARANDELA ECLIPSE Ø40",
+   "description": "Arandela em formato circular, produzida em metal. Equipada com LED integrado, emite iluminação indireta que cria uma luz suave ao redor da peça.",
+   "price": 1440.0,
+   "brand": "Bella Itália",
+   "pages": [
+    248
+   ],
+   "id": 244,
+   "search": "arandela eclipse ø40 arandela em formato circular, produzida em metal. equipada com led integrado, emite iluminacao indireta que cria uma luz suave ao redor da peca.",
+   "thumb": "thumbs/1791987470-244.jpg"
+  },
+  {
+   "name": "PENDENTE ELEMENTO Ø14",
+   "description": "Pendente com haste em pedra natural, disco metálico texturizado e difusor em rocha natural. Emite uma iluminação suave e difusa.",
+   "price": 3300.0,
+   "brand": "Bella Itália",
+   "pages": [
+    249
+   ],
+   "id": 245,
+   "search": "pendente elemento ø14 pendente com haste em pedra natural, disco metalico texturizado e difusor em rocha natural. emite uma iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-245.jpg"
+  },
+  {
+   "name": "PENDENTE ELEMENTO Ø20",
+   "description": "Pendente com haste em pedra natural, disco metálico texturizado e difusor em rocha natural. Emite uma iluminação suave e difusa.",
+   "price": 3600.0,
+   "brand": "Bella Itália",
+   "pages": [
+    250
+   ],
+   "id": 246,
+   "search": "pendente elemento ø20 pendente com haste em pedra natural, disco metalico texturizado e difusor em rocha natural. emite uma iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-246.jpg"
+  },
+  {
+   "name": "ARANDELA ELIS",
+   "description": "Arandela que projeta luz para dois lados opostos, formando uma iluminação escultória.",
+   "price": 435.0,
+   "brand": "Bella Itália",
+   "pages": [
+    251
+   ],
+   "id": 247,
+   "search": "arandela elis arandela que projeta luz para dois lados opostos, formando uma iluminacao escultoria.",
+   "thumb": "thumbs/1791987470-247.jpg"
+  },
+  {
+   "name": "ARANDELA FIO 50CM",
+   "description": "Arandela de desenho linear e elegante, marcada por uma curva contínua que valoriza a verticalidade da peça.",
+   "price": 1767.0,
+   "brand": "Bella Itália",
+   "pages": [
+    252
+   ],
+   "id": 248,
+   "search": "arandela fio 50cm arandela de desenho linear e elegante, marcada por uma curva continua que valoriza a verticalidade da peca.",
+   "thumb": "thumbs/1791987470-248.jpg"
+  },
+  {
+   "name": "ARANDELA FIO 116CM",
+   "description": "Arandela de desenho linear e elegante, marcada por uma curva contínua que valoriza a verticalidade da peça.",
+   "price": 1960.0,
+   "brand": "Bella Itália",
+   "pages": [
+    253
+   ],
+   "id": 249,
+   "search": "arandela fio 116cm arandela de desenho linear e elegante, marcada por uma curva continua que valoriza a verticalidade da peca.",
+   "thumb": "thumbs/1791987470-249.jpg"
+  },
+  {
+   "name": "ARANDELA FIO 165CM",
+   "description": "Arandela de desenho linear e elegante, marcada por uma curva contínua que valoriza a verticalidade da peça.",
+   "price": 2150.0,
+   "brand": "Bella Itália",
+   "pages": [
+    254
+   ],
+   "id": 250,
+   "search": "arandela fio 165cm arandela de desenho linear e elegante, marcada por uma curva continua que valoriza a verticalidade da peca.",
+   "thumb": "thumbs/1791987470-250.jpg"
+  },
+  {
+   "name": "ARANDELA FRONT 120CM",
+   "description": "Arandela linear de formato alongado, revestida por tecido cru em forma de tubo e apoiada em base metálica. Equipada com LED integrado, oferece iluminação suave e uniforme na parede.",
+   "price": 4870.0,
+   "brand": "Bella Itália",
+   "pages": [
+    255
+   ],
+   "id": 251,
+   "search": "arandela front 120cm arandela linear de formato alongado, revestida por tecido cru em forma de tubo e apoiada em base metalica. equipada com led integrado, oferece iluminacao suave e uniforme na parede.",
+   "thumb": "thumbs/1791987470-251.jpg"
+  },
+  {
+   "name": "ARANDELA FRONT 180CM",
+   "description": "Arandela linear de formato alongado, revestida por tecido cru em forma de tubo e apoiada em base metálica. Equipada com LED integrado, oferece iluminação suave e uniforme na parede.",
+   "price": 6700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    256
+   ],
+   "id": 252,
+   "search": "arandela front 180cm arandela linear de formato alongado, revestida por tecido cru em forma de tubo e apoiada em base metalica. equipada com led integrado, oferece iluminacao suave e uniforme na parede.",
+   "thumb": "thumbs/1791987470-252.jpg"
+  },
+  {
+   "name": "ARANDELA GANGO",
+   "description": "Arandela vertical com base retangular em pedra natural e corpo tubular em tecido cru. Conta com LED integrado que emite iluminação difusa.",
+   "price": 9140.0,
+   "brand": "Bella Itália",
+   "pages": [
+    257
+   ],
+   "id": 253,
+   "search": "arandela gango arandela vertical com base retangular em pedra natural e corpo tubular em tecido cru. conta com led integrado que emite iluminacao difusa.",
+   "thumb": "thumbs/1791987470-253.jpg"
+  },
+  {
+   "name": "ARANDELA GRACE",
+   "description": "Arandela em formato vertical e curvado, produzida em metal com LED integrado. Projeta iluminação indireta e suave, destacando o desenho orgânico da peça.",
+   "price": 2870.0,
+   "brand": "Bella Itália",
+   "pages": [
+    258
+   ],
+   "id": 254,
+   "search": "arandela grace arandela em formato vertical e curvado, produzida em metal com led integrado. projeta iluminacao indireta e suave, destacando o desenho organico da peca.",
+   "thumb": "thumbs/1791987470-254.jpg"
+  },
+  {
+   "name": "ARANDELA GRAVE",
+   "description": "Arandela em formato alongado cônico, com base oval e corpo em metal. Equipada com LED integrado, projeta luz direcionada para cima, criando um efeito marcado na parede.",
+   "price": 2710.0,
+   "brand": "Bella Itália",
+   "pages": [
+    259
+   ],
+   "id": 255,
+   "search": "arandela grave arandela em formato alongado conico, com base oval e corpo em metal. equipada com led integrado, projeta luz direcionada para cima, criando um efeito marcado na parede.",
+   "thumb": "thumbs/1791987470-255.jpg"
+  },
+  {
+   "name": "PENDENTE GRAVE",
+   "description": "Pendente em formato cônico alongado, com corpo em metal. Conta com LED integrado que projeta luz direcionada para baixo, ideal para composições.",
+   "price": 1225.0,
+   "brand": "Bella Itália",
+   "pages": [
+    260
+   ],
+   "id": 256,
+   "search": "pendente grave pendente em formato conico alongado, com corpo em metal. conta com led integrado que projeta luz direcionada para baixo, ideal para composicoes.",
+   "thumb": "thumbs/1791987470-256.jpg"
+  },
+  {
+   "name": "ARANDELA GUMA",
+   "description": "Arandela com difusores retangulares em palha e base em pedra natural. A iluminação atravessa o tecido, criando uma luz suave e acolhedora que valoriza a textura dos materiais.",
+   "price": 2550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    261
+   ],
+   "id": 257,
+   "search": "arandela guma arandela com difusores retangulares em palha e base em pedra natural. a iluminacao atravessa o tecido, criando uma luz suave e acolhedora que valoriza a textura dos materiais.",
+   "thumb": "thumbs/1791987470-257.jpg"
+  },
+  {
+   "name": "PENDENTE INTERLAGOS 60CM",
+   "description": "Pendente orgânico com estrutura metálica e base de madeira. Disponível em dois tamanhos, ambos com LED integrado, oferece iluminação difusa que destaca as formas fluidas da peça.",
+   "price": 6700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    262
+   ],
+   "id": 258,
+   "search": "pendente interlagos 60cm pendente organico com estrutura metalica e base de madeira. disponivel em dois tamanhos, ambos com led integrado, oferece iluminacao difusa que destaca as formas fluidas da peca.",
+   "thumb": "thumbs/1791987470-258.jpg"
+  },
+  {
+   "name": "PENDENTE INTERLAGOS 120CM",
+   "description": "Pendente orgânico com estrutura metálica e base de madeira. Disponível em dois tamanhos, ambos com LED integrado, oferece iluminação difusa que destaca as formas fluidas da peça.",
+   "price": 6885.0,
+   "brand": "Bella Itália",
+   "pages": [
+    263
+   ],
+   "id": 259,
+   "search": "pendente interlagos 120cm pendente organico com estrutura metalica e base de madeira. disponivel em dois tamanhos, ambos com led integrado, oferece iluminacao difusa que destaca as formas fluidas da peca.",
+   "thumb": "thumbs/1791987470-259.jpg"
+  },
+  {
+   "name": "ARANDELA LAIZA",
+   "description": "Arandela em formato retangular com cantos arredondados, produzida em metal. Possui LED integrado com iluminação indireta, criando um efeito acolhedor e difuso na parede.",
+   "price": 435.0,
+   "brand": "Bella Itália",
+   "pages": [
+    264
+   ],
+   "id": 260,
+   "search": "arandela laiza arandela em formato retangular com cantos arredondados, produzida em metal. possui led integrado com iluminacao indireta, criando um efeito acolhedor e difuso na parede.",
+   "thumb": "thumbs/1791987470-260.jpg"
+  },
+  {
+   "name": "PENDENTE LIBRIO",
+   "description": "Pendente de formato cilíndrico, produzido em alumínio estriado com revestimento couro e detalhe esférico em madeira.",
+   "price": 2070.0,
+   "brand": "Bella Itália",
+   "pages": [
+    265
+   ],
+   "id": 261,
+   "search": "pendente librio pendente de formato cilindrico, produzido em aluminio estriado com revestimento couro e detalhe esferico em madeira.",
+   "thumb": "thumbs/1791987470-261.jpg"
+  },
+  {
+   "name": "ARANDELA LOLLA",
+   "description": "Arandela cilíndrica produzida em metal. Projeta luz bidirecional, para cima e para baixo, criando um efeito de iluminação cênica e acolhedora na parede.",
+   "price": 300.0,
+   "brand": "Bella Itália",
+   "pages": [
+    266
+   ],
+   "id": 262,
+   "search": "arandela lolla arandela cilindrica produzida em metal. projeta luz bidirecional, para cima e para baixo, criando um efeito de iluminacao cenica e acolhedora na parede.",
+   "thumb": "thumbs/1791987470-262.jpg"
+  },
+  {
+   "name": "ARANDELA LUI",
+   "description": "Luminária circular produzida em metal com acabamento fosco. Possui LED integrado e difusor interno que distribui a luz de forma uniforme, criando um efeito suave e contínuo no ambiente.",
+   "price": 3140.0,
+   "brand": "Bella Itália",
+   "pages": [
+    267
+   ],
+   "id": 263,
+   "search": "arandela lui luminaria circular produzida em metal com acabamento fosco. possui led integrado e difusor interno que distribui a luz de forma uniforme, criando um efeito suave e continuo no ambiente.",
+   "thumb": "thumbs/1791987470-263.jpg"
+  },
+  {
+   "name": "PENDENTE MONTAN",
+   "description": "Pendente escultural em alumínio fundido e texturizado, com formas orgânicas e iluminação indireta e uniforme, que valoriza seus contornos naturais.",
+   "price": 3900.0,
+   "brand": "Bella Itália",
+   "pages": [
+    268
+   ],
+   "id": 264,
+   "search": "pendente montan pendente escultural em aluminio fundido e texturizado, com formas organicas e iluminacao indireta e uniforme, que valoriza seus contornos naturais.",
+   "thumb": "thumbs/1791987470-264.jpg"
+  },
+  {
+   "name": "ARANDELA NAPO",
+   "description": "Arandela triangular em metal, com design geométrico de linhas dobradas. Com difusor em rocha natural, emite iluminação indireta que cria um efeito suave na parede.",
+   "price": 2430.0,
+   "brand": "Bella Itália",
+   "pages": [
+    269
+   ],
+   "id": 265,
+   "search": "arandela napo arandela triangular em metal, com design geometrico de linhas dobradas. com difusor em rocha natural, emite iluminacao indireta que cria um efeito suave na parede.",
+   "thumb": "thumbs/1791987470-265.jpg"
+  },
+  {
+   "name": "ARANDELA NOZ PP",
+   "description": "Arandela em formato orgânico, composta por base em metal e difusor esculpido em rocha natural translúcida.",
+   "price": 1290.0,
+   "brand": "Bella Itália",
+   "pages": [
+    270
+   ],
+   "id": 266,
+   "search": "arandela noz pp arandela em formato organico, composta por base em metal e difusor esculpido em rocha natural translucida.",
+   "thumb": "thumbs/1791987470-266.jpg"
+  },
+  {
+   "name": "ARANDELA NOZ P",
+   "description": "Arandela em formato orgânico, composta por base em metal e difusor esculpido em rocha natural translúcida.",
+   "price": 1470.0,
+   "brand": "Bella Itália",
+   "pages": [
+    271
+   ],
+   "id": 267,
+   "search": "arandela noz p arandela em formato organico, composta por base em metal e difusor esculpido em rocha natural translucida.",
+   "thumb": "thumbs/1791987470-267.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE INDIRETO 90CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 3265.0,
+   "brand": "Bella Itália",
+   "pages": [
+    272
+   ],
+   "id": 268,
+   "search": "pendente paine indireto 90cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-268.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE INDIRETO 130CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 4290.0,
+   "brand": "Bella Itália",
+   "pages": [
+    273
+   ],
+   "id": 269,
+   "search": "pendente paine indireto 130cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-269.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE INDIRETO 180CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 6270.0,
+   "brand": "Bella Itália",
+   "pages": [
+    274
+   ],
+   "id": 270,
+   "search": "pendente paine indireto 180cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-270.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE DIRETO 90CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 3265.0,
+   "brand": "Bella Itália",
+   "pages": [
+    275
+   ],
+   "id": 271,
+   "search": "pendente paine direto 90cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-271.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE DIRETO 130CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 4290.0,
+   "brand": "Bella Itália",
+   "pages": [
+    276
+   ],
+   "id": 272,
+   "search": "pendente paine direto 130cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-272.jpg"
+  },
+  {
+   "name": "PENDENTE PAINE DIRETO 180CM",
+   "description": "Pendente linear em formato alongado, produzido em pedra natural. Conta com LED integrado que percorre toda a extensão da peça, emitindo uma iluminação difusa.",
+   "price": 6270.0,
+   "brand": "Bella Itália",
+   "pages": [
+    277
+   ],
+   "id": 273,
+   "search": "pendente paine direto 180cm pendente linear em formato alongado, produzido em pedra natural. conta com led integrado que percorre toda a extensao da peca, emitindo uma iluminacao difusa.",
+   "thumb": "thumbs/1791987470-273.jpg"
+  },
+  {
+   "name": "BALIZADOR PARASIT 45CM",
+   "description": "Balizador de jardim com estrutura esbelta em metal e cúpula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "price": 595.0,
+   "brand": "Bella Itália",
+   "pages": [
+    278
+   ],
+   "id": 274,
+   "search": "balizador parasit 45cm balizador de jardim com estrutura esbelta em metal e cupula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "thumb": "thumbs/1791987470-274.jpg"
+  },
+  {
+   "name": "BALIZADOR PARASIT 60CM",
+   "description": "Balizador de jardim com estrutura esbelta em metal e cúpula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "price": 635.0,
+   "brand": "Bella Itália",
+   "pages": [
+    279
+   ],
+   "id": 275,
+   "search": "balizador parasit 60cm balizador de jardim com estrutura esbelta em metal e cupula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "thumb": "thumbs/1791987470-275.jpg"
+  },
+  {
+   "name": "BALIZADOR PARASIT 75CM",
+   "description": "Balizador de jardim com estrutura esbelta em metal e cúpula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "price": 680.0,
+   "brand": "Bella Itália",
+   "pages": [
+    280
+   ],
+   "id": 276,
+   "search": "balizador parasit 75cm balizador de jardim com estrutura esbelta em metal e cupula circular, que direciona a luz para baixo de forma suave e pontual, integrando-se discretamente ao paisagismo.",
+   "thumb": "thumbs/1791987470-276.jpg"
+  },
+  {
+   "name": "ARANDELA PETRA Ø26",
+   "description": "Arandela circular composta por base em pedra natural ou madeira e detalhe central em metal. Equipada com LED integrado, emite iluminação indireta que valoriza o material.",
+   "price": 3340.0,
+   "brand": "Bella Itália",
+   "pages": [
+    281
+   ],
+   "id": 277,
+   "search": "arandela petra ø26 arandela circular composta por base em pedra natural ou madeira e detalhe central em metal. equipada com led integrado, emite iluminacao indireta que valoriza o material.",
+   "thumb": "thumbs/1791987470-277.jpg"
+  },
+  {
+   "name": "ARANDELA PETRA Ø45",
+   "description": "Arandela circular composta por base em pedra natural ou madeira e detalhe central em metal. Equipada com LED integrado, emite iluminação indireta que valoriza o material.",
+   "price": 6100.0,
+   "brand": "Bella Itália",
+   "pages": [
+    282
+   ],
+   "id": 278,
+   "search": "arandela petra ø45 arandela circular composta por base em pedra natural ou madeira e detalhe central em metal. equipada com led integrado, emite iluminacao indireta que valoriza o material.",
+   "thumb": "thumbs/1791987470-278.jpg"
+  },
+  {
+   "name": "ARANDELA PETRUS",
+   "description": "Arandela em formato cilíndrico, com base em pedra natural e difusor esférico em vidro leitoso. Compatível com soquete G9. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 2380.0,
+   "brand": "Bella Itália",
+   "pages": [
+    283
+   ],
+   "id": 279,
+   "search": "arandela petrus arandela em formato cilindrico, com base em pedra natural e difusor esferico em vidro leitoso. compativel com soquete g9. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-279.jpg"
+  },
+  {
+   "name": "ABAJUR PETRUS",
+   "description": "Abajur em formato cilíndrico, com base em pedra natural e difusor esférico em vidro leitoso. Compatível com soquete G9. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 2380.0,
+   "brand": "Bella Itália",
+   "pages": [
+    284
+   ],
+   "id": 280,
+   "search": "abajur petrus abajur em formato cilindrico, com base em pedra natural e difusor esferico em vidro leitoso. compativel com soquete g9. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-280.jpg"
+  },
+  {
+   "name": "PENDENTE PILO CIRCULAR",
+   "description": "Pendente de formato circular, com estrutura em metal e difusor em palha, proporcionando iluminação suave e difusa.",
+   "price": 8550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    285
+   ],
+   "id": 281,
+   "search": "pendente pilo circular pendente de formato circular, com estrutura em metal e difusor em palha, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-281.jpg"
+  },
+  {
+   "name": "PENDENTE PILO HORIZONTAL",
+   "description": "Pendente linear, com estrutura em metal e difusor cilíndrico em palha, proporcionando iluminação suave e difusa.",
+   "price": 8550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    286
+   ],
+   "id": 282,
+   "search": "pendente pilo horizontal pendente linear, com estrutura em metal e difusor cilindrico em palha, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-282.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON PILO QUADRADO 60CM",
+   "description": "Plafon de formato quadrado, com estrutura em metal e difusor em palha, proporcionando iluminação suave e difusa.",
+   "price": 8550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    287
+   ],
+   "id": 283,
+   "search": "arandela | plafon pilo quadrado 60cm plafon de formato quadrado, com estrutura em metal e difusor em palha, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-283.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON PILO QUADRADO 80CM",
+   "description": "Plafon de formato quadrado, com estrutura em metal e difusor em palha, proporcionando iluminação suave e difusa.",
+   "price": 10350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    288
+   ],
+   "id": 284,
+   "search": "arandela | plafon pilo quadrado 80cm plafon de formato quadrado, com estrutura em metal e difusor em palha, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-284.jpg"
+  },
+  {
+   "name": "PENDENTE PING 50CM",
+   "description": "Pendente minimalista composto por haste metálica e pequeno difusor em rocha natural. Equipado com LED integrado, proporciona iluminação pontual e precisa.",
+   "price": 390.0,
+   "brand": "Bella Itália",
+   "pages": [
+    289
+   ],
+   "id": 285,
+   "search": "pendente ping 50cm pendente minimalista composto por haste metalica e pequeno difusor em rocha natural. equipado com led integrado, proporciona iluminacao pontual e precisa.",
+   "thumb": "thumbs/1791987470-285.jpg"
+  },
+  {
+   "name": "PENDENTE PING 70CM",
+   "description": "Pendente minimalista composto por haste metálica e pequeno difusor em rocha natural. Equipado com LED integrado, proporciona iluminação pontual e precisa.",
+   "price": 470.0,
+   "brand": "Bella Itália",
+   "pages": [
+    290
+   ],
+   "id": 286,
+   "search": "pendente ping 70cm pendente minimalista composto por haste metalica e pequeno difusor em rocha natural. equipado com led integrado, proporciona iluminacao pontual e precisa.",
+   "thumb": "thumbs/1791987470-286.jpg"
+  },
+  {
+   "name": "PENDENTE PING 90CM",
+   "description": "Pendente minimalista composto por haste metálica e pequeno difusor em rocha natural. Equipado com LED integrado, proporciona iluminação pontual e precisa.",
+   "price": 550.0,
+   "brand": "Bella Itália",
+   "pages": [
+    291
+   ],
+   "id": 287,
+   "search": "pendente ping 90cm pendente minimalista composto por haste metalica e pequeno difusor em rocha natural. equipado com led integrado, proporciona iluminacao pontual e precisa.",
+   "thumb": "thumbs/1791987470-287.jpg"
+  },
+  {
+   "name": "PENDENTE PING 110CM",
+   "description": "Pendente minimalista composto por haste metálica e pequeno difusor em rocha natural. Equipado com LED integrado, proporciona iluminação pontual e precisa.",
+   "price": 630.0,
+   "brand": "Bella Itália",
+   "pages": [
+    292
+   ],
+   "id": 288,
+   "search": "pendente ping 110cm pendente minimalista composto por haste metalica e pequeno difusor em rocha natural. equipado com led integrado, proporciona iluminacao pontual e precisa.",
+   "thumb": "thumbs/1791987470-288.jpg"
+  },
+  {
+   "name": "ARANDELA PIRÂMIDE",
+   "description": "Arandela em formato cônico, produzida em metal. Conta com LED integrado que emite luz difusa.",
+   "price": 1860.0,
+   "brand": "Bella Itália",
+   "pages": [
+    293
+   ],
+   "id": 289,
+   "search": "arandela piramide arandela em formato conico, produzida em metal. conta com led integrado que emite luz difusa.",
+   "thumb": "thumbs/1791987470-289.jpg"
+  },
+  {
+   "name": "BALIZADOR POST",
+   "description": "Balizador linear produzido em estrutura metálica é equipado com LED integrado e proteção IP65, garantindo resistência e durabilidade em ambientes externos. Projeta pontos de luz delicados, ideais para composições paisagísticas.",
+   "price": 1350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    294
+   ],
+   "id": 290,
+   "search": "balizador post balizador linear produzido em estrutura metalica e equipado com led integrado e protecao ip65, garantindo resistencia e durabilidade em ambientes externos. projeta pontos de luz delicados, ideais para composicoes paisagisticas.",
+   "thumb": "thumbs/1791987470-290.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø60",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 3150.0,
+   "brand": "Bella Itália",
+   "pages": [
+    295
+   ],
+   "id": 291,
+   "search": "pendente ring moon ø60 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-291.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø80",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 4355.0,
+   "brand": "Bella Itália",
+   "pages": [
+    296
+   ],
+   "id": 292,
+   "search": "pendente ring moon ø80 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-292.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø100",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 5440.0,
+   "brand": "Bella Itália",
+   "pages": [
+    297
+   ],
+   "id": 293,
+   "search": "pendente ring moon ø100 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-293.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø120",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 6810.0,
+   "brand": "Bella Itália",
+   "pages": [
+    298
+   ],
+   "id": 294,
+   "search": "pendente ring moon ø120 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-294.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø150",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 8670.0,
+   "brand": "Bella Itália",
+   "pages": [
+    299
+   ],
+   "id": 295,
+   "search": "pendente ring moon ø150 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-295.jpg"
+  },
+  {
+   "name": "PENDENTE RING MOON Ø170",
+   "description": "Pendente circular produzido em metal. Equipado com LED integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "price": 10075.0,
+   "brand": "Bella Itália",
+   "pages": [
+    300
+   ],
+   "id": 296,
+   "search": "pendente ring moon ø170 pendente circular produzido em metal. equipado com led integrado, projeta luz indireta e uniforme, criando um efeito de luz suave.",
+   "thumb": "thumbs/1791987470-296.jpg"
+  },
+  {
+   "name": "PENDENTE RING SPOT Ø60",
+   "description": "Pendente circular em metal. Possui LED integrado ao longo da estrutura e spots direcionáveis, permitindo combinar iluminação difusa e focada em um único elemento.",
+   "price": 4170.0,
+   "brand": "Bella Itália",
+   "pages": [
+    301
+   ],
+   "id": 297,
+   "search": "pendente ring spot ø60 pendente circular em metal. possui led integrado ao longo da estrutura e spots direcionaveis, permitindo combinar iluminacao difusa e focada em um unico elemento.",
+   "thumb": "thumbs/1791987470-297.jpg"
+  },
+  {
+   "name": "PENDENTE RING SPOT Ø80",
+   "description": "Pendente circular em metal. Possui LED integrado ao longo da estrutura e spots direcionáveis, permitindo combinar iluminação difusa e focada em um único elemento.",
+   "price": 5930.0,
+   "brand": "Bella Itália",
+   "pages": [
+    302
+   ],
+   "id": 298,
+   "search": "pendente ring spot ø80 pendente circular em metal. possui led integrado ao longo da estrutura e spots direcionaveis, permitindo combinar iluminacao difusa e focada em um unico elemento.",
+   "thumb": "thumbs/1791987470-298.jpg"
+  },
+  {
+   "name": "PENDENTE RING SPOT Ø100",
+   "description": "Pendente circular em metal. Possui LED integrado ao longo da estrutura e spots direcionáveis, permitindo combinar iluminação difusa e focada em um único elemento.",
+   "price": 7280.0,
+   "brand": "Bella Itália",
+   "pages": [
+    303
+   ],
+   "id": 299,
+   "search": "pendente ring spot ø100 pendente circular em metal. possui led integrado ao longo da estrutura e spots direcionaveis, permitindo combinar iluminacao difusa e focada em um unico elemento.",
+   "thumb": "thumbs/1791987470-299.jpg"
+  },
+  {
+   "name": "PENDENTE RING SPOT Ø120",
+   "description": "Pendente circular em metal. Possui LED integrado ao longo da estrutura e spots direcionáveis, permitindo combinar iluminação difusa e focada em um único elemento.",
+   "price": 9520.0,
+   "brand": "Bella Itália",
+   "pages": [
+    304
+   ],
+   "id": 300,
+   "search": "pendente ring spot ø120 pendente circular em metal. possui led integrado ao longo da estrutura e spots direcionaveis, permitindo combinar iluminacao difusa e focada em um unico elemento.",
+   "thumb": "thumbs/1791987470-300.jpg"
+  },
+  {
+   "name": "PENDENTE RIO 136CM",
+   "description": "Pendente orgânico em estrutura metálica, com linhas sinuosas e assimétricas. Equipado com LED integrado, emite iluminação difusa que valoriza o desenho fluido da peça.",
+   "price": 6700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    305
+   ],
+   "id": 301,
+   "search": "pendente rio 136cm pendente organico em estrutura metalica, com linhas sinuosas e assimetricas. equipado com led integrado, emite iluminacao difusa que valoriza o desenho fluido da peca.",
+   "thumb": "thumbs/1791987470-301.jpg"
+  },
+  {
+   "name": "PENDENTE RIO 180CM",
+   "description": "Pendente orgânico em estrutura metálica, com linhas sinuosas e assimétricas. Equipado com LED integrado, emite iluminação difusa que valoriza o desenho fluido da peça.",
+   "price": 6885.0,
+   "brand": "Bella Itália",
+   "pages": [
+    306
+   ],
+   "id": 302,
+   "search": "pendente rio 180cm pendente organico em estrutura metalica, com linhas sinuosas e assimetricas. equipado com led integrado, emite iluminacao difusa que valoriza o desenho fluido da peca.",
+   "thumb": "thumbs/1791987470-302.jpg"
+  },
+  {
+   "name": "BALIZADOR ROCHA P",
+   "description": "Balizador de formato orgânico, inspirado em pedra, produzido em fibra de vidro. Ideal para ambientação e destaque paisagístico.",
+   "price": 1380.0,
+   "brand": "Bella Itália",
+   "pages": [
+    307
+   ],
+   "id": 303,
+   "search": "balizador rocha p balizador de formato organico, inspirado em pedra, produzido em fibra de vidro. ideal para ambientacao e destaque paisagistico.",
+   "thumb": "thumbs/1791987470-303.jpg"
+  },
+  {
+   "name": "BALIZADOR ROCHA G",
+   "description": "Balizador de formato orgânico, inspirado em pedra, produzido em fibra de vidro. Ideal para ambientação e destaque paisagístico.",
+   "price": 2370.0,
+   "brand": "Bella Itália",
+   "pages": [
+    308
+   ],
+   "id": 304,
+   "search": "balizador rocha g balizador de formato organico, inspirado em pedra, produzido em fibra de vidro. ideal para ambientacao e destaque paisagistico.",
+   "thumb": "thumbs/1791987470-304.jpg"
+  },
+  {
+   "name": "ARANDELA ROMANA Ø5,5",
+   "description": "Arandela em formato cilíndrico, produzida em pedra natural. Projeta luz para cima e para baixo. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 2000.0,
+   "brand": "Bella Itália",
+   "pages": [
+    309
+   ],
+   "id": 305,
+   "search": "arandela romana ø5,5 arandela em formato cilindrico, produzida em pedra natural. projeta luz para cima e para baixo. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-305.jpg"
+  },
+  {
+   "name": "ARANDELA ROMANA Ø8",
+   "description": "Arandela em formato cilíndrico, produzida em pedra natural. Projeta luz para cima e para baixo. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 2240.0,
+   "brand": "Bella Itália",
+   "pages": [
+    310
+   ],
+   "id": 306,
+   "search": "arandela romana ø8 arandela em formato cilindrico, produzida em pedra natural. projeta luz para cima e para baixo. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-306.jpg"
+  },
+  {
+   "name": "SPOT ROMANA Ø6 14CM",
+   "description": "Spot em formato cilíndrico, produzida em pedra natural. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 1782.0,
+   "brand": "Bella Itália",
+   "pages": [
+    311
+   ],
+   "id": 307,
+   "search": "spot romana ø6 14cm spot em formato cilindrico, produzida em pedra natural. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-307.jpg"
+  },
+  {
+   "name": "SPOT ROMANA Ø6 8CM",
+   "description": "Spot em formato cilíndrico, produzida em pedra natural. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 1617.0,
+   "brand": "Bella Itália",
+   "pages": [
+    312
+   ],
+   "id": 308,
+   "search": "spot romana ø6 8cm spot em formato cilindrico, produzida em pedra natural. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-308.jpg"
+  },
+  {
+   "name": "SPOT ROMANA Ø7 14CM",
+   "description": "Spot em formato cilíndrico, produzida em pedra natural. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 1980.0,
+   "brand": "Bella Itália",
+   "pages": [
+    313
+   ],
+   "id": 309,
+   "search": "spot romana ø7 14cm spot em formato cilindrico, produzida em pedra natural. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-309.jpg"
+  },
+  {
+   "name": "SPOT ROMANA Ø7 8CM",
+   "description": "Spot em formato cilíndrico, produzida em pedra natural. Compatível com soquete GU10. A lâmpada não acompanha o produto e deve ser adquirida separadamente.",
+   "price": 1815.0,
+   "brand": "Bella Itália",
+   "pages": [
+    314
+   ],
+   "id": 310,
+   "search": "spot romana ø7 8cm spot em formato cilindrico, produzida em pedra natural. compativel com soquete gu10. a lampada nao acompanha o produto e deve ser adquirida separadamente.",
+   "thumb": "thumbs/1791987470-310.jpg"
+  },
+  {
+   "name": "BALIZADOR ROMANA",
+   "description": "Balizador de formato cilíndrico, produzido em rocha natural com difusor integrado ao corpo da peça. Proporciona iluminação suave e pontual, ideal para sinalização e valorização de jardins.",
+   "price": 2245.0,
+   "brand": "Bella Itália",
+   "pages": [
+    315
+   ],
+   "id": 311,
+   "search": "balizador romana balizador de formato cilindrico, produzido em rocha natural com difusor integrado ao corpo da peca. proporciona iluminacao suave e pontual, ideal para sinalizacao e valorizacao de jardins.",
+   "thumb": "thumbs/1791987470-311.jpg"
+  },
+  {
+   "name": "ARANDELA RONDA",
+   "description": "Arandela circular com base em latão de acabamento artesanal e corpo em tecido cru. Possui LED integrado, proporcionando iluminação suave e difusa.",
+   "price": 3700.0,
+   "brand": "Bella Itália",
+   "pages": [
+    316
+   ],
+   "id": 312,
+   "search": "arandela ronda arandela circular com base em latao de acabamento artesanal e corpo em tecido cru. possui led integrado, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-312.jpg"
+  },
+  {
+   "name": "COLUNA SANN 05",
+   "description": "Luminária de piso em metal com base em pedra natural. Seu difusor proporciona iluminação suave e homogênea.",
+   "price": 8800.0,
+   "brand": "Bella Itália",
+   "pages": [
+    317
+   ],
+   "id": 313,
+   "search": "coluna sann 05 luminaria de piso em metal com base em pedra natural. seu difusor proporciona iluminacao suave e homogenea.",
+   "thumb": "thumbs/1791987470-313.jpg"
+  },
+  {
+   "name": "ABAJUR SANN 04",
+   "description": "Abajur com cúpula em formato orgânico e estrutura metálica.",
+   "price": 1860.0,
+   "brand": "Bella Itália",
+   "pages": [
+    318
+   ],
+   "id": 314,
+   "search": "abajur sann 04 abajur com cupula em formato organico e estrutura metalica.",
+   "thumb": "thumbs/1791987470-314.jpg"
+  },
+  {
+   "name": "ARANDELA SECRET",
+   "description": "Luminária em formato circular, produzida em alumínio com acabamento fosco interno em tom cobre. Possui LED integrado e difusor interno, emitindo luz suave e contínua.",
+   "price": 2290.0,
+   "brand": "Bella Itália",
+   "pages": [
+    319
+   ],
+   "id": 315,
+   "search": "arandela secret luminaria em formato circular, produzida em aluminio com acabamento fosco interno em tom cobre. possui led integrado e difusor interno, emitindo luz suave e continua.",
+   "thumb": "thumbs/1791987470-315.jpg"
+  },
+  {
+   "name": "PLAFON SECRET",
+   "description": "Luminária em formato circular, produzida em alumínio com acabamento fosco interno em tom cobre. Possui LED integrado e difusor interno, emitindo luz suave e contínua.",
+   "price": 1970.0,
+   "brand": "Bella Itália",
+   "pages": [
+    320
+   ],
+   "id": 316,
+   "search": "plafon secret luminaria em formato circular, produzida em aluminio com acabamento fosco interno em tom cobre. possui led integrado e difusor interno, emitindo luz suave e continua.",
+   "thumb": "thumbs/1791987470-316.jpg"
+  },
+  {
+   "name": "ARANDELA SINGULAR",
+   "description": "Arandela de desenho compacto e delicado, marcada pela curva da estrutura metálica que envolve o ponto de luz.",
+   "price": 673.0,
+   "brand": "Bella Itália",
+   "pages": [
+    321
+   ],
+   "id": 317,
+   "search": "arandela singular arandela de desenho compacto e delicado, marcada pela curva da estrutura metalica que envolve o ponto de luz.",
+   "thumb": "thumbs/1791987470-317.jpg"
+  },
+  {
+   "name": "COLUNA SIRENA",
+   "description": "Luminária de piso com estrutura metálica e base composta por camadas de metal e pedra natural. Seu spot é ajustável, também em pedra natural, oferecendo luz pontual e precisa.",
+   "price": 4850.0,
+   "brand": "Bella Itália",
+   "pages": [
+    322
+   ],
+   "id": 318,
+   "search": "coluna sirena luminaria de piso com estrutura metalica e base composta por camadas de metal e pedra natural. seu spot e ajustavel, tambem em pedra natural, oferecendo luz pontual e precisa.",
+   "thumb": "thumbs/1791987470-318.jpg"
+  },
+  {
+   "name": "SPOT SIRENA",
+   "description": "Spot com corpo em pedra natural e estrutura em metal, com foco de luz direcionável.",
+   "price": 2370.0,
+   "brand": "Bella Itália",
+   "pages": [
+    323
+   ],
+   "id": 319,
+   "search": "spot sirena spot com corpo em pedra natural e estrutura em metal, com foco de luz direcionavel.",
+   "thumb": "thumbs/1791987470-319.jpg"
+  },
+  {
+   "name": "ARANDELA SOFT 40CM",
+   "description": "Arandela em perfil de metal, com design linear. Iluminação com LED integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "price": 485.0,
+   "brand": "Bella Itália",
+   "pages": [
+    324
+   ],
+   "id": 320,
+   "search": "arandela soft 40cm arandela em perfil de metal, com design linear. iluminacao com led integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "thumb": "thumbs/1791987470-320.jpg"
+  },
+  {
+   "name": "ARANDELA SOFT 74,5CM",
+   "description": "Arandela em perfil de metal, com design linear. Iluminação com LED integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "price": 875.0,
+   "brand": "Bella Itália",
+   "pages": [
+    325
+   ],
+   "id": 321,
+   "search": "arandela soft 74,5cm arandela em perfil de metal, com design linear. iluminacao com led integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "thumb": "thumbs/1791987470-321.jpg"
+  },
+  {
+   "name": "ARANDELA SOFT 110CM",
+   "description": "Arandela em perfil de metal, com design linear. Iluminação com LED integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "price": 1320.0,
+   "brand": "Bella Itália",
+   "pages": [
+    326
+   ],
+   "id": 322,
+   "search": "arandela soft 110cm arandela em perfil de metal, com design linear. iluminacao com led integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "thumb": "thumbs/1791987470-322.jpg"
+  },
+  {
+   "name": "ARANDELA SOL",
+   "description": "Arandela em perfil de metal, com design linear. Iluminação com LED integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "price": 1285.0,
+   "brand": "Bella Itália",
+   "pages": [
+    327
+   ],
+   "id": 323,
+   "search": "arandela sol arandela em perfil de metal, com design linear. iluminacao com led integrado de efeito indireto, proporcionando luz suave e uniforme sobre a parede.",
+   "thumb": "thumbs/1791987470-323.jpg"
+  },
+  {
+   "name": "PENDENTE SUSPENSO",
+   "description": "Pendente em metal com haste alongada e curva, sustentando cúpula metálica. Conta com iluminação LED direcionada para baixo, garantindo luz funcional e uniforme.",
+   "price": 3985.0,
+   "brand": "Bella Itália",
+   "pages": [
+    328
+   ],
+   "id": 324,
+   "search": "pendente suspenso pendente em metal com haste alongada e curva, sustentando cupula metalica. conta com iluminacao led direcionada para baixo, garantindo luz funcional e uniforme.",
+   "thumb": "thumbs/1791987470-324.jpg"
+  },
+  {
+   "name": "BALIZADOR TARTARUGA Ø25",
+   "description": "Arandela em formato orgânico, produzida em polipropileno. Equipada com LED integrado, possui um ponto de iluminação central, oferecendo uma luz difusa.",
+   "price": 1410.0,
+   "brand": "Bella Itália",
+   "pages": [
+    329
+   ],
+   "id": 325,
+   "search": "balizador tartaruga ø25 arandela em formato organico, produzida em polipropileno. equipada com led integrado, possui um ponto de iluminacao central, oferecendo uma luz difusa.",
+   "thumb": "thumbs/1791987470-325.jpg"
+  },
+  {
+   "name": "BALIZADOR TARTARUGA Ø40",
+   "description": "Arandela em formato orgânico, produzida em polipropileno. Equipada com LED integrado, possui um ponto de iluminação central, oferecendo uma luz difusa.",
+   "price": 1887.0,
+   "brand": "Bella Itália",
+   "pages": [
+    330
+   ],
+   "id": 326,
+   "search": "balizador tartaruga ø40 arandela em formato organico, produzida em polipropileno. equipada com led integrado, possui um ponto de iluminacao central, oferecendo uma luz difusa.",
+   "thumb": "thumbs/1791987470-326.jpg"
+  },
+  {
+   "name": "ARANDELA TEXA",
+   "description": "Arandela de haste metálica curva, com uma base em lâmina de madeira natural e finalizada por uma cúpula que abriga a rocha natural retroiluminada.",
+   "price": 3450.0,
+   "brand": "Bella Itália",
+   "pages": [
+    331
+   ],
+   "id": 327,
+   "search": "arandela texa arandela de haste metalica curva, com uma base em lamina de madeira natural e finalizada por uma cupula que abriga a rocha natural retroiluminada.",
+   "thumb": "thumbs/1791987470-327.jpg"
+  },
+  {
+   "name": "ARANDELA TOOM",
+   "description": "Arandela em formato orgânico, produzida em polipropileno. Equipada com LED integrado, possui um ponto de iluminação central, oferecendo uma luz difusa.",
+   "price": 3460.0,
+   "brand": "Bella Itália",
+   "pages": [
+    332
+   ],
+   "id": 328,
+   "search": "arandela toom arandela em formato organico, produzida em polipropileno. equipada com led integrado, possui um ponto de iluminacao central, oferecendo uma luz difusa.",
+   "thumb": "thumbs/1791987470-328.jpg"
+  },
+  {
+   "name": "ARANDELA TOOM DE PALHA",
+   "description": "Arandela de formato orgânico, com difusor em tecido e detalhe central em latão, proporcionando iluminação suave e difusa.",
+   "price": 4155.0,
+   "brand": "Bella Itália",
+   "pages": [
+    333
+   ],
+   "id": 329,
+   "search": "arandela toom de palha arandela de formato organico, com difusor em tecido e detalhe central em latao, proporcionando iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-329.jpg"
+  },
+  {
+   "name": "COLUNA TRAÇO",
+   "description": "Luminária disponível nas versões de piso e arandela, com formato orgânico e vertical. Estruturada por uma haste sinuosa em LED integrado que projeta iluminação difusa.",
+   "price": 6350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    334
+   ],
+   "id": 330,
+   "search": "coluna traco luminaria disponivel nas versoes de piso e arandela, com formato organico e vertical. estruturada por uma haste sinuosa em led integrado que projeta iluminacao difusa.",
+   "thumb": "thumbs/1791987470-330.jpg"
+  },
+  {
+   "name": "ARANDELA TRAÇO",
+   "description": "Luminária disponível nas versões de piso e arandela, com formato orgânico e vertical. Estruturada por uma haste sinuosa em LED integrado que projeta iluminação difusa.",
+   "price": 6350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    335
+   ],
+   "id": 331,
+   "search": "arandela traco luminaria disponivel nas versoes de piso e arandela, com formato organico e vertical. estruturada por uma haste sinuosa em led integrado que projeta iluminacao difusa.",
+   "thumb": "thumbs/1791987470-331.jpg"
+  },
+  {
+   "name": "SPOT TUBINHO 7CM",
+   "description": "Spot de sobrepor com formato cilíndrico e acabamento preto. Possui facho de luz direcionado para baixo, proporcionando iluminação focal e marcada",
+   "price": 265.0,
+   "brand": "Bella Itália",
+   "pages": [
+    336
+   ],
+   "id": 332,
+   "search": "spot tubinho 7cm spot de sobrepor com formato cilindrico e acabamento preto. possui facho de luz direcionado para baixo, proporcionando iluminacao focal e marcada",
+   "thumb": "thumbs/1791987470-332.jpg"
+  },
+  {
+   "name": "SPOT TUBINHO 8CM",
+   "description": "Spot de sobrepor com formato cilíndrico e acabamento preto. Possui facho de luz direcionado para baixo, proporcionando iluminação focal e marcada",
+   "price": 319.0,
+   "brand": "Bella Itália",
+   "pages": [
+    337
+   ],
+   "id": 333,
+   "search": "spot tubinho 8cm spot de sobrepor com formato cilindrico e acabamento preto. possui facho de luz direcionado para baixo, proporcionando iluminacao focal e marcada",
+   "thumb": "thumbs/1791987470-333.jpg"
+  },
+  {
+   "name": "SPOT TUBINHO 10CM",
+   "description": "Spot de sobrepor com formato cilíndrico e acabamento preto. Possui facho de luz direcionado para baixo, proporcionando iluminação focal e marcada",
+   "price": 398.0,
+   "brand": "Bella Itália",
+   "pages": [
+    338
+   ],
+   "id": 334,
+   "search": "spot tubinho 10cm spot de sobrepor com formato cilindrico e acabamento preto. possui facho de luz direcionado para baixo, proporcionando iluminacao focal e marcada",
+   "thumb": "thumbs/1791987470-334.jpg"
+  },
+  {
+   "name": "SPOT TUBINHO 12CM",
+   "description": "Spot de sobrepor com formato cilíndrico e acabamento preto. Possui facho de luz direcionado para baixo, proporcionando iluminação focal e marcada",
+   "price": 345.0,
+   "brand": "Bella Itália",
+   "pages": [
+    339
+   ],
+   "id": 335,
+   "search": "spot tubinho 12cm spot de sobrepor com formato cilindrico e acabamento preto. possui facho de luz direcionado para baixo, proporcionando iluminacao focal e marcada",
+   "thumb": "thumbs/1791987470-335.jpg"
+  },
+  {
+   "name": "SPOT TUBINHO 16,5CM",
+   "description": "Spot de sobrepor com formato cilíndrico e acabamento preto. Possui facho de luz direcionado para baixo, proporcionando iluminação focal e marcada",
+   "price": 290.0,
+   "brand": "Bella Itália",
+   "pages": [
+    340
+   ],
+   "id": 336,
+   "search": "spot tubinho 16,5cm spot de sobrepor com formato cilindrico e acabamento preto. possui facho de luz direcionado para baixo, proporcionando iluminacao focal e marcada",
+   "thumb": "thumbs/1791987470-336.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON VETRO Ø50",
+   "description": "Luminária de formato circular, produzida em estrutura metálica com difusor em tecido. Equipada com LED integrado, proporciona iluminação suave e difusa.",
+   "price": 4350.0,
+   "brand": "Bella Itália",
+   "pages": [
+    341
+   ],
+   "id": 337,
+   "search": "arandela | plafon vetro ø50 luminaria de formato circular, produzida em estrutura metalica com difusor em tecido. equipada com led integrado, proporciona iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-337.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON VETRO Ø70",
+   "description": "Luminária de formato circular, produzida em estrutura metálica com difusor em tecido. Equipada com LED integrado, proporciona iluminação suave e difusa.",
+   "price": 5400.0,
+   "brand": "Bella Itália",
+   "pages": [
+    342
+   ],
+   "id": 338,
+   "search": "arandela | plafon vetro ø70 luminaria de formato circular, produzida em estrutura metalica com difusor em tecido. equipada com led integrado, proporciona iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-338.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON VETRO Ø90",
+   "description": "Luminária de formato circular, produzida em estrutura metálica com difusor em tecido. Equipada com LED integrado, proporciona iluminação suave e difusa.",
+   "price": 6435.0,
+   "brand": "Bella Itália",
+   "pages": [
+    343
+   ],
+   "id": 339,
+   "search": "arandela | plafon vetro ø90 luminaria de formato circular, produzida em estrutura metalica com difusor em tecido. equipada com led integrado, proporciona iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-339.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON VETRO QUADRADO 56CM",
+   "description": "Luminária de formato quadrado, produzida em estrutura metálica com difusor em tecido. Equipada com LED integrado, proporciona iluminação suave e difusa.",
+   "price": 5410.0,
+   "brand": "Bella Itália",
+   "pages": [
+    344
+   ],
+   "id": 340,
+   "search": "arandela | plafon vetro quadrado 56cm luminaria de formato quadrado, produzida em estrutura metalica com difusor em tecido. equipada com led integrado, proporciona iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-340.jpg"
+  },
+  {
+   "name": "ARANDELA | PLAFON VETRO QUADRADO 78CM",
+   "description": "Luminária de formato quadrado, produzida em estrutura metálica com difusor em tecido. Equipada com LED integrado, proporciona iluminação suave e difusa.",
+   "price": 6435.0,
+   "brand": "Bella Itália",
+   "pages": [
+    345
+   ],
+   "id": 341,
+   "search": "arandela | plafon vetro quadrado 78cm luminaria de formato quadrado, produzida em estrutura metalica com difusor em tecido. equipada com led integrado, proporciona iluminacao suave e difusa.",
+   "thumb": "thumbs/1791987470-341.jpg"
+  },
+  {
+   "name": "ARANDELA VERSI",
+   "description": "Arandela com difusor arredondado e disco metálico que cria um jogo delicado entre forma e luz.",
+   "price": 1887.0,
+   "brand": "Bella Itália",
+   "pages": [
+    346
+   ],
+   "id": 342,
+   "search": "arandela versi arandela com difusor arredondado e disco metalico que cria um jogo delicado entre forma e luz.",
+   "thumb": "thumbs/1791987470-342.jpg"
+  },
+  {
+   "name": "ARANDELA VICKY",
+   "description": "Arandela de formato retangular com cantos arredondados, composta por base em pedra natural ou madeira e spot cilíndrico ajustável em metal.",
+   "price": 2780.0,
+   "brand": "Bella Itália",
+   "pages": [
+    347
+   ],
+   "id": 343,
+   "search": "arandela vicky arandela de formato retangular com cantos arredondados, composta por base em pedra natural ou madeira e spot cilindrico ajustavel em metal.",
+   "thumb": "thumbs/1791987470-343.jpg"
+  },
+  {
+   "name": "PENDENTE VULCÃO 120CM",
+   "description": "Pendente linear em metal, de formato minimalista. Possui iluminação LED integrado, oferecendo luz direta e uniforme.",
+   "price": 5110.0,
+   "brand": "Bella Itália",
+   "pages": [
+    348
+   ],
+   "id": 344,
+   "search": "pendente vulcao 120cm pendente linear em metal, de formato minimalista. possui iluminacao led integrado, oferecendo luz direta e uniforme.",
+   "thumb": "thumbs/1791987470-344.jpg"
+  },
+  {
+   "name": "PENDENTE VULCÃO 180CM",
+   "description": "Pendente linear em metal, de formato minimalista. Possui iluminação LED integrado, oferecendo luz direta e uniforme.",
+   "price": 7025.0,
+   "brand": "Bella Itália",
+   "pages": [
+    349
+   ],
+   "id": 345,
+   "search": "pendente vulcao 180cm pendente linear em metal, de formato minimalista. possui iluminacao led integrado, oferecendo luz direta e uniforme.",
+   "thumb": "thumbs/1791987470-345.jpg"
+  }
+ ]
+}

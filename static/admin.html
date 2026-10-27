@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="__BASE_HREF__">
+<link rel="icon" type="image/x-icon" href="static/favicon.ico" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/x-icon" href="static/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+<title>Admin — Atualizar Catálogo</title>
+<style>
+  @font-face{font-family:"Inter"; src:url("static/fonts/Inter-Variable.ttf") format("truetype"); font-weight:100 900}
+  :root{--bg:#0d0d0d; --panel:#161616; --card:#1c1c1c; --line:#2b2b2b; --text:#f2f0eb; --muted:#9a968e; --accent:#c8b08a; --ok:#8fbf8f; --danger:#c96b5f}
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--text); font-family:"Inter","Segoe UI",system-ui,sans-serif; min-height:100vh; display:flex; flex-direction:column; align-items:center}
+  header{width:100%; padding:14px 28px; border-bottom:1px solid var(--line); background:var(--panel); display:flex; justify-content:space-between; align-items:center}
+  .logo{font-weight:700; letter-spacing:.35em; font-size:15px}
+  .logo small{display:block; letter-spacing:.18em; font-weight:400; color:var(--muted); font-size:10px; margin-top:2px}
+  a{color:var(--accent)}
+  .headlinks{display:flex; gap:18px; align-items:center}
+  .headlinks #logout{color:var(--muted)}
+  .headlinks #logout:hover{color:var(--danger)}
+  main{width:min(720px,94vw); padding:40px 0 60px}
+  h1{font-size:20px; letter-spacing:.2em; margin-bottom:8px}
+  p.sub{color:var(--muted); font-size:14.5px; line-height:1.65; margin-bottom:28px}
+  #drop{border:2px dashed var(--line); border-radius:14px; padding:46px 24px; text-align:center; cursor:pointer; transition:border-color .15s; background:var(--card)}
+  #drop:hover,#drop.over{border-color:var(--accent)}
+  #drop .big{font-size:17px; margin-bottom:6px}
+  #drop .small{color:var(--muted); font-size:13px}
+  #fileName{margin-top:18px; font-size:14px; color:var(--accent); min-height:18px}
+  #sendBtn{margin-top:18px; width:100%; background:var(--text); color:var(--bg); border:none; padding:15px; border-radius:9px; font-size:15px; font-weight:700; letter-spacing:.05em; cursor:pointer; font-family:inherit}
+  #sendBtn:hover{background:var(--accent)}
+  #sendBtn:disabled{opacity:.4; cursor:default}
+  #status{margin-top:22px; font-size:14.5px; line-height:1.7; white-space:pre-wrap}
+  #status.ok{color:var(--ok)} #status.err{color:var(--danger)}
+  .spin{display:inline-block; width:14px; height:14px; border:2px solid var(--muted); border-top-color:var(--accent); border-radius:50%; animation:r 1s linear infinite; vertical-align:-2px; margin-right:8px}
+  @keyframes r{to{transform:rotate(360deg)}}
+  .result{margin-top:24px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 24px; display:none}
+  .result h3{font-size:13px; letter-spacing:.15em; color:var(--muted); margin:14px 0 6px}
+  .result h3:first-child{margin-top:0}
+  .result ul{list-style:none; font-size:14px; line-height:1.8}
+  .result .add li::before{content:"+ "; color:var(--ok)}
+  .result .rem li::before{content:"− "; color:var(--danger)}
+  .stats{display:flex; gap:26px; font-size:14px}
+  .stats b{font-size:22px; color:var(--accent); display:block}
+  .sep{border:none; border-top:1px solid var(--line); margin:46px 0 30px}
+  .muted{color:var(--muted); font-size:14px}
+  .addrow{display:flex; gap:10px; margin-bottom:16px}
+  .addrow input{flex:1; background:var(--card); border:1px solid var(--line); color:var(--text); padding:12px 16px; border-radius:9px; font-size:15px; outline:none; font-family:inherit}
+  .addrow input:focus{border-color:var(--accent)}
+  .addrow button{background:var(--text); color:var(--bg); border:none; padding:0 22px; border-radius:9px; font-weight:700; font-size:13.5px; letter-spacing:.04em; cursor:pointer; font-family:inherit}
+  .addrow button:hover{background:var(--accent)}
+  .vendform{flex-wrap:wrap}
+  .vendform #vNome{flex:2 1 180px}
+  .vendform #vUser,.vendform #vSenha{flex:1 1 120px}
+  .vendlist{list-style:none}
+  .vendlist li{display:flex; justify-content:space-between; align-items:center; gap:12px; background:var(--card); border:1px solid var(--line); border-radius:9px; padding:11px 16px; margin-bottom:8px; font-size:14.5px; flex-wrap:wrap}
+  .vendlist .vinfo{flex:1; min-width:160px}
+  .vendlist .vinfo .vuser{color:var(--muted); font-size:12.5px; margin-top:2px}
+  .vendlist .vtag{font-size:10px; letter-spacing:.06em; text-transform:uppercase; padding:2px 8px; border-radius:999px; margin-left:8px; font-weight:600}
+  .vendlist .vtag.off{background:rgba(201,107,95,.16); color:var(--danger)}
+  .vendlist .vtag.nopw{background:rgba(208,162,74,.16); color:#d0a24a}
+  .vendlist .vacts{display:flex; gap:8px; align-items:center}
+  .vendlist .vacts button{background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:7px; padding:6px 11px; font-size:12.5px; cursor:pointer; font-family:inherit}
+  .vendlist .vacts button:hover{border-color:var(--accent); color:var(--accent)}
+  .vendlist .rm{background:none; border:none; color:var(--muted); cursor:pointer; font-size:16px}
+  .vendlist .rm:hover{color:var(--danger)}
+  .st{font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; font-weight:600; white-space:nowrap}
+  .st.aberto{background:rgba(208,162,74,.16); color:#d0a24a}
+  .st.ganho{background:rgba(143,191,143,.18); color:var(--ok)}
+  .st.perdido{background:rgba(201,107,95,.16); color:var(--danger)}
+  .pbiField{margin-bottom:14px}
+  .pbiField label{font-size:12.5px; color:var(--muted); margin-bottom:6px; display:block}
+  .ostatus{cursor:pointer}
+  .odel{background:none; border:none; color:var(--muted); cursor:pointer; font-size:15px}
+  .odel:hover{color:var(--danger)}
+  #maintBox{margin-top:22px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 22px}
+  .maintRow{display:flex; align-items:center; gap:16px; flex-wrap:wrap}
+  .maintText{flex:1; min-width:220px}
+  .maintTitle{font-size:13px; letter-spacing:.12em; color:var(--muted); margin-bottom:4px}
+  #restartBtn.pending{background:var(--accent); border-color:var(--accent); color:var(--bg); animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.72}}
+  .alerta{font-size:10px; font-weight:600; padding:2px 7px; border-radius:999px; white-space:nowrap; margin-left:6px}
+  .alerta.a30{background:rgba(208,162,74,.16); color:#d0a24a}
+  .alerta.a45{background:rgba(201,107,95,.18); color:var(--danger)}
+  .alertBar{background:rgba(201,107,95,.13); border:1px solid var(--danger); color:var(--danger); border-radius:8px; padding:10px 14px; font-size:13px; margin:0 0 12px}
+  .obsLine{font-size:11.5px; color:var(--muted); margin-top:3px; max-width:260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  #vendasTable tfoot .vendasTotal td{border-top:2px solid var(--line); font-weight:700; color:var(--accent)}
+  #vendasTable td:first-child,#vendasTable th:first-child{text-align:left}
+  #vendasTable td,#vendasTable th{text-align:right}
+  #vendasTable td:last-child,#vendasTable th:last-child{text-align:right}
+  .sapModo{font-size:11px; font-weight:600; padding:2px 9px; border-radius:999px; background:rgba(208,162,74,.16); color:#d0a24a}
+  .sapH3{font-size:13px; letter-spacing:.12em; color:var(--muted); margin:22px 0 10px}
+  .sapCfg{display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap; margin-bottom:8px}
+  .sapChk{display:flex; align-items:center; gap:7px; font-size:13px; color:var(--muted); cursor:pointer}
+  .sapChk input{width:15px; height:15px; accent-color:var(--accent)}
+  #sapTable input{background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:6px; padding:6px 9px; font-size:13px; outline:none; width:100%}
+  #sapTable input:focus{border-color:var(--accent)}
+  #sapTable td.semcod input{border-color:var(--danger)}
+  .derivBtn,.pullBtn{margin-left:6px; font-size:12px; padding:4px 8px; border:1px solid var(--line); background:var(--card); color:var(--text); border-radius:6px; cursor:pointer}
+  .pullBtn:not(:disabled){border-color:var(--accent); color:var(--accent)}
+  .derivBtn:disabled,.pullBtn:disabled{opacity:.4; cursor:not-allowed}
+  #sapTable td:nth-child(3){
+  white-space: normal;
+  min-width: 230px;
+  } #sapTable td:nth-child(4){min-width:70px}
+  .derivBtn{background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:7px; padding:5px 11px; font-size:12.5px; cursor:pointer; font-family:inherit; margin-left:8px}
+  .derivBtn:hover{border-color:var(--accent); color:var(--accent)}
+  #derivModal{position:fixed; inset:0; background:rgba(0,0,0,.62); display:none; align-items:center; justify-content:center; z-index:70; padding:20px}
+  .derivCard{width:min(520px,100%); background:var(--panel); border:1px solid var(--line); border-radius:14px; display:flex; flex-direction:column; max-height:86vh}
+  .derivHead{display:flex; align-items:flex-start; gap:12px; padding:18px 20px; border-bottom:1px solid var(--line)}
+  .derivTitle{font-size:14px; font-weight:700; letter-spacing:.06em}
+  .derivX{margin-left:auto; background:none; border:none; color:var(--muted); font-size:20px; cursor:pointer}
+  .derivBody{padding:16px 20px; overflow-y:auto}
+  .derivRow{display:flex; gap:8px; margin-bottom:8px}
+  .derivRow input{flex:1; background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:7px; padding:8px 11px; font-size:13px; outline:none}
+  .derivRow input:focus{border-color:var(--accent)}
+  .derivRow .cod{max-width:120px}
+  .derivRow .rmd{background:none; border:none; color:var(--muted); cursor:pointer; font-size:16px}
+  .derivRow .rmd:hover{color:var(--danger)}
+  .derivFoot{padding:14px 20px; border-top:1px solid var(--line); display:flex; align-items:center; gap:14px}
+  .ghostbtn{background:transparent; color:var(--text); border:1px solid var(--text); padding:11px 18px; border-radius:9px; font-size:13.5px; font-weight:700; letter-spacing:.04em; cursor:pointer; font-family:inherit; margin-bottom:18px}
+  .ghostbtn:hover{background:var(--accent); border-color:var(--accent); color:var(--bg)}
+  .filters{display:flex; gap:14px; align-items:flex-end; flex-wrap:wrap; margin-bottom:14px}
+  .fcol{display:flex; flex-direction:column; gap:5px}
+  .fcol label{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+  .fcol select,.fcol input{background:var(--card); border:1px solid var(--line); color:var(--text); padding:9px 12px; border-radius:8px; font-size:14px; outline:none; font-family:inherit}
+  .fcol select:focus,.fcol input:focus{border-color:var(--accent)}
+  .linkbtn{background:none; border:none; color:var(--muted); cursor:pointer; font-size:12.5px; text-decoration:underline; font-family:inherit; padding:9px 2px}
+  .linkbtn:hover{color:var(--accent)}
+  .reportTools{display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:12px}
+  .tableWrap{overflow-x:auto}
+  table.report{width:100%; border-collapse:collapse; font-size:13.5px; white-space:nowrap}
+  table.report th{text-align:left; color:var(--muted); font-size:11px; letter-spacing:.08em; padding:8px 12px; border-bottom:1px solid var(--line)}
+  table.report td{padding:10px 12px; border-bottom:1px solid var(--line)}
+  table.report td:last-child,table.report th:last-child{text-align:right}
+  table.report tr:hover td{background:var(--card)}
+  /* Senior searchable product index */
+.sapLookupActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.sapJobChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 7px;
+  background: var(--card);
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  line-height: 1.25;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sapJobChip:hover,
+.sapJobChip:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.sapJobChip.pending,
+.sapJobChip.review {
+  border-color: rgba(208, 162, 74, .5);
+  color: #d0a24a;
+}
+
+.sapJobChip.error {
+  border-color: rgba(201, 107, 95, .5);
+  color: var(--danger);
+}
+
+.sapJobChip.applied {
+  border-color: rgba(143, 191, 143, .5);
+  color: var(--ok);
+}
+
+.sapJobChip.mock {
+  color: var(--muted);
+}
+
+.sapLookupBtn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 6px 0 2px;
+}
+
+.sapLookupBtn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.sapCodeRead {
+  width: 100%;
+  background: #131313 !important;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.sapSourceNotice {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 5px 0 0;
+}
+
+/* Senior search modal */
+#seniorLookupModal {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .75);
+  padding: 18px;
+}
+
+.lookupCard {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+  width: min(640px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.lookupHeader {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.lookupHeader h2 {
+  font-size: 17px;
+  letter-spacing: .03em;
+}
+
+#lookupSearch {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: 100%;
+  padding: 13px;
+  margin: 14px 0;
+  font-family: inherit;
+}
+
+#lookupSearch:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+#lookupResults {
+  max-height: 270px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.lookupItem {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  text-align: left;
+  width: 100%;
+  padding: 11px 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lookupItem:last-child {
+  border-bottom: 0;
+}
+
+.lookupItem:hover,
+.lookupItem:focus {
+  background: var(--card);
+  outline: 1px solid var(--accent);
+}
+
+.lookupItem strong {
+  display: block;
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.lookupItem small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#lookupState {
+  line-height: 1.65;
+  font-size: 13px;
+  margin-top: 14px;
+  min-height: 20px;
+}
+
+#lookupPreview {
+  margin-top: 12px;
+  max-height: 160px;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+#lookupApply {
+  margin-top: 14px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">GALERIA WALDIR JUNIOR<small>PAINEL ADMINISTRATIVO</small></div>
+  <div class="headlinks">
+    <a href=".">← voltar ao catálogo</a>
+    <a href="#" id="logout">sair</a>
+  </div>
+</header>
+<main>
+  <h1>ATUALIZAR CATÁLOGO</h1>
+  <p class="sub">Envie o novo <b>PDF do catálogo</b> com os produtos adicionados, removidos ou alterados.
+  O sistema guarda um backup do modelo atual, reindexa todos os produtos, regenera as miniaturas e
+  detecta automaticamente a página <b>SEPARADOR</b> (WJ / Bella Itália) e a de encerramento.
+  A reindexação roda em segundo plano e o progresso aparece abaixo — pode levar alguns minutos.</p>
+
+  <div id="drop">
+    <div class="big">Arraste o PDF aqui ou clique para escolher</div>
+    <div class="small">Somente .pdf — o arquivo substituirá o modelo geral atual</div>
+    <div id="fileName"></div>
+  </div>
+  <input id="file" type="file" accept="application/pdf" hidden>
+  <button id="sendBtn" disabled>ATUALIZAR SISTEMA</button>
+  <div id="status"></div>
+
+  <div class="result" id="result">
+    <div class="stats">
+      <span><b id="rTotal">0</b>produtos</span>
+      <span><b id="rWJ">0</b>WJ</span>
+      <span><b id="rBella">0</b>Bella Itália</span>
+      <span><b id="rPages">0</b>páginas no PDF</span>
+    </div>
+    <h3>PRODUTOS ADICIONADOS</h3><ul class="add" id="rAdded"></ul>
+    <h3>PRODUTOS REMOVIDOS</h3><ul class="rem" id="rRemoved"></ul>
+  </div>
+
+  <div id="maintBox" style="display:none">
+    <div class="maintRow">
+      <div class="maintText">
+        <div class="maintTitle">MANUTENÇÃO</div>
+        <div class="muted" style="font-size:13.5px">Reinicia o serviço do sistema — use depois de atualizar o catálogo para garantir que tudo recarregue.</div>
+      </div>
+      <button id="restartBtn" class="ghostbtn" style="margin:0">↻ Reiniciar sistema</button>
+    </div>
+    <div id="restartMsg" class="muted" style="margin-top:10px; min-height:16px"></div>
+  </div>
+
+  <hr class="sep">
+  <h1>VENDEDORES</h1>
+  <p class="sub">Crie um <b>login</b> para cada vendedor: nome, um <b>usuário</b> (para entrar) e uma
+  <b>senha inicial</b>. O vendedor entra na página de orçamentos com esse usuário e senha, e os
+  orçamentos que ele gerar ficam salvos na conta dele. Você pode redefinir a senha, desativar
+  (bloqueia o acesso sem apagar o histórico) ou excluir.</p>
+  <div class="addrow vendform">
+    <input id="vNome" type="text" placeholder="Nome do vendedor" autocomplete="off">
+    <input id="vUser" type="text" placeholder="usuário (login)" autocomplete="off" autocapitalize="none" spellcheck="false">
+    <input id="vSenha" type="text" placeholder="senha inicial" autocomplete="off">
+    <input id="vCod" type="text" placeholder="cód. Sapiens (opcional)" autocomplete="off">
+    <button id="addVendedor">+ CRIAR</button>
+  </div>
+  <ul id="vendList" class="vendlist"></ul>
+
+  <hr class="sep">
+  <h1>RELATÓRIO DE ORÇAMENTOS</h1>
+  <p class="sub">Lista dos orçamentos gerados, com os dados de contato para o follow-up.
+  Filtre por <b>data</b> e por <b>vendedor</b> — a planilha baixa exatamente o resultado filtrado.
+  Inclui os orçamentos sem vendedor (clientes que montaram sozinhos).</p>
+  <div class="filters">
+    <div class="fcol"><label>Vendedor</label><select id="fSeller"><option value="">Todos</option></select></div>
+    <div class="fcol"><label>De</label><input type="date" id="fFrom"></div>
+    <div class="fcol"><label>Até</label><input type="date" id="fTo"></div>
+    <button id="clearFilters" class="linkbtn">limpar filtros</button>
+  </div>
+  <div class="reportTools">
+    <span id="summaryLine" class="muted"></span>
+    <button id="downloadCsv" class="ghostbtn">⬇ Baixar planilha (filtro atual)</button>
+  </div>
+  <div class="tableWrap">
+    <table id="reportTable" class="report">
+      <thead><tr><th>Nº</th><th>Data</th><th>Vendedor</th><th>Cliente</th><th>Arquiteto</th><th>WhatsApp</th><th>Cidade</th><th>Tipo</th><th>Obs.</th><th>Valor</th></tr></thead>
+      <tbody id="reportBody"></tbody>
+    </table>
+  </div>
+  <div id="reportEmpty" class="muted" style="display:none">Nenhum orçamento no filtro atual.</div>
+
+  <hr class="sep">
+  <h1>ORÇAMENTOS SALVOS</h1>
+  <p class="sub">Todos os orçamentos salvos pelos vendedores, com o <b>histórico de versões</b> e a
+  <b>situação</b>. Você pode re-baixar o PDF de qualquer versão e alterar o status (aberto / ganho / perdido).</p>
+  <div class="filters">
+    <div class="fcol"><label>Buscar</label><input id="oSearch" type="search" placeholder="cliente, nº ou vendedor" autocomplete="off"></div>
+    <div class="fcol"><label>Situação</label>
+      <select id="oStatus"><option value="">Todas</option><option value="aberto">Abertos</option><option value="ganho">Ganhos</option><option value="perdido">Perdidos</option></select>
+    </div>
+    <span id="oSummary" class="muted" style="margin-left:auto"></span>
+  </div>
+  <div id="orcAlert"></div>
+  <div class="tableWrap">
+    <table id="orcTable" class="report">
+      <thead><tr><th>Nº</th><th>Cliente</th><th>Vendedor</th><th>Criado</th><th>Versões</th><th>Situação</th><th>PDF</th><th>Valor</th><th></th></tr></thead>
+      <tbody id="orcBody"></tbody>
+    </table>
+  </div>
+  <div id="orcEmpty" class="muted" style="display:none">Nenhum orçamento salvo ainda.</div>
+
+  <hr class="sep">
+  <h1>RELATÓRIO DE VENDAS (POR MÊS)</h1>
+  <p class="sub">Soma dos orçamentos marcados como <b>Ganho</b>, separada por marca (<b>WJ</b> e
+  <b>Bella Itália</b>) e por mês — "Ganho" conta como venda. Um orçamento com as duas marcas entra
+  proporcionalmente em cada coluna. O mês é o de quando foi marcado como ganho.</p>
+  <div class="tableWrap">
+    <table id="vendasTable" class="report">
+      <thead><tr><th>Mês</th><th>Vendas WJ</th><th>Vendas Bella Itália</th><th>Total</th><th>Nº ganhos</th></tr></thead>
+      <tbody id="vendasBody"></tbody>
+      <tfoot id="vendasFoot"></tfoot>
+    </table>
+  </div>
+  <div id="vendasEmpty" class="muted" style="display:none">Nenhuma venda ainda — marque orçamentos como <b>Ganho</b> para aparecerem aqui.</div>
+
+  <hr class="sep">
+  <h1>INTEGRAÇÃO SAPIENS (FÁBRICA)</h1>
+  <p class="sub">A aplicação web apenas prepara a fila. O <b>relay dentro da fábrica</b> faz a chamada SOAP ao Senior. Os defaults comerciais (representante, condição/forma de pagamento e transportadora) são herdados do cadastro do cliente no Senior.</p>
+
+  <h3 class="sapH3">Empresas / filiais</h3>
+  <p class="muted" style="margin:0 0 8px">WJ e Bella Itália são empresas diferentes. A transação usada pelos pedidos do site é definida ao enviar um pedido para a fabrica.</p>
+  <div class="sapCfg">
+    <div class="fcol"><label>Empresa WJ</label><input id="sapEmpresaWJ" autocomplete="off" placeholder="10"></div>
+    <div class="fcol"><label>Filial WJ</label><input id="sapFilialWJ" autocomplete="off" placeholder="1"></div>
+    <div class="fcol"><label>Empresa Bella Itália</label><input id="sapEmpresaBella" autocomplete="off" placeholder="1"></div>
+    <div class="fcol"><label>Filial Bella Itália</label><input id="sapFilialBella" autocomplete="off" placeholder="1"></div>
+    <button id="sapCfgSave" class="ghostbtn" style="margin:0">Salvar empresas</button>
+    <span id="sapCfgMsg" class="muted"></span>
+  </div>
+
+  <h3 class="sapH3">Relay (agente da fábrica)</h3>
+  <p class="sub" style="margin-bottom:8px">O <b>relay</b> roda dentro da fábrica: pega os pedidos da fila, envia ao Sapiens e devolve o número.
+  Cole este <b>token</b> na configuração dele (arquivo <span class="mono">config.json no servidor da fábrica</span>). Trate como senha.</p>
+  <div class="fcol pbiField">
+    <label>Token do relay</label>
+    <div class="addrow">
+      <input id="relayToken" type="text" readonly placeholder="carregando...">
+      <button class="pbiCopy" data-target="relayToken">COPIAR</button>
+    </div>
+  </div>
+
+  <h3 class="sapH3">De-para de produtos (catálogo → código Sapiens)</h3>
+  <p
+  class="sub"
+  id="sapIdxStatus"
+  style="margin-bottom:8px"
+  >
+  Índice de busca: verificando…
+  </p>
+  <p class="sub" id="catStatus" style="margin-bottom:8px">Catálogo do Senior: <span class="muted">verificando…</span></p>
+  <div class="filters">
+    <div class="fcol"><label>Buscar produto</label><input id="sapSearch" type="search" placeholder="nome do produto" autocomplete="off"></div>
+    <label class="sapChk"><input type="checkbox" id="sapOnlyPend"> só sem código</label>
+    <span id="sapCount" class="muted" style="margin-left:auto"></span>
+  </div>
+  <div class="tableWrap" style="max-height:440px; overflow:auto">
+    <table id="sapTable" class="report">
+      <thead><tr><th>Produto</th><th>Marca</th><th>Código Sapiens</th><th>Unid.</th><th>Cores / derivações</th></tr></thead>
+      <tbody id="sapBody"></tbody>
+    </table>
+  </div>
+
+  <hr class="sep">
+  <h1>POWER BI / INTEGRAÇÃO</h1>
+  <p class="sub">Três links seguros para conectar no Power BI (Obter Dados → <b>Web</b>). Atualizam sozinhos.
+  Trate como senha: quem tiver o link vê os dados (somente leitura). Relacione as tabelas
+  pela coluna <b>numero</b>. A planilha de orçamentos traz <b>valor_wj</b>, <b>valor_bella</b>,
+  <b>status</b> e <b>ganho_em</b> para análises de vendas por marca.</p>
+  <div class="fcol pbiField">
+    <label>1) Orçamentos — 1 linha por orçamento (data, vendedor, cliente, valor…)</label>
+    <div class="addrow">
+      <input id="pbiUrlLeads" type="text" readonly placeholder="gerando link...">
+      <button class="pbiCopy" data-target="pbiUrlLeads">COPIAR</button>
+    </div>
+  </div>
+  <div class="fcol pbiField">
+    <label>2) Itens — 1 linha por produto orçado (para "produtos mais orçados")</label>
+    <div class="addrow">
+      <input id="pbiUrlItens" type="text" readonly placeholder="gerando link...">
+      <button class="pbiCopy" data-target="pbiUrlItens">COPIAR</button>
+    </div>
+  </div>
+  <div class="fcol pbiField">
+    <label>3) Situação — 1 linha por orçamento salvo, com <b>status</b> (aberto/ganho/perdido) e valor atual — para medir <b>conversão</b></label>
+    <div class="addrow">
+      <input id="pbiUrlOrc" type="text" readonly placeholder="gerando link...">
+      <button class="pbiCopy" data-target="pbiUrlOrc">COPIAR</button>
+    </div>
+  </div>
+  <div class="reportTools">
+    <span id="pbiMsg" class="muted"></span>
+    <button id="pbiRegen" class="linkbtn">gerar novos links (invalida os atuais)</button>
+  </div>
+</main>
+
+<!-- Senior product search / derivation preview -->
+<div
+  id="seniorLookupModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="lookupTitle"
+>
+  <div class="lookupCard">
+    <div class="lookupHeader">
+      <div>
+        <h2 id="lookupTitle">Buscar produto no Senior</h2>
+        <p class="sapSourceNotice" id="lookupWebName"></p>
+      </div>
+
+      <button
+        class="derivX"
+        id="lookupClose"
+        aria-label="Fechar busca"
+      >✕</button>
+    </div>
+
+    <p class="sapSourceNotice">
+      Índice local. Nenhuma consulta SOAP durante a busca;
+      o código NÃO será salvo até receber e aprovar as derivações reais.
+    </p>
+
+    <input
+      id="lookupSearch"
+      type="search"
+      placeholder="Digite parte do nome ou código Senior"
+      autocomplete="off"
+      aria-label="Busca de produto Senior"
+    >
+
+    <div id="lookupResults" role="listbox">
+      <div class="muted" style="padding:14px">
+        Digite pelo menos 2 caracteres.
+      </div>
+    </div>
+
+    <div id="lookupState" aria-live="polite"></div>
+
+    <div id="lookupPreview"></div>
+
+    <button
+      class="ghostbtn"
+      id="lookupApply"
+      style="display:none"
+      type="button"
+    >
+      Confirmar e salvar código + unidade + derivações
+    </button>
+  </div>
+</div>
+
+<!-- editor de cores/derivações de um produto -->
+<div id="derivModal">
+  <div class="derivCard">
+    <div class="derivHead">
+      <div><div id="derivTitle" class="derivTitle"></div><div class="muted" style="font-size:12px">Cada linha = uma cor/acabamento e o código da derivação no Sapiens (futuramente puxado do Senior).</div></div>
+      <button class="derivX" id="derivClose">✕</button>
+    </div>
+    <div class="derivBody"><div id="derivRows"></div>
+      <button id="derivAdd" class="linkbtn">+ adicionar cor</button>
+    </div>
+    <div class="derivFoot"><button id="derivSave" class="ghostbtn" style="margin:0">Salvar</button><span id="derivMsg" class="muted"></span></div>
+  </div>
+</div>
+
+<script>
+document.getElementById("logout").onclick = async (e) => {
+  e.preventDefault();
+  await fetch("api/logout", {method:"POST"});
+  location.reload();
+};
+const $ = s => document.querySelector(s);
+const drop = $("#drop"), fileInput = $("#file"), btn = $("#sendBtn"), status = $("#status");
+let file = null;
+
+drop.onclick = () => fileInput.click();
+drop.ondragover = e => { e.preventDefault(); drop.classList.add("over"); };
+drop.ondragleave = () => drop.classList.remove("over");
+drop.ondrop = e => { e.preventDefault(); drop.classList.remove("over"); setFile(e.dataTransfer.files[0]); };
+fileInput.onchange = () => setFile(fileInput.files[0]);
+
+function setFile(f){
+  if (!f) return;
+  if (!f.name.toLowerCase().endsWith(".pdf")) { status.className="err"; status.textContent="Escolha um arquivo .pdf"; return; }
+  file = f;
+  $("#fileName").textContent = `${f.name} (${(f.size/1048576).toFixed(0)} MB)`;
+  btn.disabled = false;
+  status.textContent = ""; status.className = "";
+}
+
+btn.onclick = async () => {
+  if (!file || !confirm(`Substituir o catálogo atual por "${file.name}" e reindexar o sistema?`)) return;
+  btn.disabled = true; drop.style.pointerEvents = "none";
+  $("#result").style.display = "none";
+  status.className = "";
+  status.innerHTML = `<span class="spin"></span>Enviando PDF...`;
+  const fd = new FormData();
+  fd.append("pdf", file);
+  try {
+    const r = await fetch("api/update", {method:"POST", body: fd});
+    let data; try { data = await r.json(); } catch(_) { data = {}; }
+    if (!r.ok) throw new Error(data.error || `Erro ${r.status} no servidor.`);
+    pollUpdate();   // reindexação roda em segundo plano; acompanha o progresso
+  } catch (e) {
+    status.className = "err";
+    status.textContent = "Erro: " + e.message;
+    btn.disabled = false; drop.style.pointerEvents = "";
+  }
+};
+
+function pollUpdate(){
+  const tick = async () => {
+    let s;
+    try { s = await fetch("api/update/status").then(r=>r.json()); }
+    catch(_) { status.innerHTML = `<span class="spin"></span>Processando...`; return setTimeout(tick, 3000); }
+    if (!s.done) {
+      status.className = "";
+      status.innerHTML = `<span class="spin"></span>${s.msg || "Reindexando o catálogo..."} — pode levar alguns minutos, não feche a página.`;
+      return setTimeout(tick, 3000);
+    }
+    btn.disabled = false; drop.style.pointerEvents = "";
+    if (s.error) {
+      status.className = "err";
+      status.textContent = "Erro ao reindexar: " + s.error;
+      return;
+    }
+    const d = s.summary || {};
+    status.className = "ok";
+    status.textContent = `✓ Catálogo atualizado! Separador: página ${d.divider ?? "não encontrado"} · Encerramento: página ${d.closing}.`;
+    $("#rTotal").textContent = d.products;
+    $("#rWJ").textContent = d.wj;
+    $("#rBella").textContent = d.bella;
+    $("#rPages").textContent = d.pages;
+    $("#rAdded").innerHTML = (d.added||[]).length ? d.added.map(n=>`<li>${n}</li>`).join("") : "<li style='color:var(--muted)'>nenhum</li>";
+    $("#rRemoved").innerHTML = (d.removed||[]).length ? d.removed.map(n=>`<li>${n}</li>`).join("") : "<li style='color:var(--muted)'>nenhum</li>";
+    $("#result").style.display = "block";
+    loadVendedores(); loadReport();
+    markRestartPending();   // sugere reiniciar para garantir que tudo recarregue
+  };
+  tick();
+};
+
+// ----------------------------- Manutenção / reiniciar -----------------------------
+async function loadRestart(){
+  try {
+    const d = await fetch("api/restart").then(r=>r.json());
+    if (d.enabled) $("#maintBox").style.display = "block";
+  } catch(_){}
+}
+function markRestartPending(){
+  if ($("#maintBox").style.display === "none") return;
+  $("#restartBtn").classList.add("pending");
+  $("#restartMsg").textContent = "Catálogo atualizado — clique em Reiniciar para garantir que tudo recarregue.";
+}
+$("#restartBtn").onclick = async () => {
+  if (!confirm("Reiniciar o serviço do sistema agora?\n\nLeva alguns segundos e o site fica indisponível nesse curto intervalo.")) return;
+  const b = $("#restartBtn"), m = $("#restartMsg");
+  b.disabled = true; b.classList.remove("pending");
+  m.textContent = "Reiniciando... aguarde alguns segundos.";
+  try {
+    const r = await fetch("api/restart", {method:"POST"});
+    const j = await r.json().catch(()=>({}));
+    if (!r.ok) throw new Error(j.error || "Erro ao reiniciar.");
+    // espera o serviço voltar (só começa a checar após 3s, já em pleno restart) e recarrega
+    let tries = 0;
+    setTimeout(() => {
+      const wait = setInterval(async () => {
+        tries++;
+        try {
+          const ok = await fetch("api/catalog", {cache:"no-store"});
+          if (ok.ok){ clearInterval(wait); m.textContent = "✓ Sistema reiniciado."; setTimeout(()=>location.reload(), 800); return; }
+        } catch(_){}
+        if (tries > 20){ clearInterval(wait); m.textContent = "Reinício disparado — recarregue a página em instantes."; b.disabled = false; }
+      }, 1500);
+    }, 3000);
+  } catch (e) {
+    m.textContent = "Erro: " + e.message; b.disabled = false;
+  }
+};
+
+// ----------------------------- Vendedores (contas) -----------------------------
+const brl = v => (v||0).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
+const esc = s => (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const slug = s => (s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+
+async function loadVendedores(){
+  const d = await fetch("api/vendedores").then(r=>r.json());
+  const ul = $("#vendList");
+  const contas = d.contas || [];
+  ul.innerHTML = contas.map(v => {
+    const tags = (v.ativo ? "" : `<span class="vtag off">inativo</span>`) +
+                 (v.tem_senha ? "" : `<span class="vtag nopw">sem senha</span>`);
+    const cod = v.cod_sapiens ? ` · Sapiens: ${esc(v.cod_sapiens)}` : ` · <span style="color:var(--muted)">sem cód. Sapiens</span>`;
+    return `<li>
+      <div class="vinfo"><div>${esc(v.nome)}${tags}</div><div class="vuser">usuário: ${esc(v.usuario)}${cod}</div></div>
+      <div class="vacts">
+        <button data-a="senha" data-u="${esc(v.usuario)}" data-n="${esc(v.nome)}">Nova senha</button>
+        <button data-a="sapiens" data-u="${esc(v.usuario)}" data-n="${esc(v.nome)}" data-c="${esc(v.cod_sapiens||"")}">Cód. Sapiens</button>
+        <button data-a="ativo" data-u="${esc(v.usuario)}" data-v="${v.ativo?0:1}">${v.ativo?"Desativar":"Ativar"}</button>
+        <button class="rm" data-a="del" data-u="${esc(v.usuario)}" data-n="${esc(v.nome)}" title="Excluir">✕</button>
+      </div>
+    </li>`;
+  }).join("") || "<li class='muted' style='justify-content:center'>Nenhum vendedor cadastrado.</li>";
+  ul.querySelectorAll("button").forEach(b => b.onclick = () => vendedorAction(b.dataset));
+}
+
+async function vendedorAction(d){
+  if (d.a === "senha"){
+    const senha = prompt(`Nova senha para "${d.n}" (mín. 4 caracteres):`);
+    if (senha == null) return;
+    await postVend("api/vendedores/senha", {usuario:d.u, senha}, "Senha atualizada.");
+  } else if (d.a === "sapiens"){
+    const cod = prompt(`Código do vendedor "${d.n}" no Sapiens (deixe vazio para remover):`, d.c || "");
+    if (cod == null) return;
+    await postVend("api/vendedores/sapiens", {usuario:d.u, cod_sapiens:cod}, null);
+  } else if (d.a === "ativo"){
+    await postVend("api/vendedores/ativo", {usuario:d.u, ativo:d.v==="1"}, null);
+  } else if (d.a === "del"){
+    if (!confirm(`Excluir o vendedor "${d.n}"? O histórico de orçamentos dele continua salvo.`)) return;
+    await postVend("api/vendedores", {usuario:d.u}, null, "DELETE");
+  }
+}
+async function postVend(url, body, okMsg, method){
+  let r;
+  try { r = await fetch(url, {method:method||"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)}); }
+  catch(e){ alert("Erro de conexão com o servidor."); return; }
+  if (r.ok){ if (okMsg) alert(okMsg); loadVendedores(); loadReport(); }
+  else if (r.status === 401){ alert("Sessão expirada. Recarregue a página e entre novamente."); }
+  else { alert((await r.json().catch(()=>({}))).error || "Não foi possível concluir a ação."); }
+}
+
+async function addVendedor(){
+  const nome = $("#vNome").value.trim();
+  const usuario = ($("#vUser").value.trim() || slug(nome.split(/\s+/)[0])).toLowerCase();
+  const senha = $("#vSenha").value;
+  const cod_sapiens = $("#vCod").value.trim();
+  if (!nome){ alert("Informe o nome do vendedor."); return; }
+  if (senha.length < 4){ alert("A senha inicial deve ter ao menos 4 caracteres."); return; }
+  let r;
+  try { r = await fetch("api/vendedores", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({nome, usuario, senha, cod_sapiens})}); }
+  catch(e){ alert("Erro de conexão com o servidor."); return; }
+  if (r.ok){ $("#vNome").value=$("#vUser").value=$("#vSenha").value=$("#vCod").value=""; userEdited=false; loadVendedores(); loadReport(); }
+  else if (r.status === 401){ alert("Sessão expirada. Recarregue a página e entre novamente."); }
+  else { alert((await r.json().catch(()=>({}))).error || "Não foi possível criar o vendedor."); }
+}
+// preenche o usuário automaticamente a partir do nome (até o gestor editar manualmente)
+let userEdited = false;
+$("#vUser").addEventListener("input", () => userEdited = true);
+$("#vNome").addEventListener("input", () => { if (!userEdited) $("#vUser").value = slug($("#vNome").value.split(/\s+/)[0]); });
+$("#addVendedor").onclick = addVendedor;
+$("#vSenha").addEventListener("keydown", e => { if (e.key==="Enter") addVendedor(); });
+
+// --------------------------- Relatório / leads ---------------------------
+const LEAD_COLS = ["numero","data_hora","data","mes","vendedor","cliente","arquiteto","whatsapp","cidade","tipo","itens","valor_total","observacao"];
+let ALL_LEADS = [];
+
+async function loadReport(){
+  let r;
+  try { r = await fetch("api/leads"); } catch(e){ return; }
+  if (!r.ok){ ALL_LEADS = []; renderReport(); return; }
+  ALL_LEADS = (await r.json()).leads || [];
+  const sellers = [...new Set(ALL_LEADS.map(l => l.vendedor))].sort((a,b)=>a.localeCompare(b,"pt"));
+  const cur = $("#fSeller").value;
+  $("#fSeller").innerHTML = '<option value="">Todos</option>' + sellers.map(s=>`<option>${s}</option>`).join("");
+  $("#fSeller").value = cur;
+  renderReport();
+}
+function filteredLeads(){
+  const sv = $("#fSeller").value, from = $("#fFrom").value, to = $("#fTo").value;
+  return ALL_LEADS.filter(l => {
+    if (sv && l.vendedor !== sv) return false;
+    const d = (l.data_hora || "").slice(0,10);  // YYYY-MM-DD
+    if (from && d < from) return false;
+    if (to && d > to) return false;
+    return true;
+  });
+}
+function renderReport(){
+  const rows = filteredLeads();
+  $("#reportTable").style.display = rows.length ? "" : "none";
+  $("#reportEmpty").style.display = rows.length ? "none" : "block";
+  const total = rows.reduce((s,l)=> s + (parseFloat(l.valor_total)||0), 0);
+  $("#summaryLine").textContent = `${rows.length} orçamento(s) · ${brl(total)} no total`;
+  $("#reportBody").innerHTML = rows.map(l => {
+    const obs = l.observacao || "";
+    const obsShort = obs.length > 40 ? obs.slice(0,40)+"…" : obs;
+    return `<tr>
+    <td>${l.numero||"—"}</td><td>${l.data||"—"}</td><td>${l.vendedor||"—"}</td><td>${l.cliente||"—"}</td>
+    <td>${l.arquiteto||"—"}</td><td>${l.whatsapp||"—"}</td><td>${l.cidade||"—"}</td>
+    <td>${l.tipo||"—"}</td><td title="${esc(obs)}">${esc(obsShort)||"—"}</td><td>${brl(parseFloat(l.valor_total)||0)}</td></tr>`;
+  }).join("");
+}
+["#fSeller","#fFrom","#fTo"].forEach(id => $(id).addEventListener("change", renderReport));
+$("#clearFilters").onclick = () => { $("#fSeller").value=""; $("#fFrom").value=""; $("#fTo").value=""; renderReport(); };
+
+$("#downloadCsv").onclick = () => {
+  const rows = filteredLeads();
+  if (!rows.length){ alert("Não há orçamentos no filtro atual para exportar."); return; }
+  const esc = v => { v = (v==null?"":String(v)); return /[;"\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; };
+  const csv = "﻿" + LEAD_COLS.join(";") + "\n" +
+    rows.map(l => LEAD_COLS.map(c => esc(l[c])).join(";")).join("\n");
+  const blob = new Blob([csv], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `leads-orcamentos-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click(); URL.revokeObjectURL(a.href);
+};
+
+// --------------------------- Power BI / Integração ---------------------------
+function pbiSetUrl(token){
+  const root = location.origin + document.querySelector("base").getAttribute("href");
+  $("#pbiUrlLeads").value = root + "api/leads.csv?token=" + token;
+  $("#pbiUrlItens").value = root + "api/itens.csv?token=" + token;
+  $("#pbiUrlOrc").value = root + "api/orcamentos.csv?token=" + token;
+}
+async function loadPbi(){
+  try {
+    const d = await fetch("api/powerbi-token").then(r=>r.json());
+    if (d.token) pbiSetUrl(d.token);
+  } catch(_) {}
+}
+document.querySelectorAll(".pbiCopy").forEach(b => b.onclick = async () => {
+  const inp = document.getElementById(b.dataset.target); inp.select();
+  try { await navigator.clipboard.writeText(inp.value); } catch(_) { document.execCommand("copy"); }
+  $("#pbiMsg").textContent = "Link copiado!";
+  setTimeout(() => $("#pbiMsg").textContent = "", 4000);
+});
+$("#pbiRegen").onclick = async () => {
+  if (!confirm("Gerar links novos? Os atuais param de funcionar e você precisará atualizar no Power BI.")) return;
+  const d = await fetch("api/powerbi-token", {method:"POST"}).then(r=>r.json());
+  if (d.token){ pbiSetUrl(d.token); $("#pbiMsg").textContent = "Novos links gerados — atualize no Power BI."; }
+};
+
+// --------------------------- Orçamentos salvos (todos) ---------------------------
+let ALL_ORCS = [];
+async function loadOrcs(){
+  let r;
+  try { r = await fetch("api/orcamentos"); } catch(e){ return; }
+  if (!r.ok){ ALL_ORCS = []; renderOrcs(); return; }
+  ALL_ORCS = (await r.json()).orcamentos || [];
+  renderOrcs();
+}
+function renderOrcs(){
+  const q = (($("#oSearch").value)||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
+  const st = $("#oStatus").value;
+  const list = ALL_ORCS.filter(o =>
+    (!st || o.status === st) &&
+    (!q || (o.cliente||"").toLowerCase().includes(q) || String(o.numero).includes(q) || (o.vendedor_nome||"").toLowerCase().includes(q))
+  );
+  $("#orcTable").style.display = list.length ? "" : "none";
+  $("#orcEmpty").style.display = list.length ? "none" : "block";
+  const totOpen = ALL_ORCS.filter(o=>o.status==="ganho").reduce((s,o)=>s+(o.valor_atual||0),0);
+  $("#oSummary").textContent = `${ALL_ORCS.length} orçamento(s) · ${ALL_ORCS.filter(o=>o.status==="ganho").length} ganho(s) (${brl(totOpen)})`;
+  // alerta de orçamentos em aberto parados (30/45 dias)
+  const ab = ALL_ORCS.filter(o=>o.status==="aberto");
+  const c45 = ab.filter(o=>diasDesde(o.criado_em)>=45).length;
+  const c30 = ab.filter(o=>diasDesde(o.criado_em)>=30).length;
+  $("#orcAlert").innerHTML = c30 ? `<div class="alertBar">⚠ ${c30} orçamento(s) em aberto há mais de 30 dias${c45?` — ${c45} há mais de 45`:""}. Vale um follow-up.</div>` : "";
+  const root = location.origin + document.querySelector("base").getAttribute("href");
+  $("#orcBody").innerHTML = list.map(o => {
+    const vers = [];
+    for (let i=1;i<=o.n_versoes;i++) vers.push(`<a href="${root}api/orcamento/${o.numero}/pdf?v=${i}" title="Baixar PDF da versão ${i}">v${i}</a>`);
+    const obs = o.observacao ? `<div class="obsLine" title="${esc(o.observacao)}">📝 ${esc(o.observacao.length>48?o.observacao.slice(0,48)+"…":o.observacao)}</div>` : "";
+    const ped = o.pedido_desatualizado
+      ? `<div class="obsLine" style="color:#d0a24a">🏭 alterações não enviadas · último envio ${o.pedido_versao ? `v${o.pedido_versao}` : "anterior"}</div>`
+
+      : o.pedido_status==="pendente"
+      ? `<div class="obsLine" style="color:#d0a24a">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}na fila</div>`
+
+      : o.pedido_status==="recebido_agente"
+      ? `<div class="obsLine" style="color:var(--ok)">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}recebido pela fábrica</div>`
+
+      : o.pedido_status==="enviado"
+      ? `<div class="obsLine" style="color:var(--ok)">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}pedido${(o.pedido_numeros&&o.pedido_numeros.length>1)?"s":""} ${esc((o.pedido_numeros&&o.pedido_numeros.length?o.pedido_numeros:[o.pedido_numero]).filter(Boolean).join(", "))}</div>`
+
+      : o.pedido_status==="parcial"
+      ? `<div class="obsLine" style="color:#d0a24a">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}parcial com erro</div>`
+
+      : o.pedido_status==="concluido_parcial"
+      ? `<div class="obsLine" style="color:var(--ok)">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}concluído parcialmente</div>`
+
+      : o.pedido_status==="nao_enviar"
+      ? `<div class="obsLine">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}não reenviar</div>`
+
+      : o.pedido_status==="erro"
+      ? `<div class="obsLine" style="color:var(--danger)">🏭 ${o.pedido_versao ? `v${o.pedido_versao} · ` : ""}erro no envio</div>`
+
+      : "";
+    return `<tr>
+      <td>#${o.numero}</td>
+      <td>${esc(o.cliente||"(sem cliente)")}${obs}${ped}</td>
+      <td>${esc(o.vendedor_nome||"—")}</td>
+      <td>${esc((o.criado_em||"").slice(0,10).split("-").reverse().join("/"))}${alertaBadge(o)}</td>
+      <td>${o.n_versoes} (atual v${o.versao_atual})</td>
+      <td><select data-n="${o.numero}" class="ostatus st ${o.status}">
+        <option value="aberto" ${o.status==="aberto"?"selected":""}>Aberto</option>
+        <option value="ganho" ${o.status==="ganho"?"selected":""}>Ganho</option>
+        <option value="perdido" ${o.status==="perdido"?"selected":""}>Perdido</option>
+      </select></td>
+      <td>${vers.join(" ")}</td>
+      <td>${brl(o.valor_atual)}</td>
+      <td>${o.enviado_fabrica
+        ? `<button class="odel" disabled title="Não é possível excluir: este orçamento já possui histórico de envio à fábrica">🗑</button>`
+        : `<button class="odel" data-n="${o.numero}" data-c="${esc(o.cliente||'')}" title="Excluir orçamento">🗑</button>`}</td>
+    </tr>`;
+  }).join("");
+  $("#orcBody").querySelectorAll(".ostatus").forEach(sel => sel.onchange = () => mudarStatus(sel.dataset.n, sel.value));
+  $("#orcBody").querySelectorAll(".odel").forEach(b => b.onclick = () => excluirOrc(b.dataset.n, b.dataset.c));
+}
+function diasDesde(s){
+  if (!s) return 0;
+  const d = new Date(String(s).replace(" ","T"));
+  const n = Math.floor((Date.now()-d.getTime())/86400000);
+  return isNaN(n) ? 0 : n;
+}
+function alertaBadge(o){
+  if (o.status !== "aberto") return "";
+  const d = diasDesde(o.criado_em);
+  if (d >= 45) return ` <span class="alerta a45" title="Aberto há ${d} dias">⚠ ${d}d</span>`;
+  if (d >= 30) return ` <span class="alerta a30" title="Aberto há ${d} dias">⏳ ${d}d</span>`;
+  return "";
+}
+
+// --------------------------- Relatório de vendas (por mês) ---------------------------
+const MESNOMES = ["","jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+async function loadVendas(){
+  let r;
+  try { r = await fetch("api/relatorio-vendas"); } catch(e){ return; }
+  if (!r.ok) return;
+  const v = (await r.json()).vendas || [];
+  const has = v.length > 0;
+  $("#vendasTable").style.display = has ? "" : "none";
+  $("#vendasEmpty").style.display = has ? "none" : "block";
+  const fmtMes = m => { const p=(m||"").split("-"); return p.length===2 ? `${MESNOMES[+p[1]]||p[1]}/${p[0]}` : m; };
+  $("#vendasBody").innerHTML = v.map(x =>
+    `<tr><td>${fmtMes(x.mes)}</td><td>${brl(x.wj)}</td><td>${brl(x.bella)}</td><td><b>${brl(x.total)}</b></td><td>${x.n}</td></tr>`).join("");
+  const twj=v.reduce((s,x)=>s+x.wj,0), tb=v.reduce((s,x)=>s+x.bella,0), tt=v.reduce((s,x)=>s+x.total,0), tn=v.reduce((s,x)=>s+x.n,0);
+  $("#vendasFoot").innerHTML = has ?
+    `<tr class="vendasTotal"><td>TOTAL</td><td>${brl(twj)}</td><td>${brl(tb)}</td><td>${brl(tt)}</td><td>${tn}</td></tr>` : "";
+}
+async function excluirOrc(numero, cliente){
+  if (!confirm(`Excluir definitivamente o orçamento Nº ${numero}${cliente?` (${cliente})`:""}?\n\nIsso remove todas as versões e as linhas nas planilhas (leads/itens). Não dá para desfazer.`)) return;
+  try {
+    const r = await fetch("api/orcamento/" + numero, {method:"DELETE"});
+    if (!r.ok) throw new Error((await r.json().catch(()=>({}))).error || "Erro ao excluir.");
+    ALL_ORCS = ALL_ORCS.filter(o => o.numero != numero);
+    renderOrcs(); loadReport();
+  } catch(ex){ alert("Erro: " + ex.message); }
+}
+async function mudarStatus(numero, status){
+  try {
+    const r = await fetch(`api/orcamento/${numero}/status`, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({status})});
+    if (!r.ok) throw new Error((await r.json().catch(()=>({}))).error || "Erro");
+    const o = ALL_ORCS.find(x=>x.numero==numero); if (o) o.status = status;
+    renderOrcs(); loadVendas();
+  } catch(ex){ alert("Erro ao mudar status: " + ex.message); }
+}
+["#oSearch","#oStatus"].forEach(id => $(id).addEventListener("input", renderOrcs));
+
+// --------------------------- Integração Sapiens (fábrica) ---------------------------
+const SAP_CFG = ["empresaWJ","filialWJ","empresaBella","filialBella"];
+let SAP_MAP = {}, SAP_PRODS = [], SAP_VERIFIED = {};
+async function loadSapiens(){
+  try {
+    const rc = await fetch("api/sapiens/config", {cache:"no-store"});
+    if(!rc.ok) throw new Error(`config HTTP ${rc.status}`);
+
+    const c = await rc.json();
+
+    SAP_CFG.forEach(k => {
+      const el = $("#sap" + k.charAt(0).toUpperCase() + k.slice(1));
+      if(el) el.value = (c.config || {})[k] || "";
+    });
+
+    const rr = await fetch("api/relay-token", {cache:"no-store"});
+    if(!rr.ok) throw new Error(`relay-token HTTP ${rr.status}`);
+
+    const rt = await rr.json();
+    $("#relayToken").value = rt.token || "";
+
+    const rm = await fetch("api/sapiens/map", {cache:"no-store"});
+    if(!rm.ok) throw new Error(`sapiens/map HTTP ${rm.status}`);
+
+    const m = await rm.json();
+
+    SAP_MAP = m.map || {};
+    SAP_PRODS = m.produtos || [];
+    SAP_VERIFIED = m.verificados || {};
+
+    renderSap();
+    loadCatalogoStatus();
+    loadSeniorIndexStatus();
+
+  } catch(ex) {
+    console.error("Erro ao carregar integração Sapiens:", ex);
+
+    $("#relayToken").value = "ERRO AO CARREGAR";
+
+    const count = $("#sapCount");
+    if(count){
+      count.textContent = "Erro ao carregar integração Sapiens";
+    }
+  }
+}
+$("#sapCfgSave").onclick = async () => {
+  const body = {}; SAP_CFG.forEach(k => { const el=$("#sap"+k.charAt(0).toUpperCase()+k.slice(1)); if(el) body[k]=el.value; });
+  try {
+    const r = await fetch("api/sapiens/config", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)});
+    if(!r.ok) throw new Error("Erro ao salvar.");
+    $("#sapCfgMsg").textContent = "Parâmetros salvos."; setTimeout(()=>$("#sapCfgMsg").textContent="",4000);
+  } catch(ex){ $("#sapCfgMsg").textContent = "Erro: "+ex.message; }
+};
+["#sapSearch","#sapOnlyPend"].forEach(id => $(id).addEventListener("input", renderSap));
+function renderSap() {
+  const q = (($("#sapSearch").value) || "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .trim();
+
+  const pend = $("#sapOnlyPend").checked;
+
+  const list = SAP_PRODS.filter(p => {
+    const m = SAP_MAP[p.name];
+
+    if (pend && m && m.codigo) return false;
+
+    return !q || p.name.toLowerCase().includes(q);
+  });
+
+  const semcod = SAP_PRODS.filter(
+    p => !(SAP_MAP[p.name] || {}).codigo
+  ).length;
+
+  $("#sapCount").textContent =
+    `${SAP_PRODS.length} produtos · ${semcod} sem código`;
+
+  $("#sapBody").innerHTML = list.map(p => {
+    const m = SAP_MAP[p.name] || {};
+    const nm = esc(p.name);
+    const nd = (m.derivacoes || []).length;
+
+    const verified = SAP_VERIFIED[p.name];
+
+    const isVerified = !!(
+      verified && verified.code === m.codigo
+    );
+
+    const verifiedText = !m.codigo
+      ? ""
+      : isVerified
+        ? `✓ Validado no Senior`
+        : "⚠ código anterior não verificado";
+
+    return `
+      <tr>
+        <td>${nm}</td>
+        <td>${esc(p.brand || "")}</td>
+
+        <td class="${m.codigo ? "" : "semcod"}">
+          <input
+            class="sapCodeRead"
+            readonly
+            value="${esc(m.codigo || "")}"
+            data-nome="${nm}"
+            data-f="codigo"
+            placeholder="não vinculado"
+          >
+
+          <div class="sapSourceNotice">
+            ${verifiedText}
+          </div>
+
+          <span class="sapLookupActions">
+            <button
+              class="sapLookupBtn"
+              type="button"
+              data-nome="${nm}"
+              data-marca="${esc(p.brand || "")}"
+            >
+              ⌕ Buscar Senior
+            </button>
+
+            ${jobChipHtml(p.name, p.brand)}
+          </span>
+
+          ${m.codigo ? `
+            <button
+              class="linkbtn sapUnmapBtn"
+              type="button"
+              data-nome="${nm}"
+            >
+              Desvincular
+            </button>
+          ` : ""}
+        </td>
+
+        <td>
+          <input
+            value="${esc(m.unidade || "")}"
+            data-nome="${nm}"
+            data-f="unidade"
+            placeholder="—"
+          >
+        </td>
+
+        <td>
+          ${nd} cor(es)
+
+          <button
+            class="derivBtn"
+            data-nome="${nm}"
+            ${m.codigo
+              ? ""
+              : "disabled title='cadastre o código primeiro'"}
+          >
+            Editar
+          </button>
+        </td>
+      </tr>
+    `;
+  }).join("");
+
+  // The Senior code is selected through search,
+  // not by manually typing into the input.
+  $("#sapBody")
+    .querySelectorAll('input[data-f="unidade"]')
+    .forEach(inp => {
+      inp.addEventListener("change", () =>
+        saveSap(inp.dataset.nome, inp.closest("tr"))
+      );
+    });
+
+  $("#sapBody")
+    .querySelectorAll(".sapLookupBtn")
+    .forEach(b => {
+      b.onclick = () =>
+        openSeniorLookup(b.dataset.nome, b.dataset.marca);
+    });
+
+  $("#sapBody")
+    .querySelectorAll(".sapJobChip")
+    .forEach(b => {
+      b.onclick = () =>
+        openExistingSeniorJob(b.dataset.jobId);
+    });
+
+  $("#sapBody")
+    .querySelectorAll(".sapUnmapBtn")
+    .forEach(b => {
+      b.onclick = () => unlinkSeniorProduct(b.dataset.nome);
+    });
+
+  $("#sapBody")
+    .querySelectorAll(".derivBtn")
+    .forEach(b => {
+      b.onclick = () => openDeriv(b.dataset.nome);
+    });
+}
+async function unlinkSeniorProduct(nome) {
+  if (!confirm(
+    `Remover o vínculo Senior de "${nome}" e todas as derivações salvas?`
+  )) return;
+
+  try {
+    const r = await fetch("api/sapiens/map", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nome,
+        codigo: ""
+      })
+    });
+
+    const j = await r.json();
+
+    if (!r.ok) {
+      throw new Error(j.error || "Erro ao desvincular");
+    }
+
+    SAP_MAP = j.map || SAP_MAP;
+    delete SAP_VERIFIED[nome];
+
+    renderSap();
+
+  } catch (e) {
+    alert("Erro: " + e.message);
+  }
+}
+async function puxarCores(nome, btn){
+  const cod = (SAP_MAP[nome]||{}).codigo || "";
+  if(!cod){ alert("Cadastre o código Sapiens primeiro."); return; }
+  const txt = btn.textContent; btn.disabled = true; btn.textContent = "puxando…";
+  try {
+    const r = await fetch("api/sapiens/importar-derivacoes", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({nome, codpro:cod})});
+    const j = await r.json();
+    if(!r.ok) throw new Error(j.error||"Falha.");
+    if(j.map) SAP_MAP = j.map;
+    renderSap();
+    alert(`✓ ${j.n} cor(es) importada(s) do Senior para "${nome}".`);
+  } catch(ex){ btn.disabled = false; btn.textContent = txt; alert("Erro: "+ex.message); }
+}
+async function loadCatalogoStatus() {
+  try {
+    const c = await fetch("api/sapiens/catalogo")
+      .then(r => r.json());
+
+    const el = $("#catStatus");
+
+    if (c.total) {
+      const comDeriv = c.produtos.filter(
+        p => p.n_deriv > 0
+      ).length;
+
+      el.innerHTML =
+        `Cache legado de derivações: <b>${c.total}</b> ` +
+        `produto(s) · <b>${comDeriv}</b> com cores. ` +
+        `A busca por código usa o novo índice acima.`;
+
+    } else {
+      el.textContent =
+        "Derivações ainda não sincronizadas: " +
+        "Use ‘Buscar Senior’ para solicitar uma consulta individual " +
+        "via fila; o relay responderá na próxima etapa.";
+    }
+  } catch (_) {}
+}
+async function saveSap(nome, tr){
+  const get = f => tr.querySelector(`input[data-f="${f}"]`).value.trim();
+  const codigo = (SAP_MAP[nome] || {}).codigo || "";
+  try {
+    const r = await fetch("api/sapiens/map", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nome,
+        unidade: get("unidade")
+      })
+    });
+    const j = await r.json();
+    if(j.map) SAP_MAP = j.map;
+    tr.querySelector("td:nth-child(3)").classList.toggle("semcod", !codigo);
+    const db = tr.querySelector(".derivBtn"); if(db) db.disabled = !codigo;
+    const semcod = SAP_PRODS.filter(p => !(SAP_MAP[p.name]||{}).codigo).length;
+    $("#sapCount").textContent = `${SAP_PRODS.length} produtos · ${semcod} sem código`;
+  } catch(_){}
+}
+
+
+/* ---------- Inline derivation lookup status ---------- */
+
+let jobsWatchTimer = null;
+let SAP_LATEST_JOBS = {};
+
+function jobKey(name, brand) {
+  const b = String(brand || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toUpperCase();
+
+  return `${b.startsWith("WJ") ? "WJ" : "BELLA"}\u0000${name}`;
+}
+
+function jobChipHtml(name, brand) {
+  const job = SAP_LATEST_JOBS[jobKey(name, brand)];
+
+  if (!job) return "";
+
+  let label = "";
+  let kind = "mock";
+
+  if (job.applied_at) {
+    label = "✓ Vinculado";
+    kind = "applied";
+  } else if (job.status === "pending") {
+    label = "◷ Na fila";
+    kind = "pending";
+  } else if (job.status === "error") {
+    label = "⚠ Erro";
+    kind = "error";
+  } else if (job.result_source === "mock") {
+    label = "✓ Teste";
+    kind = "mock";
+  } else if (job.status === "completed") {
+    label = "● Revisar";
+    kind = "review";
+  } else {
+    label = "Consultar";
+  }
+
+  const hint = job.applied_at
+    ? "Mapeamento aplicado"
+    : job.status === "pending"
+      ? "Aguardando consulta pelo relay"
+      : job.status === "error"
+        ? "Consulta falhou; clique para ver o erro"
+        : job.result_source === "mock"
+          ? "Mock recebido: não alterou o mapeamento"
+          : "Derivações recebidas; clique para revisar";
+
+  return `
+    <button
+      type="button"
+      class="sapJobChip ${kind}"
+      data-job-id="${esc(job.job_id)}"
+      title="${esc(hint)}"
+      aria-label="${esc(hint)}: ${esc(name)}"
+    >${label}</button>
+  `;
+}
+
+async function refreshJobsBadges() {
+  if (jobsWatchTimer) clearTimeout(jobsWatchTimer);
+  jobsWatchTimer = null;
+
+  let wait = 10000;
+
+  try {
+    const r = await fetch(
+      "api/sapiens/derivacao-jobs?resumo=1",
+      { cache: "no-store" }
+    );
+
+    if (!r.ok) throw new Error("HTTP " + r.status);
+
+    const data = await r.json();
+    const jobs = data.jobs || [];
+
+    const updated = {};
+
+    jobs.forEach(j => {
+      updated[jobKey(j.web_product, j.brand)] = j;
+    });
+
+    SAP_LATEST_JOBS = updated;
+
+    // Update chips without rerendering the whole table.
+    $("#sapBody").querySelectorAll("tr").forEach(row => {
+      const actions = row.querySelector(".sapLookupActions");
+      const btn = actions && actions.querySelector(".sapLookupBtn");
+
+      if (!btn) return;
+
+      const old = actions.querySelector(".sapJobChip");
+      if (old) old.remove();
+
+      const html = jobChipHtml(
+        btn.dataset.nome,
+        btn.dataset.marca
+      );
+
+      if (html) {
+        actions.insertAdjacentHTML("beforeend", html);
+
+        actions.querySelector(".sapJobChip").onclick = e =>
+          openExistingSeniorJob(e.currentTarget.dataset.jobId);
+      }
+    });
+
+    wait = jobs.some(j => j.status === "pending")
+      ? 3000
+      : 10000;
+
+  } catch (e) {
+    console.warn(
+      "Não foi possível atualizar os indicadores de consulta:",
+      e
+    );
+  }
+
+  jobsWatchTimer = setTimeout(refreshJobsBadges, wait);
+}
+
+async function openExistingSeniorJob(jobId) {
+  closeSeniorLookup();
+
+  lookupJobId = jobId;
+
+  try {
+    const r = await fetch(
+      "api/sapiens/derivacao-jobs/" + encodeURIComponent(jobId),
+      { cache: "no-store" }
+    );
+
+    const data = await r.json();
+
+    if (!r.ok) {
+      throw new Error(
+        data.error || "Não foi possível abrir a consulta."
+      );
+    }
+
+    const j = data.job;
+
+    lookupName = j.web_product;
+    lookupBrand = j.brand;
+
+    $("#lookupWebName").textContent =
+      `${j.web_product} · ${j.brand} / ${j.environment} · ` +
+      `Senior: ${j.code} — ${j.description}`;
+
+    $("#lookupSearch").value = "";
+    $("#lookupResults").innerHTML = "";
+    $("#lookupPreview").textContent = "";
+    $("#lookupApply").style.display = "none";
+
+    $("#seniorLookupModal").style.display = "flex";
+
+    await refreshLookupJob();
+
+  } catch (e) {
+    closeSeniorLookup();
+    alert("Erro abrindo consulta: " + e.message);
+  }
+}
+
+
+/* ---------- Search products in the Senior index ---------- */
+
+let lookupName = "";
+let lookupBrand = "";
+let lookupJobId = "";
+let lookupSeq = 0;
+let lookupTimer = null;
+let lookupSearchTimer = null;
+
+function lookupShow(text) {
+  $("#lookupState").textContent = text;
+}
+
+async function loadSeniorIndexStatus() {
+  const el = $("#sapIdxStatus");
+
+  try {
+    const r = await fetch(
+      "api/sapiens/produtos-index/status",
+      { cache: "no-store" }
+    );
+
+    if (!r.ok) throw new Error("HTTP " + r.status);
+
+    const j = await r.json();
+
+    const entries = (j.indices || []).filter(
+      x => x.environment === "producao"
+    );
+
+    el.textContent = entries.length
+      ? "Índice Senior · " +
+        entries.map(x =>
+          `${x.brand}: ${x.total.toLocaleString("pt-BR")} produtos`
+        ).join(" · ") +
+        " · Busca rápida por código/nome; derivações sob demanda."
+      : "Índice Senior não carregado. Importe os CSVs de WJ/Bella antes de pesquisar.";
+
+  } catch (e) {
+    el.textContent =
+      "Não foi possível consultar o índice Senior: " + e.message;
+  }
+}
+
+function closeSeniorLookup() {
+  ++lookupSeq;
+
+  if (lookupTimer) clearTimeout(lookupTimer);
+  if (lookupSearchTimer) clearTimeout(lookupSearchTimer);
+
+  lookupTimer = null;
+  lookupJobId = "";
+
+  $("#seniorLookupModal").style.display = "none";
+}
+
+function openSeniorLookup(nome, marca) {
+  closeSeniorLookup();
+
+  lookupName = nome;
+  lookupBrand = marca;
+
+  $("#lookupWebName").textContent =
+    `Catálogo: ${nome} · ${marca} · índice Produção`;
+
+  $("#lookupSearch").value = "";
+
+  $("#lookupResults").innerHTML =
+    '<div class="muted" style="padding:14px">' +
+    'Digite pelo menos 2 caracteres.</div>';
+
+  $("#lookupPreview").textContent = "";
+  $("#lookupApply").style.display = "none";
+
+  lookupShow(
+    "Selecione um produto; a consulta de derivações será " +
+    "colocada na fila somente após confirmação."
+  );
+
+  $("#seniorLookupModal").style.display = "flex";
+  $("#lookupSearch").focus();
+}
+
+$("#lookupClose").onclick = closeSeniorLookup;
+
+$("#seniorLookupModal").addEventListener("click", e => {
+  if (e.target.id === "seniorLookupModal") {
+    closeSeniorLookup();
+  }
+});
+
+$("#lookupSearch").addEventListener("input", () => {
+  if (lookupSearchTimer) clearTimeout(lookupSearchTimer);
+
+  lookupSearchTimer = setTimeout(
+    searchSeniorProducts,
+    230
+  );
+});
+
+async function searchSeniorProducts() {
+  const query = $("#lookupSearch").value.trim();
+  const seq = ++lookupSeq;
+  const box = $("#lookupResults");
+
+  if (query.length < 2) {
+    box.textContent = "Digite pelo menos 2 caracteres.";
+    return;
+  }
+
+  box.textContent = "Pesquisando…";
+
+  try {
+    const url =
+      `api/sapiens/produtos-search?` +
+      `marca=${encodeURIComponent(lookupBrand)}` +
+      `&ambiente=producao` +
+      `&q=${encodeURIComponent(query)}`;
+
+    const r = await fetch(url, { cache: "no-store" });
+    const json = await r.json();
+
+    if (seq !== lookupSeq) return;
+
+    if (!r.ok) {
+      throw new Error(json.error || "Erro na busca");
+    }
+
+    const hits = json.produtos || [];
+
+    if (!hits.length) {
+      box.textContent =
+        "Nenhum produto encontrado nesse índice Produção.";
+      return;
+    }
+
+    box.innerHTML = hits.map((p, i) => `
+      <button
+        type="button"
+        class="lookupItem"
+        data-i="${i}"
+      >
+        <strong>${esc(p.code)}</strong>
+        <small>${esc(p.description)}</small>
+      </button>
+    `).join("");
+
+    box.querySelectorAll(".lookupItem").forEach(btn => {
+      btn.onclick = () =>
+        selectSeniorProduct(hits[Number(btn.dataset.i)]);
+    });
+
+  } catch (e) {
+    if (seq === lookupSeq) {
+      box.textContent = "Erro: " + e.message;
+    }
+  }
+}
+
+
+/* ---------- Create the derivation lookup job ---------- */
+
+async function selectSeniorProduct(prod) {
+  const ok = confirm(`Vincular a consulta para:
+
+WEB: ${lookupName}
+SENIOR (${lookupBrand} / Produção): ${prod.code} — ${prod.description}
+
+Isso criará um job para o relay da fábrica. NÃO altera o mapeamento existente até você aprovar as derivações reais.`);
+
+  if (!ok) return;
+
+  ++lookupSeq;
+
+  $("#lookupResults").innerHTML = "";
+  $("#lookupSearch").disabled = true;
+  $("#lookupApply").style.display = "none";
+
+  lookupShow(
+    `Criando solicitação de derivações para ${prod.code}…`
+  );
+
+  try {
+    const r = await fetch("api/sapiens/derivacao-jobs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nome: lookupName,
+        marca: lookupBrand,
+        codigo: prod.code,
+        ambiente: "producao"
+      })
+    });
+
+    const j = await r.json();
+
+    if (!r.ok) {
+      throw new Error(j.error || "Falha ao enfileirar.");
+    }
+
+    lookupJobId = j.job.job_id;
+
+    refreshJobsBadges();
+
+    lookupShow(
+      `Job ${lookupJobId} na fila. `
+    );
+
+    await refreshLookupJob();
+
+  } catch (e) {
+    lookupShow("Erro: " + e.message);
+
+  } finally {
+    $("#lookupSearch").disabled = false;
+  }
+}
+
+
+/* ---------- Preview returned Senior data ---------- */
+
+async function refreshLookupJob() {
+  const jid = lookupJobId;
+
+  if (
+    !jid ||
+    $("#seniorLookupModal").style.display !== "flex"
+  ) return;
+
+  try {
+    const r = await fetch(
+      "api/sapiens/derivacao-jobs/" +
+      encodeURIComponent(jid),
+      { cache: "no-store" }
+    );
+
+    if (!r.ok) {
+      throw new Error(
+        "Consulta do job falhou: HTTP " + r.status
+      );
+    }
+
+    const j = (await r.json()).job;
+
+    if (jid !== lookupJobId) return;
+
+    if (j.status === "pending") {
+      lookupShow(
+        `Aguardando relay da fábrica· ${jid} · ${j.code}`
+      );
+
+      lookupTimer = setTimeout(refreshLookupJob, 2000);
+      return;
+    }
+
+    if (j.status === "error") {
+      lookupShow(
+        "Senior retornou erro: " +
+        (j.error || "desconhecido")
+      );
+      return;
+    }
+
+    if (j.applied_at) {
+      lookupShow(
+        `✓ Mapeamento já aplicado em ${j.applied_at} · ` +
+        `${j.code} · Unid.: ${j.unidade || "não registrada"}.`
+      );
+    } else {
+      lookupShow(
+        `${j.derivations.length} derivação(ões) recebida(s) ` +
+        `para ${j.code}. Unid.: ${j.unidade || "não retornada"}. ` +
+        `Origem: ${j.result_source}.`
+      );
+    }
+
+    $("#lookupPreview").innerHTML =
+      (j.derivations || []).map(d =>
+        `<div>${esc(d.cod)} — ${esc(d.nome)}</div>`
+      ).join("") ||
+      '<span class="muted">Nenhuma derivação para esse produto.</span>';
+
+    if (j.result_source === "mock") {
+      lookupShow(
+        "✓ Mock recebido. É apenas um teste de fila: " +
+        "NÃO pode ser salvo como derivação verdadeira."
+      );
+
+    } else if (!j.unidade) {
+      lookupShow(
+        "⚠ Senior não retornou uniMed nesta consulta. " +
+        "Atualize o F000CWS e faça uma nova consulta."
+      );
+
+    } else if (!j.applied_at) {
+      $("#lookupApply").style.display = "inline-block";
+    }
+
+  } catch (e) {
+    lookupShow(
+      "Erro consultando status: " + e.message
+    );
+  }
+}
+
+
+/* ---------- Approve and persist the Senior mapping ---------- */
+
+$("#lookupApply").onclick = async () => {
+  const jid = lookupJobId;
+
+  if (!jid || !confirm(
+    "Salvar código Senior, unidade de medida (uniMed) " +
+    "e substituir as derivações existentes pelos dados " +
+    "retornados do Senior?"
+  )) return;
+
+  const btn = $("#lookupApply");
+  btn.disabled = true;
+
+  try {
+    const r = await fetch(
+      `api/sapiens/derivacao-jobs/${encodeURIComponent(jid)}/aplicar`,
+      { method: "POST" }
+    );
+
+    const j = await r.json();
+
+    if (!r.ok) {
+      throw new Error(j.error || "Falha ao salvar.");
+    }
+
+    SAP_MAP = j.map || SAP_MAP;
+
+    SAP_VERIFIED[lookupName] = {
+      code: (SAP_MAP[lookupName] || {}).codigo,
+      environment: "producao"
+    };
+
+    renderSap();
+    refreshJobsBadges();
+    closeSeniorLookup();
+
+    alert(
+      "Produto mapeado com sucesso. " +
+      `Unid.: ${(SAP_MAP[lookupName] || {}).unidade || "—"}. ` +
+      `${j.n} derivação(ões) salva(s).`
+    );
+
+  } catch (e) {
+    lookupShow("Erro ao salvar: " + e.message);
+
+  } finally {
+    btn.disabled = false;
+  }
+};
+
+
+// editor de cores/derivações de um produto
+let derivNome = null;
+function derivRowHtml(cod, nome){
+  return `<div class="derivRow"><input class="cod" placeholder="cód. derivação" value="${esc(cod||"")}"><input class="nom" placeholder="cor / acabamento" value="${esc(nome||"")}"><button class="rmd" title="remover">✕</button></div>`;
+}
+function bindDerivRows(){
+  $("#derivRows").querySelectorAll(".rmd").forEach(b => b.onclick = () => b.closest(".derivRow").remove());
+}
+function openDeriv(nome){
+  derivNome = nome;
+  $("#derivTitle").textContent = nome;
+  $("#derivMsg").textContent = "";
+  const derivs = (SAP_MAP[nome]||{}).derivacoes || [];
+  $("#derivRows").innerHTML = (derivs.length ? derivs : [{cod:"",nome:""}]).map(d => derivRowHtml(d.cod, d.nome)).join("");
+  bindDerivRows();
+  $("#derivModal").style.display = "flex";
+}
+$("#derivAdd").onclick = () => { $("#derivRows").insertAdjacentHTML("beforeend", derivRowHtml("","")); bindDerivRows(); };
+$("#derivClose").onclick = () => { $("#derivModal").style.display = "none"; };
+$("#derivModal").addEventListener("click", e => { if(e.target.id==="derivModal") $("#derivModal").style.display = "none"; });
+$("#derivSave").onclick = async () => {
+  const derivacoes = [...$("#derivRows").querySelectorAll(".derivRow")].map(r => ({
+    cod: r.querySelector(".cod").value.trim(), nome: r.querySelector(".nom").value.trim()
+  })).filter(d => d.cod || d.nome);
+  try {
+    const r = await fetch("api/sapiens/map", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({nome:derivNome, derivacoes})});
+    const j = await r.json(); if(j.map) SAP_MAP = j.map;
+    $("#derivMsg").textContent = "Salvo.";
+    renderSap();
+    setTimeout(() => { $("#derivModal").style.display = "none"; }, 500);
+  } catch(ex){ $("#derivMsg").textContent = "Erro ao salvar."; }
+};
+
+loadVendedores();
+loadReport();
+loadOrcs();
+loadVendas();
+loadPbi();
+loadRestart();
+loadSapiens();
+refreshJobsBadges();
+
+// se uma atualização já estiver em andamento (ex.: recarregou a página), retoma o acompanhamento
+fetch("api/update/status").then(r=>r.json()).then(s => {
+  if (s && s.running) { btn.disabled = true; drop.style.pointerEvents = "none"; pollUpdate(); }
+}).catch(()=>{});
+</script>
+</body>
+</html>

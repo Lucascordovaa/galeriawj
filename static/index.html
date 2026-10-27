@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="__BASE_HREF__">
+<link rel="icon" type="image/x-icon" href="static/favicon.ico" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/x-icon" href="static/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+<title>Galeria Waldir Junior — Orçamentos</title>
+<style>
+  @font-face{font-family:"Inter"; src:url("static/fonts/Inter-Variable.ttf") format("truetype"); font-weight:100 900}
+  :root{
+    --bg:#0d0d0d; --panel:#161616; --card:#1c1c1c; --line:#2b2b2b;
+    --text:#f2f0eb; --muted:#9a968e; --accent:#c8b08a; --danger:#c96b5f;
+    --ok:#7ab87a; --warn:#d0a24a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--text); font-family:"Inter","Segoe UI",system-ui,sans-serif; height:100vh; display:flex; flex-direction:column; overflow:hidden}
+  input,button,select{font-family:inherit}
+
+  header{display:flex; align-items:center; gap:18px; padding:14px 28px; border-bottom:1px solid var(--line); background:var(--panel); flex-wrap:wrap}
+  .logo{font-weight:700; letter-spacing:.35em; font-size:15px; white-space:nowrap}
+  .logo small{display:block; letter-spacing:.18em; font-weight:400; color:var(--muted); font-size:10px; margin-top:2px}
+  #search{flex:1; min-width:200px; background:var(--card); border:1px solid var(--line); color:var(--text); padding:11px 16px; border-radius:8px; font-size:15px; outline:none}
+  #search:focus{border-color:var(--accent)}
+  .chips{display:flex; gap:8px}
+  .chip{background:var(--card); border:1px solid var(--line); color:var(--muted); padding:8px 16px; border-radius:999px; cursor:pointer; font-size:13px; user-select:none}
+  .chip.on{background:var(--text); color:var(--bg); border-color:var(--text); font-weight:600}
+  #cartToggle{display:none}
+  .hbtn{background:var(--card); border:1px solid var(--line); color:var(--text); padding:8px 14px; border-radius:8px; cursor:pointer; font-size:13px; white-space:nowrap}
+  .hbtn:hover{border-color:var(--accent); color:var(--accent)}
+  .whoami{display:flex; align-items:center; gap:7px; color:var(--muted); font-size:13px; white-space:nowrap}
+  .whoami b{color:var(--text); font-weight:600}
+  .whoami .dot{width:8px; height:8px; border-radius:50%; background:var(--ok)}
+  #adminLink{color:var(--muted); text-decoration:none; font-size:18px; padding:4px 6px}
+  #adminLink:hover{color:var(--accent)}
+
+  main{flex:1; display:flex; min-height:0}
+  #grid{flex:1; overflow-y:auto; padding:24px; display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); grid-auto-rows:max-content; gap:18px; align-content:start}
+  #count{grid-column:1/-1; color:var(--muted); font-size:13px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; transition:border-color .15s}
+  .card:hover{border-color:#4a4a4a}
+  .card.inCart{border-color:var(--accent)}
+  .card img{width:100%; aspect-ratio:16/9; object-fit:cover; background:#fff; cursor:zoom-in}
+  .card .body{padding:12px 14px 14px; display:flex; flex-direction:column; gap:8px; flex:1}
+  .card h3{font-size:13.5px; letter-spacing:.06em}
+  .badge{font-size:10px; letter-spacing:.12em; color:var(--muted); text-transform:uppercase}
+  .card button{margin-top:auto; background:transparent; border:1px solid var(--accent); color:var(--accent); padding:9px; border-radius:8px; cursor:pointer; font-size:13px; font-weight:600; letter-spacing:.04em}
+  .card button:hover{background:var(--accent); color:var(--bg)}
+  .card.inCart button{background:var(--accent); color:var(--bg)}
+
+  /* carrinho */
+  #cart{width:390px; border-left:1px solid var(--line); background:var(--panel); display:flex; flex-direction:column}
+  #cart h2{padding:18px 20px 10px; font-size:14px; letter-spacing:.25em; font-weight:700}
+  #cart h2 span{color:var(--accent)}
+  #cartItems{flex:1; overflow-y:auto; padding:0 14px}
+  .ci{display:flex; gap:10px; padding:12px 6px; border-bottom:1px solid var(--line); align-items:center}
+  .ci img{width:74px; aspect-ratio:16/9; object-fit:cover; border-radius:6px; background:#fff}
+  .ci .info{flex:1; min-width:0}
+  .ci .name{font-size:12px; letter-spacing:.04em; margin-bottom:6px}
+  .ci .fields{display:flex; gap:6px; align-items:center; flex-wrap:wrap}
+  .ci input,.ci select{background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:6px; padding:6px 8px; font-size:12.5px; outline:none}
+  .ci input:focus,.ci select:focus{border-color:var(--accent)}
+  .ci .qty{width:44px; text-align:center}
+  .ci .price{width:96px}
+  .ci input.color{width:74px}
+  .ci select.color{max-width:130px; cursor:pointer}
+  .ci .sub{font-size:11.5px; color:var(--muted); margin-top:5px}
+  .ci .rm{background:none; border:none; color:var(--muted); cursor:pointer; font-size:17px; padding:4px}
+  .ci .rm:hover{color:var(--danger)}
+  #cartFooter{border-top:1px solid var(--line); padding:16px 20px; display:flex; flex-direction:column; gap:12px}
+  .editBanner{display:none; background:rgba(200,176,138,.12); border:1px solid var(--accent); border-radius:8px; padding:10px 12px; font-size:12.5px; line-height:1.5}
+  .editBanner.show{display:block}
+  .editBanner b{color:var(--accent)}
+  .editBanner a{color:var(--muted); text-decoration:underline; cursor:pointer; font-size:11.5px}
+  .leadField{width:100%; background:var(--card); border:1px solid var(--line); color:var(--text); padding:10px 14px; border-radius:8px; font-size:14px; outline:none; font-family:inherit}
+  .leadField:focus{border-color:var(--accent)}
+  .leadField.invalid{border-color:var(--danger)}
+  .obsField{resize:vertical; min-height:46px; font-size:13.5px; line-height:1.4}
+  .fieldRow{display:flex; gap:8px}
+  .fieldRow .leadField{flex:1; min-width:0}
+  .archArea{display:flex; flex-direction:column; gap:8px}
+  .archArea-tag{display:flex; align-items:center; gap:6px; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:600}
+  .archArea-tag svg{flex:none}
+  .personalizeToggle{display:flex; align-items:center; gap:9px; font-size:13.5px; color:var(--muted); cursor:pointer; user-select:none}
+  .personalizeToggle input{width:16px; height:16px; accent-color:var(--accent); cursor:pointer}
+  #leadFields{display:none; flex-direction:column; gap:12px}
+  #leadFields.show{display:flex}
+  .lgpd{font-size:10.5px; line-height:1.45; color:var(--muted); text-align:center; margin:-2px 2px 0}
+  .totalRow{display:flex; justify-content:space-between; font-size:15px}
+  .totalRow b{font-size:19px; color:var(--accent)}
+  .genBtn{background:var(--text); color:var(--bg); border:none; padding:14px; border-radius:9px; font-size:14px; font-weight:700; letter-spacing:.05em; cursor:pointer}
+  .genBtn:hover{background:var(--accent)}
+  .genBtn:disabled{opacity:.45; cursor:default}
+  .genBtn.alt{background:transparent; color:var(--text); border:1px solid var(--text)}
+  .genBtn.alt:hover{background:var(--accent); border-color:var(--accent); color:var(--bg)}
+  #clearBtn{background:none; border:none; color:var(--muted); cursor:pointer; font-size:12px; text-decoration:underline}
+  .empty{color:var(--muted); text-align:center; padding:46px 20px; font-size:13.5px; line-height:1.7}
+  #msg{font-size:12.5px; color:var(--accent); text-align:center; min-height:16px}
+  #msg.err{color:var(--danger)}
+
+  /* status badges */
+  .st{font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; font-weight:600; white-space:nowrap}
+  .st.aberto{background:rgba(208,162,74,.16); color:var(--warn)}
+  .st.ganho{background:rgba(122,184,122,.16); color:var(--ok)}
+  .st.perdido{background:rgba(201,107,95,.16); color:var(--danger)}
+
+  /* zoom da imagem */
+  #zoom{position:fixed; inset:0; background:rgba(0,0,0,.88); display:none; align-items:center; justify-content:center; z-index:50; cursor:zoom-out}
+  #zoom img{max-width:94vw; max-height:92vh; border-radius:8px}
+
+  /* login (modal — login é opcional) */
+  #loginGate{position:fixed; inset:0; background:rgba(0,0,0,.62); display:none; align-items:center; justify-content:center; z-index:60; padding:20px}
+  .gateCard{width:min(380px,100%); background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:34px 30px; display:flex; flex-direction:column; gap:16px}
+  .gateCard .logo{text-align:center; margin-bottom:4px}
+  .gateCard h1{font-size:15px; font-weight:600; text-align:center; letter-spacing:.04em; color:var(--muted)}
+  .gateCard input{background:var(--card); border:1px solid var(--line); color:var(--text); padding:12px 15px; border-radius:8px; font-size:15px; outline:none}
+  .gateCard input:focus{border-color:var(--accent)}
+  .gateCard button{background:var(--text); color:var(--bg); border:none; padding:13px; border-radius:9px; font-size:14px; font-weight:700; letter-spacing:.05em; cursor:pointer}
+  .gateCard button:hover{background:var(--accent)}
+  .gateErr{color:var(--danger); font-size:12.5px; text-align:center; min-height:15px}
+  .gateClose{color:var(--muted); font-size:12.5px; text-align:center; text-decoration:underline; cursor:pointer}
+  .gateClose:hover{color:var(--text)}
+  .gateHint{color:var(--muted); font-size:11.5px; text-align:center; line-height:1.5}
+  .gateHint a{color:var(--accent); text-decoration:none}
+
+  /* modal Meus orçamentos */
+  #orcModal{position:fixed; inset:0; background:rgba(0,0,0,.6); display:none; align-items:flex-start; justify-content:center; z-index:55; padding:34px 16px; overflow-y:auto}
+  .modalCard{width:min(920px,100%); background:var(--panel); border:1px solid var(--line); border-radius:14px; display:flex; flex-direction:column; max-height:88vh}
+  .modalHead{display:flex; align-items:center; gap:14px; padding:18px 22px; border-bottom:1px solid var(--line); flex-wrap:wrap}
+  .modalHead h2{font-size:15px; letter-spacing:.2em; font-weight:700}
+  .modalHead .close{margin-left:auto; background:none; border:none; color:var(--muted); font-size:22px; cursor:pointer}
+  .modalHead .close:hover{color:var(--text)}
+  #orcSearch{flex:1; min-width:160px; background:var(--card); border:1px solid var(--line); color:var(--text); padding:9px 13px; border-radius:8px; font-size:13.5px; outline:none}
+  .stFilter{display:flex; gap:6px}
+  .modalBody{overflow-y:auto; padding:8px 22px 20px}
+  .orcRow{display:flex; align-items:center; gap:14px; padding:14px 4px; border-bottom:1px solid var(--line); flex-wrap:wrap}
+  .orcRow .num{font-weight:700; color:var(--accent); font-size:14px; min-width:34px}
+  .orcRow .who{flex:1; min-width:150px}
+  .orcRow .who .cli{font-size:13.5px}
+  .orcRow .who .meta{font-size:11.5px; color:var(--muted); margin-top:3px}
+  .orcRow .val{font-size:14px; font-weight:600; text-align:right; min-width:110px}
+  .orcRow .acts{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .orcRow .acts button, .orcRow .acts select{background:var(--card); border:1px solid var(--line); color:var(--text); border-radius:7px; padding:7px 11px; font-size:12.5px; cursor:pointer}
+  .orcRow .acts button:hover{border-color:var(--accent); color:var(--accent)}
+  .orcRow .acts .pdf{color:var(--muted)}
+  .orcEmpty{color:var(--muted); text-align:center; padding:40px; font-size:13.5px}
+  .pdfLinks{font-size:12px; color:var(--muted)}
+  .pdfLinks a{color:var(--accent); text-decoration:none; margin:0 3px; cursor:pointer}
+  .alerta{font-size:10.5px; font-weight:600; padding:3px 8px; border-radius:999px; white-space:nowrap}
+  .alerta.a30{background:rgba(208,162,74,.16); color:var(--warn)}
+  .alerta.a45{background:rgba(201,107,95,.18); color:var(--danger)}
+  .orcAlertBar{background:rgba(201,107,95,.14); border:1px solid var(--danger); color:var(--danger); border-radius:8px; padding:10px 14px; font-size:13px; margin:6px 0 12px}
+  .fabTag{font-size:10px; font-weight:600; padding:3px 8px; border-radius:999px; background:rgba(122,184,122,.16); color:var(--ok); white-space:nowrap}
+  /* modal de fábrica */
+  #fabModal{position:fixed; inset:0; background:rgba(0,0,0,.6); display:none; align-items:flex-start; justify-content:center; z-index:56; padding:34px 16px; overflow-y:auto}
+  .simTag{display:inline-block; background:rgba(200,176,138,.16); color:var(--accent); border:1px solid var(--accent); border-radius:8px; padding:6px 12px; font-size:12px; font-weight:600; margin-bottom:12px}
+  .fabSent{background:rgba(122,184,122,.14); border:1px solid var(--ok); color:var(--ok); border-radius:8px; padding:9px 13px; font-size:13px; margin-bottom:12px}
+  .fabEmpresa{margin:16px 0 6px; font-weight:700; font-size:14px; color:var(--accent); border-top:1px solid var(--line); padding-top:12px}
+  .fabInfo{background:var(--card); border:1px solid var(--line); border-radius:9px; padding:14px 16px; font-size:13.5px; line-height:1.7; margin-bottom:14px}
+  .fabInfo .fabParams{color:var(--muted); font-size:12.5px; margin-top:6px}
+  table.fabTable{width:100%; border-collapse:collapse; font-size:13px; white-space:nowrap}
+  table.fabTable th{text-align:left; color:var(--muted); font-size:11px; letter-spacing:.06em; padding:8px 10px; border-bottom:1px solid var(--line)}
+  table.fabTable td{padding:9px 10px; border-bottom:1px solid var(--line)}
+  table.fabTable td:nth-child(2),table.fabTable th:nth-child(2){text-align:center}
+  table.fabTable td:last-child,table.fabTable th:last-child,table.fabTable td:nth-child(3),table.fabTable th:nth-child(3){text-align:right}
+  table.fabTable tr.semcod td{background:rgba(201,107,95,.08)}
+  .semcodtag{color:var(--danger); font-weight:600; font-size:12px}
+  .fabActions{margin-top:18px; display:flex; flex-direction:column; gap:10px}
+  #fabMsg{font-size:13px; min-height:16px}
+  #fabMsg.fabOk{color:var(--ok)} #fabMsg.fabErr{color:var(--danger)}
+  #fabJson{background:#0a0a0a; border:1px solid var(--line); border-radius:8px; padding:12px; font-size:11.5px; color:var(--muted); overflow-x:auto; max-height:320px; white-space:pre; font-family:ui-monospace,Consolas,monospace}
+
+  @media (max-width:900px){
+    #cart{position:fixed; right:0; top:0; bottom:0; z-index:40; transform:translateX(100%); transition:transform .25s; width:min(390px,100vw)}
+    #cart.open{transform:none}
+    #cartToggle{display:block; background:var(--accent); color:var(--bg); border:none; border-radius:999px; padding:9px 18px; font-weight:700; cursor:pointer}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">GALERIA WALDIR JUNIOR<small>ORÇAMENTOS</small></div>
+  <input id="search" type="search" placeholder="Pesquisar luminária... (ex.: arandela canova)" autocomplete="off">
+  <div class="chips" id="brandChips">
+    <div class="chip on" data-b="">Todos</div>
+    <div class="chip" data-b="WJ">WJ</div>
+    <div class="chip" data-b="Bella Itália">Bella Itália</div>
+  </div>
+  <button id="loginBtn" class="hbtn" title="Entrar como vendedor para salvar seus orçamentos">🔑 Entrar</button>
+  <button id="myOrcBtn" class="hbtn" title="Orçamentos que você salvou" style="display:none">📁 Meus orçamentos</button>
+  <span id="whoami" class="whoami" style="display:none"></span>
+  <button id="logoutBtn" class="hbtn" title="Sair da conta" style="display:none">Sair</button>
+  <button id="cartToggle">🛒 <span id="cartCountM">0</span></button>
+  <a href="admin" id="adminLink" title="Painel do gestor (admin)">⚙</a>
+</header>
+
+<main>
+  <div id="grid"></div>
+  <aside id="cart">
+    <h2>ORÇAMENTO <span id="cartCount">(0)</span></h2>
+    <div id="cartItems"></div>
+    <div id="cartFooter">
+      <div class="editBanner" id="editBanner"></div>
+      <div class="archArea">
+        <div class="archArea-tag">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16z"/><path d="M9 20v-3M13 20v-5"/></svg>
+          Área do arquiteto
+        </div>
+        <label class="personalizeToggle">
+          <input type="checkbox" id="personalize"> Personalizar com meus dados
+        </label>
+      </div>
+      <div id="leadFields">
+        <input id="client" class="leadField" type="text" placeholder="Nome do cliente">
+        <input id="documento" class="leadField" type="text" placeholder="CPF ou CNPJ do cliente" inputmode="numeric" autocomplete="off">
+        <input id="architect" class="leadField" type="text" placeholder="Nome do arquiteto">
+        <div class="fieldRow">
+          <input id="whatsapp" class="leadField" type="tel" placeholder="WhatsApp">
+          <input id="city" class="leadField" type="text" placeholder="Cidade do projeto">
+        </div>
+      </div>
+      <textarea id="observacao" class="leadField obsField" rows="2" placeholder="Observações (saem no PDF) — ex.: prazo de entrega, condições de pagamento, voltagem..."></textarea>
+      <div class="totalRow"><span>Total <small style="color:var(--muted)">(validade: 7 dias)</small></span><b id="total">R$ 0,00</b></div>
+      <button id="genBtn" class="genBtn">GERAR APRESENTAÇÃO COMPLETA (PDF)</button>
+      <button id="genBudgetBtn" class="genBtn alt">GERAR APENAS ORÇAMENTO (PDF)</button>
+      <p class="lgpd">* Ao exportar os orçamentos, seus dados pessoais serão tratados em conformidade com a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, a LGPD.</p>
+      <div id="msg"></div>
+      <button id="clearBtn">limpar orçamento</button>
+    </div>
+  </aside>
+</main>
+
+<div id="zoom"><img id="zoomImg" alt=""></div>
+
+<!-- login do vendedor -->
+<div id="loginGate">
+  <form class="gateCard" id="loginForm" autocomplete="on">
+    <div class="logo">GALERIA WALDIR JUNIOR<small>ORÇAMENTOS</small></div>
+    <h1>Entrar na sua conta de vendedor</h1>
+    <input id="loginUser" type="text" placeholder="Usuário" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+    <input id="loginPass" type="password" placeholder="Senha" autocomplete="current-password" required>
+    <button type="submit">ENTRAR</button>
+    <div class="gateErr" id="loginErr"></div>
+    <a class="gateClose" id="loginCancel">continuar sem login</a>
+    <div class="gateHint">Sem login você gera os PDFs normalmente, mas os orçamentos não ficam salvos para editar depois. Não tem acesso? Peça ao gestor para criar seu login no <a href="admin">painel do gestor</a>.</div>
+  </form>
+</div>
+
+<!-- Meus orçamentos -->
+<div id="orcModal">
+  <div class="modalCard">
+    <div class="modalHead">
+      <h2 id="orcTitle">MEUS ORÇAMENTOS</h2>
+      <input id="orcSearch" type="search" placeholder="Buscar por cliente ou nº..." autocomplete="off">
+      <div class="stFilter chips" id="orcStFilter">
+        <div class="chip on" data-s="">Todos</div>
+        <div class="chip" data-s="aberto">Abertos</div>
+        <div class="chip" data-s="ganho">Ganhos</div>
+        <div class="chip" data-s="perdido">Perdidos</div>
+      </div>
+      <button class="close" id="orcClose" title="Fechar">✕</button>
+    </div>
+    <div class="modalBody" id="orcBody"></div>
+  </div>
+</div>
+
+<!-- Revisão do pedido à fábrica (Sapiens) -->
+<div id="fabModal">
+  <div class="modalCard">
+    <div class="modalHead">
+      <h2>REVISAR PEDIDO — FÁBRICA</h2>
+      <button class="close" id="fabClose" title="Fechar">✕</button>
+    </div>
+    <div class="modalBody" id="fabBody"></div>
+  </div>
+</div>
+
+<script>
+let CATALOG = null, ME = null;
+let cart = JSON.parse(localStorage.getItem("wj_cart") || "{}"); // id -> {qty, color, name}
+let editCtx = JSON.parse(localStorage.getItem("wj_editctx") || "null"); // {numero, cliente} quando editando
+let ORCS = [], orcQuery = "", orcStatus = "";
+let brand = "", query = "";
+
+const $ = s => document.querySelector(s);
+const brl = v => (v||0).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
+const norm = s => (s||"").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const esc = s => (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// ---------------------- catálogo + autenticação (login opcional) -------------
+// o catálogo carrega para todos; o login serve só para SALVAR/EDITAR orçamentos
+fetch("api/catalog?v=" + Date.now()).then(r => r.json())
+  .then(c => { CATALOG = c; migrateCart(); render(); renderCart(); refreshEditBanner(); });
+
+// cores/derivações por produto (para o dropdown de Cor no carrinho)
+let CORES = {};
+fetch("api/cores").then(r => r.json())
+  .then(d => { CORES = d.cores || {}; if (CATALOG) renderCart(); }).catch(() => {});
+
+fetch("api/vendedor/me").then(r => r.json()).then(me => updateAuthUI(me && me.usuario ? me : null));
+
+function updateAuthUI(me){
+  ME = me;
+  const logged = !!me;
+  $("#loginBtn").style.display = logged ? "none" : "";
+  $("#myOrcBtn").style.display = logged ? "" : "none";
+  $("#logoutBtn").style.display = logged ? "" : "none";
+  $("#whoami").style.display = logged ? "" : "none";
+  $("#whoami").innerHTML = logged ? `<span class="dot"></span> Olá, <b>${esc(me.nome)}</b>` : "";
+  if (!logged && editCtx) cancelEdit();   // não é possível editar sem estar logado
+}
+
+// modal de login
+$("#loginBtn").onclick = () => { $("#loginGate").style.display = "flex"; $("#loginErr").textContent = ""; $("#loginUser").focus(); };
+$("#loginCancel").onclick = () => { $("#loginGate").style.display = "none"; };
+$("#loginGate").addEventListener("click", e => { if (e.target.id === "loginGate") $("#loginGate").style.display = "none"; });
+
+$("#loginForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = $("#loginErr"); err.textContent = "";
+  const usuario = $("#loginUser").value.trim(), senha = $("#loginPass").value;
+  try {
+    const r = await fetch("api/vendedor/login", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({usuario, senha})
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Não foi possível entrar.");
+    $("#loginGate").style.display = "none"; $("#loginPass").value = "";
+    updateAuthUI(j);
+  } catch (ex) { err.textContent = ex.message; }
+});
+
+$("#logoutBtn").onclick = async () => {
+  await fetch("api/vendedor/logout", {method:"POST"});
+  updateAuthUI(null);
+};
+
+// ------------------------------ catálogo -------------------------------------
+function save(){ localStorage.setItem("wj_cart", JSON.stringify(cart)); }
+const thumbURL = p => `static/${p.thumb}?v=${CATALOG.version || 0}`;
+
+// Após uma atualização do catálogo os IDs podem mudar: re-localiza cada item pelo nome.
+function migrateCart(){
+  const oldVer = localStorage.getItem("wj_catver");
+  const newVer = String(CATALOG.version || 0);
+  Object.entries(cart).forEach(([id, it]) => { const p = CATALOG.products.find(x => x.id == id); if (p) it.name = p.name; });
+  if (oldVer && oldVer !== newVer){
+    const byName = Object.fromEntries(CATALOG.products.map(p => [p.name, p]));
+    const next = {}; const lost = [];
+    Object.values(cart).forEach(it => {
+      if (it.name && byName[it.name]) next[byName[it.name].id] = it;
+      else if (it.name) lost.push(it.name);
+    });
+    cart = next;
+    if (lost.length) alert("O catálogo foi atualizado. Itens removidos do orçamento (saíram do catálogo):\n\n" + lost.join("\n"));
+  }
+  localStorage.setItem("wj_catver", newVer);
+  save();
+}
+
+function filtered(){
+  const q = norm(query.trim());
+  return CATALOG.products.filter(p =>
+    (!brand || p.brand === brand) &&
+    (!q || q.split(/\s+/).every(t => norm(p.name).includes(t)))  // busca só pelo NOME
+  );
+}
+
+function render(){
+  const list = filtered();
+  const grid = $("#grid");
+  grid.innerHTML = `<div id="count">${list.length} produto(s)</div>` + list.map(p => `
+    <div class="card ${cart[p.id] ? "inCart" : ""}" id="card${p.id}">
+      <img src="${thumbURL(p)}" loading="lazy" alt="${esc(p.name)}" onclick="openZoom(thumbURL(CATALOG.products.find(x=>x.id==${p.id})))">
+      <div class="body">
+        <span class="badge">${p.brand}</span>
+        <h3>${esc(p.name)}</h3>
+        <button onclick="toggle(${p.id})">${cart[p.id] ? "✓ NO ORÇAMENTO" : "+ ADICIONAR"}</button>
+      </div>
+    </div>`).join("");
+}
+
+function toggle(id){
+  if (cart[id]) delete cart[id];
+  else { const p = CATALOG.products.find(x => x.id == id); cart[id] = {qty:1, color:"", name:p.name}; }
+  save(); render(); renderCart();
+}
+
+function renderCart(){
+  const ids = Object.keys(cart).map(Number);
+  const items = CATALOG.products.filter(p => cart[p.id]);
+  $("#cartCount").textContent = `(${ids.length})`;
+  $("#cartCountM").textContent = ids.length;
+  const box = $("#cartItems");
+  if (!items.length){
+    box.innerHTML = `<div class="empty">Nenhum produto selecionado.<br>Pesquise no catálogo e clique em <b>+ ADICIONAR</b>.</div>`;
+  } else {
+    box.innerHTML = items.map(p => {
+      const it = cart[p.id];
+      const sub = (p.price || 0) * it.qty;
+      const cores = CORES[p.name];
+      const corField = (cores && cores.length)
+        ? `<select class="color" title="Cor" onchange="setColor(${p.id}, this.value)">
+             <option value="">Cor...</option>
+             ${cores.map(cc => `<option value="${esc(cc)}" ${it.color === cc ? "selected" : ""}>${esc(cc)}</option>`).join("")}
+           </select>`
+        : `<input class="color" type="text" placeholder="Cor" title="Cor" value="${esc(it.color||'')}"
+                   onchange="setColor(${p.id}, this.value)">`;
+      return `<div class="ci">
+        <img src="${thumbURL(p)}" alt="">
+        <div class="info">
+          <div class="name">${esc(p.name)}</div>
+          <div class="fields">
+            <input class="qty" type="number" min="1" value="${it.qty}" title="Quantidade"
+                   onchange="setQty(${p.id}, this.value)">
+            ${corField}
+          </div>
+          <div class="sub">${brl(p.price||0)} un. &nbsp;·&nbsp; Subtotal: <b>${brl(sub)}</b></div>
+        </div>
+        <button class="rm" title="Remover" onclick="toggle(${p.id})">✕</button>
+      </div>`;
+    }).join("");
+  }
+  const total = items.reduce((s,p) => s + (p.price||0) * cart[p.id].qty, 0);
+  $("#total").textContent = brl(total);
+  $("#genBtn").disabled = $("#genBudgetBtn").disabled = !items.length;
+}
+
+function setQty(id, v){ cart[id].qty = Math.max(1, parseInt(v)||1); save(); renderCart(); }
+function setColor(id, v){ cart[id].color = v; save(); }
+
+$("#search").addEventListener("input", e => { query = e.target.value; render(); });
+$("#brandChips").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if (!c) return;
+  $("#brandChips").querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+  c.classList.add("on"); brand = c.dataset.b; render();
+});
+$("#clearBtn").onclick = () => { if (confirm("Limpar todos os itens do orçamento?")) { cart = {}; save(); render(); renderCart(); } };
+$("#cartToggle").onclick = () => $("#cart").classList.toggle("open");
+
+// "Personalizar com meus dados": mostra/esconde os campos do lead (lembra a escolha)
+const personalizeBox = $("#personalize");
+function toggleLeadFields(){ $("#leadFields").classList.toggle("show", personalizeBox.checked); }
+personalizeBox.checked = localStorage.getItem("wj_personalize") === "1";
+toggleLeadFields();
+personalizeBox.addEventListener("change", () => {
+  localStorage.setItem("wj_personalize", personalizeBox.checked ? "1" : "0");
+  toggleLeadFields();
+});
+
+function openZoom(src){ $("#zoomImg").src = src; $("#zoom").style.display = "flex"; }
+$("#zoom").onclick = () => $("#zoom").style.display = "none";
+
+// só envia os dados do lead se "Personalizar com meus dados" estiver marcado
+function leadData(){
+  if (!$("#personalize").checked) return {};
+  return {client: $("#client").value, architect: $("#architect").value,
+          whatsapp: $("#whatsapp").value, city: $("#city").value,
+          documento: $("#documento").value};
+}
+
+// quando personalizando, todos os campos da Área do arquiteto são obrigatórios
+function validateLead(){
+  if (!$("#personalize").checked) return true;
+  const campos = [["#client","o nome do cliente"],
+                  ["#architect","o nome do arquiteto"],["#whatsapp","o WhatsApp"],
+                  ["#city","a cidade do projeto"]];
+  let falta = null;
+  campos.forEach(([sel, nome]) => {
+    const el = $(sel), vazio = !el.value.trim();
+    el.classList.toggle("invalid", vazio);
+    if (vazio && !falta) falta = {el, nome};
+  });
+  if (falta){
+    const msg = $("#msg");
+    msg.className = "err";
+    msg.textContent = "Preencha " + falta.nome + " na Área do arquiteto.";
+    falta.el.focus();
+    return false;
+  }
+  return true;
+}
+["#client","#architect","#whatsapp","#city"].forEach(sel =>
+  $(sel).addEventListener("input", () => $(sel).classList.remove("invalid")));
+
+// ------------------------- modo de edição (versões) --------------------------
+function refreshEditBanner(){
+  const b = $("#editBanner");
+  if (editCtx){
+    b.classList.add("show");
+    b.innerHTML = `✏️ Editando o orçamento <b>Nº ${editCtx.numero}</b>` +
+      (editCtx.cliente ? ` — ${esc(editCtx.cliente)}` : "") +
+      ` <br>Ao gerar, será salva a <b>versão v${(editCtx.versao||1)+1}</b> com os preços atuais. ` +
+      `<a onclick="cancelEdit()">cancelar edição / novo orçamento</a>`;
+    $("#genBtn").textContent = "SALVAR NOVA VERSÃO — COMPLETO (PDF)";
+    $("#genBudgetBtn").textContent = "SALVAR NOVA VERSÃO — ORÇAMENTO (PDF)";
+  } else {
+    b.classList.remove("show");
+    $("#genBtn").textContent = "GERAR APRESENTAÇÃO COMPLETA (PDF)";
+    $("#genBudgetBtn").textContent = "GERAR APENAS ORÇAMENTO (PDF)";
+  }
+}
+
+function cancelEdit(){
+  editCtx = null; localStorage.removeItem("wj_editctx");
+  cart = {}; save(); $("#observacao").value = ""; $("#documento").value = "";
+  render(); renderCart(); refreshEditBanner();
+}
+
+// idade (em dias) desde uma data "YYYY-MM-DD HH:MM:SS"
+function diasDesde(s){
+  if (!s) return 0;
+  const d = new Date(String(s).replace(" ", "T"));
+  const n = Math.floor((Date.now() - d.getTime()) / 86400000);
+  return isNaN(n) ? 0 : n;
+}
+function alertaBadge(o){
+  if (o.status !== "aberto") return "";
+  const d = diasDesde(o.criado_em);
+  if (d >= 45) return ` <span class="alerta a45" title="Aberto há ${d} dias">⚠ ${d}d</span>`;
+  if (d >= 30) return ` <span class="alerta a30" title="Aberto há ${d} dias">⏳ ${d}d</span>`;
+  return "";
+}
+
+async function reopenOrcamento(numero){
+  try {
+    const r = await fetch("api/orcamento/" + numero);
+    const obj = await r.json();
+    if (!r.ok) throw new Error(obj.error || "Não foi possível abrir.");
+    const versao = obj.versoes[obj.versoes.length - 1];
+    const byId = Object.fromEntries(CATALOG.products.map(p => [p.id, p]));
+    const next = {}, lost = [];
+    versao.itens.forEach(it => {
+      const p = byId[it.id];
+      if (p) next[p.id] = {qty: it.qtd, color: it.cor || "", name: p.name};
+      else lost.push(it.produto);
+    });
+    cart = next; save();
+    editCtx = {numero: obj.numero, cliente: obj.cliente || "", versao: obj.versao_atual};
+    localStorage.setItem("wj_editctx", JSON.stringify(editCtx));
+    // preenche os dados do cliente
+    personalizeBox.checked = true; localStorage.setItem("wj_personalize", "1"); toggleLeadFields();
+    $("#client").value = obj.cliente || ""; $("#architect").value = obj.arquiteto || "";
+    $("#whatsapp").value = obj.whatsapp || ""; $("#city").value = obj.cidade || "";
+    $("#documento").value = obj.documento || ""; $("#observacao").value = obj.observacao || "";
+    render(); renderCart(); refreshEditBanner();
+    closeOrcModal();
+    $("#cart").classList.add("open");
+    if (lost.length) alert("Alguns produtos saíram do catálogo e não foram recarregados:\n\n" + lost.join("\n"));
+    window.scrollTo(0, 0);
+  } catch (ex) { alert("Erro: " + ex.message); }
+}
+
+// ------------------------------ geração --------------------------------------
+async function downloadPdf(url){
+  const r = await fetch(url);
+  if (!r.ok){ let d = `Erro ${r.status} ao gerar o PDF.`; try { d = (await r.json()).error || d; } catch(_){} throw new Error(d); }
+  const blob = await r.blob();
+  const cd = r.headers.get("Content-Disposition") || "";
+  const m = cd.match(/filename\*?=(?:UTF-8'')?"?([^";]+)/i);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = m ? decodeURIComponent(m[1]) : "Orcamento.pdf";
+  a.click(); URL.revokeObjectURL(a.href);
+}
+
+async function generate(mode){
+  if (!validateLead()) return;
+  const items = Object.entries(cart).map(([id, it]) => ({id:+id, qty:it.qty, color:it.color||""}));
+  const btns = [$("#genBtn"), $("#genBudgetBtn")], msg = $("#msg");
+  btns.forEach(b => b.disabled = true);
+  msg.className = ""; msg.textContent = editCtx ? "Salvando nova versão..." : "Gerando PDF... aguarde";
+  try {
+    if (editCtx){
+      // salva uma nova versão do orçamento existente e baixa o PDF dessa versão
+      const rv = await fetch(`api/orcamento/${editCtx.numero}/versao`, {
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({...leadData(), mode, items, observacao: $("#observacao").value})
+      });
+      const jv = await rv.json();
+      if (!rv.ok) throw new Error(jv.error || "Não foi possível salvar a versão.");
+      editCtx.versao = jv.versao;
+      localStorage.setItem("wj_editctx", JSON.stringify(editCtx));
+      refreshEditBanner();
+      await downloadPdf(`api/orcamento/${editCtx.numero}/pdf?v=${jv.versao}&mode=${mode}`);
+      msg.textContent = `✓ Versão v${jv.versao} salva e PDF gerado!`;
+    } else {
+      // cria um novo orçamento (v1) e baixa o PDF
+      const r = await fetch("api/generate", {
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({...leadData(), mode, items, observacao: $("#observacao").value})
+      });
+      if (!r.ok){ let d = `Erro ${r.status} no servidor ao gerar o PDF.`; try { d = (await r.json()).error || d; } catch(_){} throw new Error(d); }
+      const blob = await r.blob();
+      const cd = r.headers.get("Content-Disposition") || "";
+      const m = cd.match(/filename\*?=(?:UTF-8'')?"?([^";]+)/i);
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = m ? decodeURIComponent(m[1]) : (mode === "budget" ? "Orcamento WJ.pdf" : "Apresentacao WJ.pdf");
+      a.click(); URL.revokeObjectURL(a.href);
+      msg.textContent = ME ? "✓ Orçamento salvo e PDF gerado!" : "✓ PDF gerado!";
+    }
+  } catch (e) {
+    msg.className = "err"; msg.textContent = "Erro: " + e.message;
+  } finally {
+    btns.forEach(b => b.disabled = !Object.keys(cart).length);
+    setTimeout(() => { msg.textContent = ""; msg.className = ""; }, 7000);
+  }
+}
+$("#genBtn").onclick = () => generate("full");
+$("#genBudgetBtn").onclick = () => generate("budget");
+
+// -------------------------- Meus orçamentos (modal) --------------------------
+$("#myOrcBtn").onclick = openOrcModal;
+$("#orcClose").onclick = closeOrcModal;
+$("#orcModal").addEventListener("click", e => { if (e.target.id === "orcModal") closeOrcModal(); });
+$("#orcSearch").addEventListener("input", e => { orcQuery = e.target.value; renderOrcs(); });
+$("#orcStFilter").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if (!c) return;
+  $("#orcStFilter").querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+  c.classList.add("on"); orcStatus = c.dataset.s; renderOrcs();
+});
+
+async function openOrcModal(){
+  $("#orcModal").style.display = "flex";
+  $("#orcBody").innerHTML = `<div class="orcEmpty">Carregando...</div>`;
+  try {
+    const r = await fetch("api/orcamentos");
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Erro ao carregar.");
+    ORCS = j.orcamentos || [];
+    $("#orcTitle").textContent = j.escopo === "todos" ? "TODOS OS ORÇAMENTOS" : "MEUS ORÇAMENTOS";
+    renderOrcs();
+  } catch (ex) { $("#orcBody").innerHTML = `<div class="orcEmpty">Erro: ${esc(ex.message)}</div>`; }
+}
+function closeOrcModal(){ $("#orcModal").style.display = "none"; }
+
+function factoryBadge(o){
+  if (o.pedido_desatualizado){
+    const ultima = o.pedido_versao ? `v${o.pedido_versao}` : "versão anterior";
+    return ` <span class="fabTag" style="background:rgba(208,162,74,.16);color:var(--warn)">🏭 alterações não enviadas · último envio ${ultima}</span>`;
+  }
+
+  const v = o.pedido_versao ? `v${o.pedido_versao} · ` : "";
+
+  if (o.pedido_status === "pendente")
+    return ` <span class="fabTag" style="background:rgba(208,162,74,.16);color:var(--warn)">🏭 ${v}na fila</span>`;
+
+  if (o.pedido_status === "recebido_agente")
+    return ` <span class="fabTag">🏭 ${v}recebida pela fábrica</span>`;
+
+  if (o.pedido_status === "enviado"){
+    const nums = (o.pedido_numeros && o.pedido_numeros.length ? o.pedido_numeros : [o.pedido_numero]).filter(Boolean);
+    return ` <span class="fabTag">🏭 ${v}pedido${nums.length>1?"s":""} ${esc(nums.join(", "))}</span>`;
+  }
+
+  if (o.pedido_status === "parcial")
+    return ` <span class="fabTag" style="background:rgba(208,162,74,.16);color:var(--warn)">🏭 ${v}parcial com erro</span>`;
+
+  if (o.pedido_status === "concluido_parcial")
+    return ` <span class="fabTag">🏭 ${v}concluído parcialmente</span>`;
+
+  if (o.pedido_status === "nao_enviar")
+    return ` <span class="fabTag">🏭 ${v}não reenviar</span>`;
+
+  if (o.pedido_status === "erro")
+    return ` <span class="fabTag" style="background:rgba(201,107,95,.18);color:var(--danger)">🏭 ${v}erro</span>`;
+
+  return "";
+}
+
+function renderOrcs(){
+  const q = norm(orcQuery.trim());
+  const list = ORCS.filter(o =>
+    (!orcStatus || o.status === orcStatus) &&
+    (!q || norm(o.cliente).includes(q) || String(o.numero).includes(q) || norm(o.vendedor_nome).includes(q))
+  );
+  const body = $("#orcBody");
+  // alerta de orçamentos em aberto parados (30/45 dias)
+  const ab = ORCS.filter(o => o.status === "aberto");
+  const c45 = ab.filter(o => diasDesde(o.criado_em) >= 45).length;
+  const c30 = ab.filter(o => diasDesde(o.criado_em) >= 30).length;
+  const bar = c30 ? `<div class="orcAlertBar">⚠ ${c30} orçamento(s) em aberto há mais de 30 dias${c45 ? ` — ${c45} há mais de 45` : ""}. Vale um follow-up.</div>` : "";
+  if (!list.length){ body.innerHTML = bar + `<div class="orcEmpty">Nenhum orçamento encontrado.</div>`; return; }
+  body.innerHTML = bar + list.map(o => {
+    const vers = [];
+    for (let i = 1; i <= o.n_versoes; i++)
+      vers.push(`<a onclick="baixarPdf(${o.numero},${i})">v${i}</a>`);
+    const tipoLabel = o.tipo === "budget" ? "Só orçamento" : "Apresentação";
+    return `<div class="orcRow">
+      <div class="num">#${o.numero}</div>
+      <div class="who">
+        <div class="cli">${esc(o.cliente || "(sem cliente)")}</div>
+        <div class="meta">${esc(o.vendedor_nome || "")} · ${esc((o.criado_em||"").slice(0,10).split("-").reverse().join("/"))} · ${tipoLabel} · ${o.n_itens} item(ns) · v${o.versao_atual}</div>
+      </div>
+      <span class="st ${o.status}">${o.status}</span>${alertaBadge(o)}${factoryBadge(o)}
+      <div class="val">${brl(o.valor_atual)}</div>
+      <div class="acts">
+        <button onclick="reopenOrcamento(${o.numero})" title="Carregar no carrinho para editar">✏️ Editar</button>
+        <button onclick="abrirFabrica(${o.numero})" title="Revisar e enviar pedido à fábrica (Sapiens)">🏭 Fábrica</button>
+        <span class="pdfLinks">PDF: ${vers.join(" ")}</span>
+        <select onchange="mudarStatus(${o.numero}, this.value)" title="Situação">
+          <option value="aberto" ${o.status==="aberto"?"selected":""}>Aberto</option>
+          <option value="ganho" ${o.status==="ganho"?"selected":""}>Ganho ✅</option>
+          <option value="perdido" ${o.status==="perdido"?"selected":""}>Perdido</option>
+        </select>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+async function baixarPdf(numero, v){
+  try { await downloadPdf(`api/orcamento/${numero}/pdf?v=${v}`); }
+  catch (ex) { alert("Erro: " + ex.message); }
+}
+
+async function mudarStatus(numero, status){
+  try {
+    const r = await fetch(`api/orcamento/${numero}/status`, {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({status})
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Erro ao mudar status.");
+    const o = ORCS.find(x => x.numero === numero); if (o) o.status = status;
+    renderOrcs();
+  } catch (ex) { alert("Erro: " + ex.message); }
+}
+
+// ------------------------- enviar pedido à fábrica (Sapiens) -------------------------
+$("#fabClose").onclick = () => { $("#fabModal").style.display = "none"; };
+$("#fabModal").addEventListener("click", e => { if (e.target.id === "fabModal") $("#fabModal").style.display = "none"; });
+
+async function abrirFabrica(numero){
+  $("#fabModal").style.display = "flex";
+  $("#fabBody").innerHTML = `<div class="orcEmpty">Carregando...</div>`;
+  try {
+    const d = await fetch(`api/orcamento/${numero}/pedido-preview`).then(r => r.json());
+    if (d.error) throw new Error(d.error);
+    renderFab(numero, d);
+  } catch (ex) { $("#fabBody").innerHTML = `<div class="orcEmpty">Erro: ${esc(ex.message)}</div>`; }
+}
+
+function renderFab(numero, d){
+  const pedidos = d.pedidos || [], prob = d.problemas || {sem_codigo: [], sem_derivacao: [], documento: "", cliente_senior: ""};
+  const nProb = (prob.sem_codigo || []).length
+    + (prob.sem_derivacao || []).length
+    + (prob.documento ? 1 : 0)
+    + (prob.cliente_senior ? 1 : 0);
+  const cli = (pedidos[0] || {}).cliente || {};
+  const docTxt = cli.cgccpfFmt || cli.cgccpf || "";
+  const versaoAtual = d.versao_atual || 1;
+  const ultimaVersao = d.ultima_versao_enviada;
+  const podeEnviar = d.pode_enviar !== false;
+
+  // Status do envio mais recente. O histórico completo permanece salvo no JSON do orçamento.
+  let jaEnv = "";
+  if (d.ja_enviado){
+    const pf = d.ja_enviado;
+    const subs = pf.pedidos || [{status: pf.status, numero_pedido: pf.numero_pedido, erro: pf.erro, marca: ""}];
+    const versaoTxt = pf.versao ? ` <b>v${pf.versao}</b> ·` : "";
+
+    jaEnv = subs.map(s => {
+      const et = s.marca ? `<b>${esc(s.marca)}</b>: ` : "";
+      if (s.status === "pendente") return `<div class="fabSent">⏳${versaoTxt} ${et}na fila — aguardando o relay.</div>`;
+      if (s.status === "recebido_agente") return `<div class="fabSent">✓${versaoTxt} ${et}recebido pelo sistema da fábrica — aguardando processamento no Sapiens.</div>`;
+      if (s.status === "processando_senior") return `<div class="fabSent">⚙${versaoTxt} ${et}em processamento no Sapiens.</div>`;
+      if (s.status === "enviado") return `<div class="fabSent">✓${versaoTxt} ${et}enviado · <b>pedido nº ${esc(s.numero_pedido||"")}</b></div>`;
+      if (s.status === "erro") return `<div class="orcAlertBar">
+        ⚠${versaoTxt} ${et}falha no processamento: ${esc(s.erro||"")}.
+        <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="genBtn alt" onclick="retryFabricaJob(${numero}, '${encodeURIComponent(s.job_id||"")}')">TENTAR NOVAMENTE ${s.marca ? esc(s.marca).toUpperCase() : ""}</button>
+          <button class="genBtn alt" onclick="naoReenviarFabricaJob(${numero}, '${encodeURIComponent(s.job_id||"")}')">NÃO REENVIAR ESTA EMPRESA NESTA VERSÃO</button>
+        </div>
+      </div>`;
+      if (s.status === "nao_enviar") return `<div class="fabSent">○${versaoTxt} ${et}<b>não enviado por decisão nesta versão</b>.</div>`;
+      if (s.status === "substituido") return `<div class="fabSent">↪${versaoTxt} ${et}substituído por uma versão mais nova antes do processamento.</div>`;
+      return "";
+    }).join("");
+  }
+
+  let aviso = "";
+
+  const empresasMantidas = d.empresas_mantidas || [];
+
+  if (empresasMantidas.length) {
+    const detalhes = empresasMantidas.map(e => {
+      const numero = e.numero_pedido
+        ? ` (pedido Senior nº ${esc(e.numero_pedido)})`
+        : "";
+
+      return `<b>${esc(e.marca)}</b>${numero}`;
+    }).join(", ");
+
+    aviso += `
+      <div class="orcAlertBar">
+        ℹ <b>Pedido anterior mantido sem alteração:</b>
+        ${detalhes}. Esta versão não enviará itens para essa
+        empresa e não alterará nem cancelará seu pedido
+        existente no Senior.
+      </div>
+    `;
+  }
+
+  
+
+  if (ultimaVersao && versaoAtual > ultimaVersao){
+    aviso += `<div class="orcAlertBar">⚠ A fábrica tem como último envio a <b>v${ultimaVersao}</b>. O orçamento está na <b>v${versaoAtual}</b>; esta versão ainda não foi enviada.</div>`;
+  }
+
+  if (pedidos.length > 1)
+    aviso += `<div class="fabSent">ℹ Este orçamento tem produtos das <b>duas empresas</b> — serão gerados <b>${pedidos.length} pedidos</b>, um para cada empresa (WJ e Bella Itália).</div>`;
+  if ((prob.sem_codigo || []).length)
+    aviso += `<div class="orcAlertBar">⚠ ${prob.sem_codigo.length} item(ns) sem código Sapiens: ${prob.sem_codigo.map(esc).join(", ")}. Peça ao gestor para cadastrar o de-para.</div>`;
+  if ((prob.sem_derivacao || []).length)
+    aviso += `<div class="orcAlertBar">⚠ Cor sem derivação no Sapiens: ${prob.sem_derivacao.map(esc).join(", ")}. Ajuste a cor ou peça ao gestor para cadastrar a derivação.</div>`;
+  if (prob.documento)
+    aviso += `<div class="orcAlertBar">⚠ ${esc(prob.documento)} Corrija o CPF/CNPJ cadastrado no orçamento.</div>`;
+  if (prob.cliente_senior)
+    aviso += `<div class="orcAlertBar">⚠ ${esc(prob.cliente_senior)}</div>`;
+
+  const blocos = pedidos.map(p => {
+    const rows = p.itens.map(it => `<tr class="${it.codpro ? "" : "semcod"}">
+      <td>${esc(it.produto)}${it.desder ? ` — ${esc(it.desder)}` : ""}</td>
+      <td>${it.qtdped}</td>
+      <td>${brl(it.preuni)}</td>
+      <td>${it.codpro ? esc(it.codpro) + (it.codder ? " / " + esc(it.codder) : "") : `<span class="semcodtag">⚠ sem código</span>`}</td>
+      <td>${brl(it.total)}</td></tr>`).join("");
+    const titulo = pedidos.length > 1 ? `<div class="fabEmpresa">🏭 Pedido ${esc(p.marca)} — empresa ${esc(p.codemp || "—")} / filial ${esc(p.codfil || "—")}</div>` : "";
+    return `${titulo}
+      <div class="fabParams"><b>Parâmetros:</b> transação produto <span id="fabTxnResumo-${p.marca === "WJ" ? "WJ" : "BELLA"}">${esc(p.tnspro || "—")}</span> · empresa ${esc(p.codemp || "—")} · filial ${esc(p.codfil || "—")} · cliente Senior ${esc((p.cliente||{}).codcli || "—")} · pedido cliente ${esc(p.pedcli || "—")}</div>
+      <div class="tableWrap"><table class="fabTable">
+        <thead><tr><th>Produto</th><th>Qtd</th><th>Unit.</th><th>Código Sapiens</th><th>Total</th></tr></thead>
+        <tbody>${rows}</tbody>
+        <tfoot><tr><td colspan="4" style="text-align:right"><b>Total ${esc(p.marca)}</b></td><td><b>${brl(p.valorTotal)}</b></td></tr></tfoot>
+      </table></div>`;
+  }).join("");
+
+  const transacoesDisponiveis = d.transacoes_disponiveis || [];
+  const transacoesFixas = d.transacoes_fixas || {};
+
+  const seletoresTransacao = pedidos.map(p => {
+    const marca = p.marca === "WJ" ? "WJ" : "BELLA";
+    const atual = String(p.tnspro || "90119");
+
+    const opcoes = [...transacoesDisponiveis];
+
+    if (!opcoes.some(t => t.codigo === atual)) {
+      opcoes.unshift({
+        codigo: atual,
+        descricao: "Transação do pedido existente"
+      });
+    }
+
+    return `
+      <label style="display:flex; margin-bottom:10px; margin-top:10px">
+        <b>Transação ${esc(p.marca)}:</b>
+
+        <select
+          id="fabTxn-${marca}"
+          ${(!podeEnviar || transacoesFixas[marca]) ? "disabled" : ""}
+          style="max-width:310px;margin-left:5px"
+        >
+          ${opcoes.map(t => `
+            <option
+              value="${esc(t.codigo)}"
+              ${t.codigo === atual ? "selected" : ""}
+            >
+              ${esc(t.codigo)} — ${esc(t.descricao)}
+            </option>
+          `).join("")}
+        </select>
+
+        ${transacoesFixas[marca]
+          ? '<small> (fixa no Senior)</small>'
+          : ''}
+      </label>
+    `;
+  }).join("");
+
+  const botaoEnviar = podeEnviar
+    ? `<button id="fabSend" class="genBtn" ${(nProb || !pedidos.length) ? "disabled" : ""} data-mantidas="${esc(empresasMantidas.map(e => e.marca).join(", "))}">CONFIRMAR E ENVIAR V${versaoAtual} À FÁBRICA${pedidos.length > 1 ? " ("+pedidos.length+" PEDIDOS)" : ""}</button>`
+    : `<div class="fabSent">✓ A <b>v${versaoAtual}</b> já possui um envio à fábrica. Edite o orçamento para gerar uma nova versão antes de enviar novamente.</div>`;
+
+  $("#fabBody").innerHTML = `
+    ${jaEnv}${aviso}
+    <div class="fabInfo">
+      <div><b>Cliente:</b> ${esc(cli.nome || "—")}${docTxt ? ` · <b>${esc(docTxt)}</b>` : ""}${cli.cidade ? ` · ${esc(cli.cidade)}` : ""}</div>
+      <div style="margin-top:8px"><b>Cliente Senior:</b>
+        <input id="fabCodCliSenior" type="text" inputmode="numeric" autocomplete="off"
+               value="${esc(cli.codcli || "")}" placeholder="ex.: 7832"
+               style="width:120px;margin-left:6px">
+        <button id="fabSaveCodCli" class="genBtn alt" style="padding:7px 10px;margin-left:6px">SALVAR CÓDIGO</button>
+        <span id="fabCodCliMsg" style="margin-left:8px"></span>
+        ${seletoresTransacao}
+      </div>
+      <div><b>Orçamento:</b> Nº ${numero} · <b>versão atual v${versaoAtual}</b></div>
+    </div>
+    ${blocos || `<div class="orcEmpty">Nenhum item para enviar.</div>`}
+    <div class="fabActions">
+      ${botaoEnviar}
+      <button id="fabShowJson" class="genBtn alt">ver o(s) pedido(s) em JSON</button>
+      <div id="fabMsg"></div>
+      <pre id="fabJson" style="display:none"></pre>
+    </div>`;
+
+  for (const p of pedidos) {
+  const marca = p.marca === "WJ" ? "WJ" : "BELLA";
+  const sel = $(`#fabTxn-${marca}`);
+
+  if (sel) {
+    sel.onchange = () => {
+      p.tnspro = sel.value;
+
+      const resumo = $(`#fabTxnResumo-${marca}`);
+      if (resumo) resumo.textContent = sel.value;
+    };
+  }
+}
+
+  const saveCodCliBtn = $("#fabSaveCodCli");
+  if (saveCodCliBtn) saveCodCliBtn.onclick = async () => {
+    const input = $("#fabCodCliSenior");
+    const msg = $("#fabCodCliMsg");
+    const cod = (input.value || "").trim();
+    if (!/^\d+$/.test(cod) || Number(cod) <= 0){
+      msg.textContent = "Código inválido.";
+      return;
+    }
+    saveCodCliBtn.disabled = true;
+    msg.textContent = "Salvando...";
+    try {
+      const r = await fetch(`api/orcamento/${numero}/cliente-senior`, {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({cod_cli_senior: cod})
+      });
+      const j = await r.json();
+      if (!r.ok) throw new Error(j.error || "Falha ao salvar código Senior.");
+      msg.textContent = "✓ salvo";
+      await abrirFabrica(numero);
+    } catch(ex){
+      msg.textContent = "Erro: " + ex.message;
+      saveCodCliBtn.disabled = false;
+    }
+  };
+
+  $("#fabShowJson").onclick = () => {
+    const el = $("#fabJson");
+    el.style.display = el.style.display === "none" ? "block" : "none";
+    el.textContent = JSON.stringify(pedidos, null, 2);
+  };
+
+  const sb = $("#fabSend");
+  if (sb && !nProb && pedidos.length) sb.onclick = () => enviarFabrica(numero);
+}
+
+async function retryFabricaJob(numero, jobIdEncoded){
+  const jobId = decodeURIComponent(jobIdEncoded || "");
+  if (!jobId) return;
+  if (!confirm("Tentar novamente somente este pedido/empresa? O mesmo payload será reenviado ao Senior.")) return;
+
+  try {
+    const r = await fetch(`api/orcamento/${numero}/fabrica-job/${encodeURIComponent(jobId)}/retry`, {method:"POST"});
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Falha ao solicitar nova tentativa.");
+    await abrirFabrica(numero);
+    fetch("api/orcamentos").then(r => r.json()).then(js => { ORCS = js.orcamentos || []; renderOrcs(); }).catch(()=>{});
+  } catch (ex) {
+    alert("Erro: " + ex.message);
+  }
+}
+
+async function naoReenviarFabricaJob(numero, jobIdEncoded){
+  const jobId = decodeURIComponent(jobIdEncoded || "");
+  if (!jobId) return;
+  if (!confirm("Não reenviar esta empresa nesta versão? Isto não cancela nenhum pedido já criado no Senior.")) return;
+
+  try {
+    const r = await fetch(`api/orcamento/${numero}/fabrica-job/${encodeURIComponent(jobId)}/nao-enviar`, {method:"POST"});
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Falha ao encerrar esta tentativa.");
+    await abrirFabrica(numero);
+    fetch("api/orcamentos").then(r => r.json()).then(js => { ORCS = js.orcamentos || []; renderOrcs(); }).catch(()=>{});
+  } catch (ex) {
+    alert("Erro: " + ex.message);
+  }
+}
+
+async function enviarFabrica(numero){
+  const m = $("#fabMsg"), b = $("#fabSend");
+  const mantidas = (
+    b?.dataset.mantidas || ""
+  ).split(",").map(s => s.trim()).filter(Boolean);
+
+  const avisoMantidas = mantidas.length
+    ? `\n\nATENÇÃO: ${mantidas.join(", ")} não terá novo envio. ` +
+      `O pedido anterior continuará sem alteração no Senior.`
+    : "";
+
+  if (!confirm(
+    "Confirmar o envio desta versão do pedido à fábrica?" +
+    avisoMantidas
+  )) return;
+
+  const transacoes = {};
+
+  for (const marca of ["WJ", "BELLA"]) {
+    const campo = $(`#fabTxn-${marca}`);
+
+    if (campo) {
+      transacoes[marca] = campo.value;
+    }
+  }
+
+  if (b) b.disabled = true;
+  if (m){ m.className = ""; m.textContent = "Colocando na fila..."; }
+
+  try {
+    const r = await fetch(`api/orcamento/${numero}/enviar-fabrica`, {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({transacoes})
+  });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Falha ao enviar.");
+
+    // Recarrega o modal: a versão recém-enviada passa a aparecer como "na fila"
+    // e o botão de envio desaparece até existir uma nova versão.
+    const previewResp = await fetch(`api/orcamento/${numero}/pedido-preview`);
+    const preview = await previewResp.json();
+    if (!previewResp.ok || preview.error) throw new Error(preview.error || "Falha ao atualizar o status.");
+    renderFab(numero, preview);
+
+    const novoMsg = $("#fabMsg");
+    if (novoMsg){
+      novoMsg.className = "fabOk";
+      novoMsg.innerHTML = `✓ <b>v${j.versao}</b> colocada na fila da fábrica.`;
+    }
+
+    fetch("api/orcamentos")
+      .then(r => r.json())
+      .then(js => { ORCS = js.orcamentos || []; renderOrcs(); })
+      .catch(()=>{});
+
+  } catch (ex) {
+    if (m){ m.className = "fabErr"; m.textContent = "Erro: " + ex.message; }
+    if (b) b.disabled = false;
+  }
+}
+
+</script>
+</body>
+</html>

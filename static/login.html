@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="__BASE_HREF__">
+<link rel="icon" type="image/x-icon" href="static/favicon.ico" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/x-icon" href="static/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+<title>Admin — Entrar</title>
+<style>
+  @font-face{font-family:"Inter"; src:url("static/fonts/Inter-Variable.ttf") format("truetype"); font-weight:100 900}
+  :root{--bg:#0d0d0d; --card:#1c1c1c; --line:#2b2b2b; --text:#f2f0eb; --muted:#9a968e; --accent:#c8b08a; --danger:#c96b5f}
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--text); font-family:"Inter","Segoe UI",system-ui,sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center}
+  .box{width:min(380px,92vw); background:var(--card); border:1px solid var(--line); border-radius:14px; padding:36px 32px; text-align:center}
+  .logo{font-weight:700; letter-spacing:.3em; font-size:15px; margin-bottom:6px}
+  .logo small{display:block; letter-spacing:.16em; font-weight:400; color:var(--muted); font-size:10px; margin-top:3px}
+  h1{font-size:15px; letter-spacing:.18em; color:var(--muted); margin:26px 0 18px; font-weight:600}
+  input{width:100%; background:var(--bg); border:1px solid var(--line); color:var(--text); padding:13px 16px; border-radius:9px; font-size:15px; outline:none; font-family:inherit}
+  input:focus{border-color:var(--accent)}
+  button{width:100%; margin-top:14px; background:var(--text); color:var(--bg); border:none; padding:14px; border-radius:9px; font-size:14.5px; font-weight:700; letter-spacing:.05em; cursor:pointer; font-family:inherit}
+  button:hover{background:var(--accent)}
+  button:disabled{opacity:.5; cursor:default}
+  #msg{min-height:18px; margin-top:14px; font-size:13.5px; color:var(--danger)}
+  a{display:inline-block; margin-top:18px; color:var(--muted); font-size:13px; text-decoration:none}
+  a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+  <div class="box">
+    <div class="logo">GALERIA WALDIR JUNIOR<small>PAINEL ADMINISTRATIVO</small></div>
+    <h1>ENTRAR</h1>
+    <form id="form">
+      <input id="pw" type="password" placeholder="Senha do administrador" autofocus autocomplete="current-password">
+      <button id="btn" type="submit">ENTRAR</button>
+    </form>
+    <div id="msg"></div>
+    <a href=".">← voltar ao catálogo</a>
+  </div>
+<script>
+const form = document.getElementById("form"), pw = document.getElementById("pw");
+const btn = document.getElementById("btn"), msg = document.getElementById("msg");
+form.onsubmit = async (e) => {
+  e.preventDefault();
+  btn.disabled = true; msg.textContent = "";
+  try {
+    const r = await fetch("api/login", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({password: pw.value})
+    });
+    if (r.ok) { location.reload(); return; }
+    msg.textContent = (await r.json()).error || "Erro ao entrar.";
+  } catch (err) {
+    msg.textContent = "Erro de conexão.";
+  }
+  btn.disabled = false; pw.select();
+};
+</script>
+</body>
+</html>

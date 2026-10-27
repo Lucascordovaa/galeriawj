@@ -1,0 +1,11 @@
+{
+ "vendedores": [
+  {
+   "nome": "galeria",
+   "usuario": "galeria",
+   "senha_hash": "scrypt:32768:8:1$0nhlVYUKK44nElNq$a6ce6622abf53c2718996b64eb59ef618c630fb93533d15b6ae04ccf5b36a6016a1996ed0247dea0d773d6679ade540364c824ebd1ce289365d966dc80d713e1",
+   "ativo": true,
+   "cod_sapiens": "237"
+  }
+ ]
+}

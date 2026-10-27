@@ -1,0 +1,23 @@
+[
+  {"codigo":"90100","descricao":"Entrada de Pedido Revenda"},
+  {"codigo":"90101","descricao":"Entrada de Pedido de Orçamento"},
+  {"codigo":"90105","descricao":"Entrada de Pedido de Serviço"},
+  {"codigo":"90106","descricao":"Entrada de Pedido p/ Bonificação"},
+  {"codigo":"90107","descricao":"Entrada de Pedido p/ Demonstração"},
+  {"codigo":"90108","descricao":"Entrada de Pedido p/ Comodato"},
+  {"codigo":"90109","descricao":"Entrada de Pedido para Consignação"},
+  {"codigo":"90110","descricao":"Entrada de Pedido Exportação Direta"},
+  {"codigo":"90111","descricao":"Entrada de Pedido Área de Livre Comércio"},
+  {"codigo":"90112","descricao":"Entrada de Pedido Zona Franca de Manaus"},
+  {"codigo":"90113","descricao":"Entrada de Pedido Amazônia Ocidental"},
+  {"codigo":"90114","descricao":"Entrada de Pedido p/ Conserto"},
+  {"codigo":"90115","descricao":"Entrada de Pedido Outras Saídas"},
+  {"codigo":"90116","descricao":"Exportação Indireta"},
+  {"codigo":"90117","descricao":"Entrada de Pedido Consumidor Final"},
+  {"codigo":"90118","descricao":"Entrada de Pedido Galeria"},
+  {"codigo":"90119","descricao":"Entrada de Pedido Site"},
+  {"codigo":"90120","descricao":"Entrada de Pedido Show Room"},
+  {"codigo":"90121","descricao":"Entrada de Pedido Show Room Zona Franca"},
+  {"codigo":"90122","descricao":"Entrada de Pedido Para Nota Futura"},
+  {"codigo":"90129","descricao":"Entrada de Pedido de Promoção B2B"}
+]

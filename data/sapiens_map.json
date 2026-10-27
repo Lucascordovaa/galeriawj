@@ -1,0 +1,56 @@
+{
+ "PENDENTE AMORFO M": {
+  "codigo": "007020240",
+  "unidade": "PÇ",
+  "derivacoes": [
+   {
+    "cod": "022",
+    "nome": "CRISTAL GRAFITE | METAL CHOCOLATE"
+   },
+   {
+    "cod": "019",
+    "nome": "CRISTAL CAPUCCINO | METAL CHOCOLATE"
+   },
+   {
+    "cod": "023",
+    "nome": "CRISTAL GRAFITE | METAL ARDOSIA"
+   },
+   {
+    "cod": "033",
+    "nome": "CRISTAL CAPUCCINO | METAL CHAMPAGNE"
+   },
+   {
+    "cod": "031",
+    "nome": "CRISTAL GRAFITE | METAL GRAFITE"
+   },
+   {
+    "cod": "046",
+    "nome": "CRISTAL CAPUCCINO | METAL AMENDOA"
+   },
+   {
+    "cod": "068",
+    "nome": "CRISTAL GRAFITE | METAL AMENDOA"
+   },
+   {
+    "cod": "066",
+    "nome": "CRISTAL GRAFITE | METAL CHAMPAGNE"
+   },
+   {
+    "cod": "069",
+    "nome": "CRISTAL CAPUCCINO | METAL ARDOSIA"
+   },
+   {
+    "cod": "114",
+    "nome": "CRISTAL CAPUCCINO | METAL GRAFITE"
+   },
+   {
+    "cod": "227",
+    "nome": "CRISTAL CAPUCCINO | METAL CREME"
+   },
+   {
+    "cod": "235",
+    "nome": "CRISTAL GRAFITE | METAL CREME"
+   }
+  ]
+ }
+}
